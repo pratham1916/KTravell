@@ -1,0 +1,69 @@
+$primary-color: #97bbe3;
+.btn {
+    background-color: $primary-color;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 15px 5%;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    top: 0;
+    h2{
+        color: black;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            font-size: 20px;
+            margin: 0 10px;
+            font-weight: 600;
+            color: black;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    #signIn {
+        background-color: white;
+        border: 1px solid $primary-color;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+
+    #signUp:hover {
+        background-color: white;
+        border: 1px solid $primary-color;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+        .navbar {
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+}
