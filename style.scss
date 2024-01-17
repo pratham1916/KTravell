@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    background-color: #fdfdfd;
+}
+@import "scss/navbar";
+@import "scss/home";
+@import "scss/modal";

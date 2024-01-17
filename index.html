@@ -1,13 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>KTravel - South Korea</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
     
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a1ef31398.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <nav>
+        <a href="/"><h2>KTravel</h2></a>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Explore</a>
+            <a href="#">Booking</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div>
+            <button class="btn" id="signUp">Sign Up</button>
+            <button class="btn" id="signIn">Sign In</button>
+        </div>
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+    </nav>
+
+    <section class="home" id="home">
+        <h1>Things to do in South Korea</h1>
+        <div class="container">
+            <div class="left">
+                <img src="images/home.jpg" alt="Home">
+            </div>
+            <div class="right">
+                <p>
+                    South Korea is mainly mountainous, and there are many islands off the south coast. The capital city,
+                    Seoul, is quite close to the North Korean border. The largest island is Jeju Island and the highest
+                    mountain is Hallasan, on Jeju. The country is slightly smaller than Iceland and Virginia.
+                </p>
+                <div class="slider">
+                    <div id="img1"></div>
+                    <div id="img2"></div>
+                </div>
+                <a href="#" class="arrow-link">Book a Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="signUp_Modal" id="signUpModal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtnSignUp">&times;</span>
+    
+            <div class="signUp">
+                <h3>Register if you are new here!</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="images/google.png" alt="Google"></a>
+                    <a href="#" class="social-icon"><img src="images/twitter.png" alt=""></a>
+                </div>
+                <form action="">
+                    <div class="rows">
+                        <div>
+                            <label for="fullName">Full Name :</label>
+                            <input type="text" placeholder="Full Name" id="fullName" required>
+                        </div>
+                        <div>
+                            <label for="email">Email : </label>
+                            <input type="email" placeholder="Email Address" id="email" required>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div>
+                            <label for="password">Password: </label>
+                            <input type="password" placeholder="Password" id="password" required>
+                        </div>
+                        <div>
+                            <label for="confirmPassword">Confirm Password: </label>
+                            <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div>
+                            <label for="phoneNumber">Phone Number: </label>
+                            <input type="tel" placeholder="Phone Number" id="phoneNumber" required>
+                        </div>
+                        <div>
+                            <label for="dob">Date of Birth: </label>
+                            <input type="date" id="dob" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="signin_Modal" id="signInModal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtnSignIn">&times;</span>
+    
+            <div class="signIn">
+                <h3>Login</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="images/google.png" alt="Google"></a>
+                    <a href="#" class="social-icon"><img src="images/twitter.png" alt=""></a>
+                </div>
+                <form action="">
+                    <label for="email">Email :</label>
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <label for="password">Password :</label>
+                    <input type="password" placeholder="Password" id="pass2" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    
+
 </body>
 <script src="script.js"></script>
+
 </html>

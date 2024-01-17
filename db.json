@@ -1,0 +1,183 @@
+{
+    "destination":[
+        {
+            "name": "Geoje Island",
+            "description": "An island known for its beautiful coastline, shipbuilding industry, and the historic Oedo-Botania botanical garden.",
+            "location": "Geoje, South Korea",
+            "image": "https://c1.wallpaperflare.com/preview/770/412/29/geoje-korea-sunset-boats.jpg"
+          },
+          {
+            "name": "Pocheon",
+            "description": "A city surrounded by mountains and lakes, Pocheon is famous for its scenic landscapes, temples, and the Herb Island theme park.",
+            "location": "Pocheon, South Korea",
+            "image": "https://example.com/pocheon.jpg"
+          },
+          {
+            "name": "Buyeo",
+            "description": "A city with a rich history, Buyeo is home to historical sites like the Baekje Cultural Land and the Neungsa Temple.",
+            "location": "Buyeo, South Korea",
+            "image": "https://example.com/buyeo.jpg"
+          },
+          {
+            "name": "Iksan",
+            "description": "Known for its agricultural heritage and historical relics, Iksan features the Mireuksa Temple and the Seodong Park.",
+            "location": "Iksan, South Korea",
+            "image": "https://example.com/iksan.jpg"
+          },
+          {
+            "name": "Namwon",
+            "description": "A city with a romantic atmosphere, Namwon is famous for its scenic gardens, traditional architecture, and the Chunhyang Theme Park.",
+            "location": "Namwon, South Korea",
+            "image": "https://example.com/namwon.jpg"
+          },
+          {
+            "name": "Yeongju",
+            "description": "Located near Mount Sobaeksan, Yeongju is known for its historic Buseoksa Temple, ancient relics, and the Sobaeksan National Park.",
+            "location": "Yeongju, South Korea",
+            "image": "https://example.com/yeongju.jpg"
+          },
+          {
+            "name": "Pyeongchang",
+            "description": "Host of the 2018 Winter Olympics, Pyeongchang is a mountainous region known for its ski resorts, Alpensia Resort, and scenic beauty.",
+            "location": "Pyeongchang, South Korea",
+            "image": "https://example.com/pyeongchang.jpg"
+          },
+          {
+            "name": "Jinhae",
+            "description": "Famous for its cherry blossom festival, Jinhae is a picturesque coastal city with parks, naval attractions, and historic sites.",
+            "location": "Jinhae, South Korea",
+            "image": "https://example.com/jinhae.jpg"
+          },
+          {
+            "name": "Gochang",
+            "description": "Known for the UNESCO World Heritage site of Dolmen Sites, Gochang offers a blend of natural beauty and cultural heritage.",
+            "location": "Gochang, South Korea",
+            "image": "https://example.com/gochang.jpg"
+          },
+          {
+            "name": "Gapyeong",
+            "description": "A region surrounded by mountains and rivers, Gapyeong is famous for its natural attractions, Nami Island, and the Garden of Morning Calm.",
+            "location": "Gapyeong, South Korea",
+            "image": "https://example.com/gapyeong.jpg"
+          },
+          {
+            "name": "Uijeongbu",
+            "description": "A city surrounded by mountains, Uijeongbu is known for its lively markets, the Uijeongbu Budaejjigae Street, and the Haengjusanseong Fortress.",
+            "location": "Uijeongbu, South Korea",
+            "image": "https://example.com/uijeongbu.jpg",
+            "priceRange": "$$"
+          },
+          {
+            "name": "Jeungpyeong",
+            "description": "A county with rural charm, Jeungpyeong features the Chungbuk Cheongju Airport, the Geumsusanseong Fortress, and the Geumsusan Mountain.",
+            "location": "Jeungpyeong, South Korea",
+            "image": "https://example.com/jeungpyeong.jpg",
+            "priceRange": "$"
+          },
+          {
+            "name": "Goesan",
+            "description": "Surrounded by mountains and agricultural landscapes, Goesan is known for the picturesque Sobaeksan Mountain and the Seonunsa Temple.",
+            "location": "Goesan, South Korea",
+            "image": "https://example.com/goesan.jpg",
+            "priceRange": "$"
+          },
+          {
+            "name": "Hongcheon",
+            "description": "A county with natural beauty, Hongcheon features the Vivaldi Park Ski World, the Palbongsan Mountain, and the Hongcheon River.",
+            "location": "Hongcheon, South Korea",
+            "image": "https://example.com/hongcheon.jpg",
+            "priceRange": "$$$"
+          },
+          {
+            "name": "Yeoju",
+            "description": "Known for its ceramics and history, Yeoju features the Yeoju Premium Outlets, the Silleuksa Temple, and the Yangji Pine Resort.",
+            "location": "Yeoju, South Korea",
+            "image": "https://example.com/yeoju.jpg",
+            "priceRange": "$$"
+          },
+          {
+            "name": "Uiwang",
+            "description": "A city with a mix of industry and culture, Uiwang features the Uiwang Railroad Village, the Cheonggyesan Mountain, and the Everland Resort.",
+            "location": "Uiwang, South Korea",
+            "image": "https://example.com/uiwang.jpg",
+            "priceRange": "$$$"
+          },
+          {
+            "name": "Chungju",
+            "description": "Situated by Chungju Lake, Chungju features the Danyangho Lake, the Jungangtap Munhwa Street, and the Sangdangsanseong Fortress.",
+            "location": "Chungju, South Korea",
+            "image": "https://example.com/chungju.jpg",
+            "priceRange": "$$"
+          },
+          {
+            "name": "Hamyang",
+            "description": "A county known for its scenic beauty, Hamyang features the Dalmasa Temple, the Sancheong Medicinal Herb Theme Park, and the Jirisan National Park.",
+            "location": "Hamyang, South Korea",
+            "image": "https://example.com/hamyang.jpg",
+            "priceRange": "$$$"
+          },
+          {
+            "name": "Asan",
+            "description": "Famous for its hot springs and health resorts, Asan is a relaxing destination with a mix of nature and wellness activities.",
+            "location": "Asan, South Korea",
+            "image": "https://example.com/asan.jpg",
+            "priceRange": "$$$"
+          },
+          {
+            "name": "Ganghwa Island",
+            "description": "An island with historical sites, Ganghwa features the Ganghwa Dolmen Sites, the Ganghwa Peace Observatory, and the Bomunsa Temple.",
+            "location": "Ganghwa, South Korea",
+            "image": "https://example.com/ganghwa.jpg",
+            "priceRange": "$$"
+          },
+          {
+            "name": "Namhae",
+            "description": "A coastal town known for its stunning landscapes, Namhae features the Namhae German Village, the Boriam Temple, and the Sangju Beach.",
+            "location": "Namhae, South Korea",
+            "image": "https://example.com/namhae.jpg",
+            "priceRange": "$$$"
+          },
+          {
+            "name": "Yeongdeok",
+            "description": "A coastal city with seafood delights, Yeongdeok features the Yeongdeok Blue Road, the Jukdobong Park, and the Gosu Cave.",
+            "location": "Yeongdeok, South Korea",
+            "image": "https://example.com/yeongdeok.jpg",
+            "priceRange": "$$"
+          },
+          {
+            "name": "Buan",
+            "description": "Known for its scenic countryside, Buan features the Byeonsanbando National Park, the Gyeongpo Beach, and the Byeonsan Peninsula.",
+            "location": "Buan, South Korea",
+            "image": "https://example.com/buan.jpg",
+            "priceRange": "$$$"
+          },
+          {
+            "name": "Seosan",
+            "description": "A city with a mix of history and coastal charm, Seosan features the Taeanhaean National Park, the Sorae Fish Market, and the Haemi Fortress.",
+            "location": "Seosan, South Korea",
+            "image": "https://example.com/seosan.jpg",
+            "priceRange": "$$"
+          },
+          {
+            "name": "Yeongju",
+            "description": "Located near Mount Sobaeksan, Yeongju is known for its historic Buseoksa Temple, ancient relics, and the Sobaeksan National Park.",
+            "location": "Yeongju, South Korea",
+            "image": "https://example.com/yeongju.jpg",
+            "priceRange": "$"
+          },
+          {
+            "name": "Boryeong",
+            "description": "Famous for its mud festival, Boryeong features the Daecheon Beach, the Boryeong Fish Market, and the Geumgang Lake.",
+            "location": "Boryeong, South Korea",
+            "image": "https://example.com/boryeong.jpg",
+            "priceRange": "$$$"
+          },
+          {
+            "name": "Seosan",
+            "description": "A coastal city with historical sites, Seosan features the Haemi Martyrdom Holy Ground, the Mallipo Beach, and the Haemi Traditional Culture Village.",
+            "location": "Seosan, South Korea",
+            "image": "https://example.com/seosan2.jpg",
+            "priceRange": "$$"
+          }
+    ]
+}
