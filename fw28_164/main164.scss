@@ -1,0 +1,207 @@
+
+*{
+    padding:0%;
+    margin: 0%;
+}
+
+
+#main164 {
+    width: 1363px;
+    border: 2px solid red;
+   box-sizing: border-box;
+  }
+  #destination{
+    width: 1358px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+    border: 4px solid rgb(180, 255, 6);
+    box-sizing: border-box;
+    position: relative;
+    // <uniquifier>: Use a uniquifier for the class name
+
+
+    #desId {
+      width: 100%;
+      height: 100%;
+    //   overflow: hidden;
+    //   object-fit: cover;
+
+      #videoDest{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        max-width: 100%;
+      max-height: 100%;
+        transition: opacity 0.3s ease-in-out;
+      }
+      #desId >  #videoDest:hover {
+        opacity: 0.7; /* Adjust as needed */
+      }
+  
+      #desId > #videoDest.controls-hidden {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+  
+      #desId:hover >  #videoDest.controls-hidden {
+        opacity: 1;
+      }
+
+
+    }
+  }
+// video end --------
+// FORM start 
+#desIdform{
+    width:860px;
+    height:100px;
+    border:1px solid yellow;
+    position: absolute;
+    top: 50%;
+    left:55%;
+    transform: translate(-50%, -50%);
+    font-size:24px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+// text part "where do you want visit "
+#destination>h3{
+    position: absolute;
+    top: 25%;
+    left:36%;
+    color:white;
+    // transform: translate(-50%, -50%);
+    font-size:47px;
+    
+
+}
+#destination>p{
+    position: absolute;
+    top: 36%;
+    left:42%;
+    color:white;
+    // transform: translate(-50%, -50%);
+    font-size:20px;
+    text-align: center;
+
+}
+// text part "where do you want visit ----end"
+.desFormClass>input,label{
+
+  padding:10px 15px;
+  border-radius:10px;
+  border:none;
+
+}
+
+@media all and (min-width:1024px) and (max-width:1200px) {
+  #main164 {
+    width: 1024px;
+    border: 2px solid rgb(105, 0, 0);
+   box-sizing: border-box;
+  }
+  #destination{
+    width: 1024px;
+    height: 600px;
+
+    font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+    border: 4px solid rgb(69, 99, 0);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    // <uniquifier>: Use a uniquifier for the class name
+
+
+    #desId {
+      width: 100%;
+      height: 100%;
+    //   overflow: hidden;
+    //   object-fit: cover;
+
+      #videoDest{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        max-width: 100%;
+      max-height: 100%;
+        transition: opacity 0.3s ease-in-out;
+      }
+      #desId >  #videoDest:hover {
+        opacity: 0.7; /* Adjust as needed */
+      }
+  
+      #desId > #videoDest.controls-hidden {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+  
+      #desId:hover >  #videoDest.controls-hidden {
+        opacity: 1;
+      }
+
+
+    }
+  }
+// video end --------
+// FORM start 
+#desIdform{
+    width:860px;
+    height:100px;
+    border:1px solid yellow;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:24px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+// text part "where do you want visit "
+#destination>h3{
+    position: absolute;
+    top: 25%;
+    left:25%;
+    color:white;
+    // transform: translate(-50%, -50%);
+    font-size:47px;
+    
+
+}
+#destination>p{
+    position: absolute;
+    top: 36%;
+    left:30%;
+    color:white;
+    // transform: translate(-50%, -50%);
+    font-size:20px;
+    text-align: center;
+
+}
+// text part "where do you want visit ----end"
+.desFormClass>input,label{
+
+  padding:10px 15px;
+  border-radius:10px;
+  border:none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.desFormClass>input:hover{
+  cursor: pointer;
+  background-color:rgb(141, 135, 135);
+  color:black;
+}
+
+}
