@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signin.css">
+</head>
+<body>
+    <div class="signUp_Modal" id="signUpModal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtnSignUp">&times;</span>
+    
+            <div class="signUp">
+                <h3>Register if you are new here!</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="images/google.png" alt="Google"></a>
+                    <a href="#" class="social-icon"><img src="images/twitter.png" alt=""></a>
+                </div>
+                <form action="">
+                    <div class="rows">
+                        <div>
+                            <label for="fullName">Full Name :</label>
+                            <input type="text" placeholder="Full Name" id="fullName" required>
+                        </div>
+                        <div>
+                            <label for="email">Email : </label>
+                            <input type="email" placeholder="Email Address" id="email" required>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div>
+                            <label for="password">Password: </label>
+                            <input type="password" placeholder="Password" id="password" required>
+                        </div>
+                        <div>
+                            <label for="confirmPassword">Confirm Password: </label>
+                            <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div>
+                            <label for="phoneNumber">Phone Number: </label>
+                            <input type="tel" placeholder="Phone Number" id="phoneNumber" required>
+                        </div>
+                        <div>
+                            <label for="dob">Date of Birth: </label>
+                            <input type="date" id="dob" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="signin_Modal" id="signInModal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtnSignIn">&times;</span>
+    
+            <div class="signIn">
+                <h3>Login</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="images/google.png" alt="Google"></a>
+                    <a href="#" class="social-icon"><img src="images/twitter.png" alt=""></a>
+                </div>
+                <form action="">
+                    <label for="email">Email :</label>
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <label for="password">Password :</label>
+                    <input type="password" placeholder="Password" id="pass2" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
