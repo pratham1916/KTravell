@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/main164.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style></style>
+  <body>
+    <div id="main164">
+      <!-- start main -->
+
+      <!-- destination-->
+      <div id="destination">
+        <h3>Where do you want to go?</h3>
+        <p>Fill this form and our manager will contact you</p>
+        <div class="desId" id="desId">
+          <video
+            id="videoDest"
+            src="/store/sorted_unit-4_part2 - Made with Clipchamp.mp4"
+            allowfullscreen
+            autoplay
+            loop
+          ></video>
+          <!-- we can add "comtrol" & "muted" also for sound in video -->
+        </div>
+        <!-- vidos -->
+        <!-- form start  -->
+        <div id="desIdstart">
+          <form action="" method="get" class="desFormClass" id="desIdform">
+            <div class="desFormClass">
+              <label for="name"></label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Destination, city "
+                required
+              />
+            </div>
+            <div class="desFormClass">
+              <label for="month"></label>
+              <input
+                type="month"
+                id="month"
+                name="month"
+                placeholder="Any Month"
+                required
+              />
+            </div>
+
+            <div class="desFormClass">
+              <label for="meeting-time"></label>
+              <input
+                type="datetime-local"
+                id="meeting-time"
+                name="meeting-time"
+                placeholder="Sort by time"
+                required
+              />
+              <!-- min="2024-01-07T00:00" -->
+              <!-- max="2024-12-14T00:00" -->
+            </div>
+            <div class="desFormClass">
+              <input
+                type="submit"
+                value="Search"
+                style="
+                  padding: 10px 20px 10px 20px;
+                  font-weight: bold;
+                  background-color: rgb(248, 85, 112);
+                  color: rgb(90, 1, 13);
+                "
+              />
+            </div>
+          </form>
+        </div>
+        <!-- destination-->
+      </div>
+
+      <!----
+      main END -->
+    </div>
+    <script>
+      var video = document.querySelector("#desId > video");
+
+      video.addEventListener("mouseover", function () {
+        video.play();
+        video.classList.remove("controls-hidden");
+      });
+
+      video.addEventListener("mouseout", function () {
+        video.pause();
+        video.classList.add("controls-hidden");
+      });
+    </script>
+  </body>
+</html>
