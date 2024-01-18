@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KTravel - South Korea</title>
-    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7a1ef31398.js" crossorigin="anonymous"></script>
@@ -16,11 +16,11 @@
     <nav>
         <a href="/"><h2>KTravel</h2></a>
         <div class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Explore</a>
-            <a href="#">Booking</a>
-            <a href="#">Contact Us</a>
+            <a href="#" id="homebtn">Home</a>
+            <a href="#" id="aboutbtn">About Us</a>
+            <a href="#" id="explorebtn">Explore</a>
+            <a href="#" id="bookingbtn">Booking</a>
+            <a href="#contackSection">Contact Us</a>
         </div>
         <div>
             <button class="btn" id="signUp">Sign Up</button>
@@ -29,7 +29,7 @@
         <i class="fa-solid fa-bars" id="hamburger"></i>
     </nav>
 
-    <section class="home" id="home">
+    <section class="active" id="homeSection">
         <h1>Things to do in South Korea</h1>
         <div class="container">
             <div class="left">
@@ -48,6 +48,18 @@
                 <a href="#" class="arrow-link">Book a Tour</a>
             </div>
         </div>
+    </section>
+
+    <section id="aboutSection">
+        <h2>About</h2>
+    </section>
+
+    <section id="exploreSection">
+        <h2>Explore</h2>
+    </section>
+
+    <section id="bookingSection">
+        <h2>Booking</h2>
     </section>
 
     <div class="signUp_Modal" id="signUpModal">

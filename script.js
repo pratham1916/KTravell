@@ -1,3 +1,27 @@
+function showSection(sectionId) {
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => section.classList.remove('active'));
+
+  const selectedSection = document.getElementById(sectionId);
+  selectedSection.classList.add('active');
+}
+
+document.getElementById('homebtn').addEventListener('click', function() {
+  showSection('homeSection');
+});
+
+document.getElementById('aboutbtn').addEventListener('click', function() {
+  showSection('aboutSection');
+});
+
+document.getElementById('explorebtn').addEventListener('click', function() {
+  showSection('exploreSection');
+});
+
+document.getElementById('bookingbtn').addEventListener('click', function() {
+  showSection('bookingSection');
+});
+
 // --------------------- Slider ------------------
 let container1 = document.getElementById("img1");
 let container2 = document.getElementById("img2");
@@ -80,6 +104,3 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
-
-
-

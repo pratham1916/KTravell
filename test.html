@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Content</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#" id="section1Link">Section 1</a></li>
+    <li><a href="#" id="section2Link">Section 2</a></li>
+    <li><a href="#" id="section3Link">Section 3</a></li>
+  </ul>
+</nav>
+
+<section id="section1" class="active">
+  <h2>Section 1 Content</h2>
+  <p>This is the content of Section 1.</p>
+</section>
+
+<section id="section2">
+  <h2>Section 2 Content</h2>
+  <p>This is the content of Section 2.</p>
+</section>
+
+<section id="section3">
+  <h2>Section 3 Content</h2>
+  <p>This is the content of Section 3.</p>
+</section>
+
+<script>
+  function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => section.classList.remove('active'));
+
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.classList.add('active');
+  }
+
+  // Add event listeners to each link
+  document.getElementById('section1Link').addEventListener('click', function() {
+    showSection('section1');
+  });
+
+  document.getElementById('section2Link').addEventListener('click', function() {
+    showSection('section2');
+  });
+
+  document.getElementById('section3Link').addEventListener('click', function() {
+    showSection('section3');
+  });
+</script>
+
+</body>
+</html>
