@@ -10,7 +10,7 @@
 }
 
 #destination {
-  width: 1358px;
+  width: 1363px;
   height: 600px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-family: "Bodoni Moda", serif;
@@ -32,7 +32,6 @@
      object-fit: cover;
   max-width: 100%;
   max-height: 100%;
-  transition: opacity 0.3s ease-in-out;
 }
 #destination #desId #desId > #videoDest:hover {
   opacity: 0.7; /* Adjust as needed */
@@ -55,6 +54,8 @@
   transform: translate(-50%, -50%);
   font-size: 24px;
   text-align: center;
+  flex-wrap: wrap;
+  align-self: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +72,7 @@
 #destination > p {
   position: absolute;
   top: 36%;
-  left: 42%;
+  left: 40%;
   color: white;
   font-size: 20px;
   text-align: center;
@@ -83,20 +84,20 @@
   border: none;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1200px) {
+@media all and (min-width: 1025px) and (max-width: 1200px) {
   #main164 {
-    width: 1024px;
-    border: 2px solid rgb(105, 0, 0);
+    width: 1200px;
+    border: 2px solid rgb(65, 4, 4);
     box-sizing: border-box;
   }
   #destination {
-    width: 1024px;
+    width: 1200px;
     height: 600px;
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    border: 4px solid rgb(69, 99, 0);
+    border: 2px solid rgb(70, 95, 11);
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
@@ -127,7 +128,7 @@
   #desIdform {
     width: 860px;
     height: 100px;
-    border: 1px solid yellow;
+    border: 1px solid rgb(145, 145, 42);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,7 +149,7 @@
   #destination > p {
     position: absolute;
     top: 36%;
-    left: 30%;
+    left: 28%;
     color: white;
     font-size: 20px;
     text-align: center;
@@ -158,6 +159,292 @@
     border-radius: 10px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .desFormClass > input:hover {
+    cursor: pointer;
+    background-color: rgb(141, 135, 135);
+    color: black;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  #main164 {
+    width: 1024px;
+    border: 2px solid rgb(238, 111, 111);
+    box-sizing: border-box;
+  }
+  #destination {
+    width: 1024px;
+    height: 600px;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border: 2px solid rgb(52, 59, 34);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+  }
+  #destination #desId {
+    width: 100%;
+    height: 100%;
+  }
+  #destination #desId #videoDest {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.3s ease-in-out;
+  }
+  #destination #desId #desId > #videoDest:hover {
+    opacity: 0.7; /* Adjust as needed */
+  }
+  #destination #desId #desId > #videoDest.controls-hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  #destination #desId #desId:hover > #videoDest.controls-hidden {
+    opacity: 1;
+  }
+  #desIdform {
+    width: 860px;
+    height: 100px;
+    border: 1px solid rgb(95, 95, 44);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #destination > h3 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: white;
+    font-size: 47px;
+  }
+  #destination > p {
+    position: absolute;
+    top: 36%;
+    left: 28%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .desFormClass > input, label {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .desFormClass > input:hover {
+    cursor: pointer;
+    background-color: rgb(141, 135, 135);
+    color: black;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #main164 {
+    width: 768px;
+    border: 2px solid rgb(160, 74, 74);
+    box-sizing: border-box;
+  }
+  #destination {
+    width: 768px;
+    height: 600px;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border: 2px solid rgb(52, 59, 34);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+  }
+  #destination #desId {
+    width: 100%;
+    height: 100%;
+  }
+  #destination #desId #videoDest {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.3s ease-in-out;
+  }
+  #destination #desId #desId > #videoDest:hover {
+    opacity: 0.7; /* Adjust as needed */
+  }
+  #destination #desId #desId > #videoDest.controls-hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  #destination #desId #desId:hover > #videoDest.controls-hidden {
+    opacity: 1;
+  }
+  #desIdform {
+    width: 600px;
+    height: 150px;
+    border: 1px solid rgb(219, 219, 49);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    gap: 10px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #destination > h3 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    color: white;
+    font-size: 45px;
+  }
+  #destination > p {
+    position: absolute;
+    top: 32%;
+    left: 28%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .desFormClass > input, label {
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .desFormClass > input[type=text] {
+    padding: 12px 30px;
+    width: 350px;
+    height: 14px;
+    font-size: 16px;
+  }
+  .desFormClass > input[type=month] {
+    padding: 12px 30px;
+    width: 200px;
+    height: 14px;
+    font-size: 16px;
+  }
+  .desFormClass > input[type=submit] {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+  .desFormClass > input:hover {
+    cursor: pointer;
+    background-color: rgb(141, 135, 135);
+    color: black;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+  #main164 {
+    width: 480px;
+    border: 2px solid rgb(160, 74, 74);
+    box-sizing: border-box;
+  }
+  #destination {
+    width: 480px;
+    height: 600px;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border: 2px solid rgb(52, 59, 34);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+  }
+  #destination #desId {
+    width: 100%;
+    height: 100%;
+  }
+  #destination #desId #videoDest {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.3s ease-in-out;
+  }
+  #destination #desId #desId > #videoDest:hover {
+    opacity: 0.7; /* Adjust as needed */
+  }
+  #destination #desId #desId > #videoDest.controls-hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  #destination #desId #desId:hover > #videoDest.controls-hidden {
+    opacity: 1;
+  }
+  #desIdform {
+    width: 480px;
+    height: 250px;
+    border: 1px solid rgb(219, 219, 49);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    gap: 10px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #destination > h3 {
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    color: white;
+    font-size: 30px;
+  }
+  #destination > p {
+    position: absolute;
+    top: 32%;
+    left: 20%;
+    color: rgb(241, 239, 239);
+    font-size: 16px;
+    text-align: center;
+  }
+  .desFormClass > input, label {
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .desFormClass > input[type=text] {
+    padding: 12px 30px;
+    width: 350px;
+    height: 14px;
+    font-size: 16px;
+  }
+  .desFormClass > input[type=month] {
+    padding: 12px 30px;
+    width: 350px;
+    height: 14px;
+    font-size: 16px;
+  }
+  .desFormClass > input[type=datetime-local] {
+    padding: 12px 30px;
+    width: 350px;
+    height: 14px;
+    font-size: 16px;
+  }
+  .desFormClass > input[type=submit] {
+    padding: 12px 25px;
+    font-size: 16px;
   }
   .desFormClass > input:hover {
     cursor: pointer;
