@@ -6,6 +6,14 @@
     text-decoration: none;
     background-color: #fdfdfd;
 }
+section {
+    display: none;
+    margin-top: 70px;
+}
+section.active {
+    display: block;
+}
+
 @import "scss/navbar";
 @import "scss/home";
 @import "scss/modal";
