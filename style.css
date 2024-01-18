@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+.card-y img {
+  width: 300px;
+  height: 300px;
+}
+
 .par {
   background-color: rgb(133, 219, 219);
 }
@@ -17,7 +22,7 @@
 .par .news-y .nrl {
   width: 50%;
   margin: auto;
-  color: #6dff74;
+  color: #fff;
 }
 .par .news-y .nrl h1 {
   font-weight: bold;
@@ -34,7 +39,7 @@
 }
 .par .news-y .nry .btn {
   font-size: 18px;
-  background-color: #f6f8f6;
+  background-color: #75fa75;
   color: white;
   font-weight: 400;
   padding: 15px;

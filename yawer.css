@@ -1,4 +1,5 @@
 * {
+  padding: 0;
   margin: 0;
 }
 
@@ -25,6 +26,8 @@
 }
 .par .news-y .nrl p {
   font-weight: bold;
+  width: 70%;
+  margin: auto;
 }
 .par .news-y .nry {
   margin: auto;
@@ -77,13 +80,16 @@ footer .icon-y {
   align-items: center;
 }
 footer .icon-y img {
-  display: inline;
   margin-bottom: 18px;
+}
+footer .icon-y .socials {
+  margin: 20px;
 }
 footer .icon-y .socials a {
   margin-right: 22px;
 }
 footer .icon-y h4 {
+  margin-top: 10px;
   width: 70%;
 }
 
