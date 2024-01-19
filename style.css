@@ -596,6 +596,102 @@ nav #hamburger {
     font-size: 22px;
   }
 }
+#aboutImg {
+  background-image: url(../images/templeImage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#about-section {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 50px;
+}
+#about-section #about-para {
+  height: 220px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#about-section #about-para #about-para1 {
+  font-size: large;
+}
+#about-section #about-para #about-para2 {
+  font-size: medium;
+}
+#about-section #about-img {
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#img-faq {
+  display: flex;
+  gap: 100px;
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+}
+#img-faq #left-img-faq {
+  background-image: url(../images/templeImage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 500px;
+  margin-left: 40px;
+  border-radius: 5px;
+}
+#img-faq #right-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#img-faq #right-faq #h1-faq {
+  text-align: center;
+}
+#img-faq #right-faq .faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#img-faq #right-faq .faq-container .question {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#img-faq #right-faq .faq-container .question:hover {
+  background-color: #e0e0e0;
+  border-radius: 2px;
+}
+#img-faq #right-faq .faq-container .question .icon {
+  cursor: pointer;
+}
+#img-faq #right-faq .faq-container .answer {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+}
+#img-faq #right-faq .faq-container .answer:hover {
+  background-color: #dee2e4;
+}
+
+@media all and (max-width: 1024px) {
+  #img-faq {
+    flex-direction: column;
+  }
+  #img-faq #left-img-faq {
+    height: 200px;
+    width: 300px;
+    margin-left: 25px;
+  }
+}
 #exploreSection #main164 {
   width: 100%;
   border: none;

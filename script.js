@@ -158,3 +158,18 @@ function startHappyCustomers() {
 
 startTrips();
 startHappyCustomers();
+
+// supriya faq 
+function toggleAnswer(questionId) {
+    
+  var answers = document.querySelectorAll('.answer');
+
+
+  answers.forEach(function(answer) {
+    answer.style.display = 'none';
+  });
+
+
+  var answer = document.getElementById(questionId);
+  answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+}
