@@ -1,71 +1,246 @@
+$small-screen: 200px;
+$medium-screen: 480px;
+$large-screen: 768px;
+$extra-large-screen: 1290px;
 $primary-color: #97bbe3;
 #homeSection {
-    width: 100%;
-    margin-top: 68px;
-    padding: 0 5%;
+  width: 100%;
+  margin-top: 68px;
+  padding: 0 5%;
 
-    h1 {
-        font-size: 113px;
-        margin-top: 70px;
+  h1 {
+    font-size: 113px;
+    margin-top: 70px;
+  }
+
+  .container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .left > img {
+      width: 650px;
+      height: 500px;
+      border-radius: 10px;
     }
 
-    .container {
-        margin-top: 20px;
+    .right {
+      flex-basis: 50%;
+      p {
+        text-align: justify;
+        color: #484a3e;
+      }
+
+      .slider {
         display: flex;
-        justify-content: space-between;
-
-        .left > img {
-            width: 650px;
-            height: 500px;
-            border-radius: 10px;
-        }
-
-        .right {
-            flex-basis: 50%;
-            p {
-                text-align: justify;
-                color: #484a3e;
-            }
-
-            .slider {
-                display: flex;
-                margin-top: 30px;
-            }
-        }
-
-        .arrow-link {
-            position: relative;
-            display: inline-block;
-            padding-right: 90px;
-            color: $primary-color;
-            margin-top: 30px;
-            font-size: 18px;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                right: 30px;
-                width: 50px;
-                height: 2px;
-                background-color: $primary-color;
-                transform: translateY(-50%);
-            }
-
-            &::after {
-                content: '';
-                position: absolute;
-                top: 50%;
-                right: 22px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 8px 0 8px 12px;
-                border-color: transparent transparent transparent $primary-color;
-                transform: translateY(-50%);
-            }
-        }
+        margin-top: 30px;
+      }
     }
 
-    // yawer Ta add Cards Scss Here
+    .arrow-link {
+      position: relative;
+      display: inline-block;
+      padding-right: 90px;
+      color: $primary-color;
+      margin-top: 30px;
+      font-size: 18px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        width: 50px;
+        height: 2px;
+        background-color: $primary-color;
+        transform: translateY(-50%);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 22px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 0 8px 12px;
+        border-color: transparent transparent transparent $primary-color;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  // yawer Ta add Cards Scss Here
+  .pd {
+    margin-top: 50px;
+    text-align: center;
+    h1 {
+      font-size: 42px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 22px;
+      color: gray;
+    }
+  }
+  .cardConatiner {
+    // border: 2px solid green;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // gap: 30px;
+    margin: 30px 0;
+    // padding: 50px 0px;
+    .card-y {
+      position: relative;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      overflow: hidden;
+      img {
+        width: 260px;
+        height: 310px;
+      }
+      h3 {
+        color: rgb(231, 231, 231);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: none;
+        padding: 12px;
+      }
+    }
+    .card-y:hover {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+@media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
+  // Your styles for small to medium screens
+
+  .cardConatiner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footy {
+    footer {
+      flex-direction: column;
+      .fleft-y {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .fright-y {
+        // margin-top: 10px;
+
+        h1 {
+          text-align: center;
+          font-size: 22px;
+        }
+        .cty {
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          p {
+            font-size: 22px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .bottom-brand {
+      flex-direction: column;
+      // margin: auto;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
+  .cardConatiner {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+    // flex-direction: column;
+  }
+  .footy {
+    footer {
+      flex-direction: column;
+      .fleft-y {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .fright-y {
+        // margin-top: 10px;
+
+        h1 {
+          text-align: center;
+          font-size: 22px;
+        }
+        .cty {
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          p {
+            font-size: 22px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .bottom-brand {
+      flex-direction: column;
+      // margin: auto;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: $large-screen) and (max-width: $extra-large-screen) {
+  .cardConatiner {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+  }
+  .footy {
+    footer {
+      flex-wrap: wrap;
+      .fleft-y {
+        justify-content: center;
+        align-items: center;
+      }
+      .fright-y {
+        h1 {
+          text-align: center;
+          font-size: 26px;
+        }
+        .cty {
+          flex-direction: column;
+
+          justify-content: center;
+          justify-items: center;
+          align-items: flex-start;
+          p {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
 }
