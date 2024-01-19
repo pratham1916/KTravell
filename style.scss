@@ -5,6 +5,7 @@
     // font-family: 'Oswald', sans-serif;
     text-decoration: none;
     background-color: #fdfdfd;
+    scroll-behavior: smooth;
 }
 section {
     display: none;
@@ -14,6 +15,7 @@ section.active {
     display: block;
 }
 
-@import "scss/navbar";
-@import "scss/home";
-@import "scss/modal";
+@import "scss/_navbar";
+@import "scss/_home";
+@import "scss/_modal";
+@import "scss/_contact";

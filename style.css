@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   background-color: #fdfdfd;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -35,6 +36,8 @@ nav {
   border-bottom: 1px solid grey;
   position: fixed;
   top: 0;
+  background-color: white;
+  z-index: 1;
 }
 nav h2 {
   color: black;
@@ -148,8 +151,8 @@ nav #hamburger {
 }
 #signUpModal .modal-content {
   background-color: #fefefe;
-  margin: 7% auto;
-  width: 40%;
+  margin: 5% auto;
+  width: 30%;
   animation: slideIn 0.5s ease-in-out;
   position: relative;
   border-radius: 10px;
@@ -184,15 +187,14 @@ nav #hamburger {
 #signUpModal .modal-content .signUp form {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 #signUpModal .modal-content .signUp form .rows {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 #signUpModal .modal-content .signUp form label {
-  margin-top: 10px;
   font-size: 14px;
   color: #000000;
 }
@@ -213,14 +215,15 @@ nav #hamburger {
   width: 30%;
   margin: 0 auto;
   background-color: #97bbe3;
-  color: white;
+  color: black;
   padding: 12px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out;
   font-weight: 600;
+  border: 1px solid #97bbe3;
 }
 #signUpModal .modal-content .signUp form input[type=submit]:hover {
   background-color: white;
@@ -332,16 +335,20 @@ nav #hamburger {
   width: 30%;
   margin: 0 auto;
   background-color: #97bbe3;
-  color: white;
+  color: black;
   padding: 12px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out;
+  font-weight: 600;
+  border: 1px solid #97bbe3;
 }
 #signInModal .modal-content .signIn form input[type=submit]:hover {
-  background-color: #97bbe3;
+  background-color: white;
+  color: #97bbe3;
+  border: 1px solid #97bbe3;
 }
 #signInModal .modal-content .signIn .social-icons {
   margin-top: 20px;
@@ -374,6 +381,121 @@ nav #hamburger {
   to {
     transform: translateY(0);
   }
+}
+
+#contactSection .map {
+  margin: 50px 0 20px;
+}
+#contactSection .contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+#contactSection .contact-container .contact-info {
+  padding: 30px;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+#contactSection .contact-container .contact-info h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+#contactSection .contact-container .contact-info p {
+  font-size: 16px;
+  text-align: justify;
+}
+#contactSection .contact-container .contact-info ul {
+  margin-top: 10px;
+  padding: 10px 0 0;
+  list-style: none;
+}
+#contactSection .contact-container .contact-info ul li {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+}
+#contactSection .contact-container .contact-info ul li i {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: #000000;
+  background-color: #97bbe3;
+  font-size: 20px;
+  border-radius: 50%;
+}
+#contactSection .contact-container .contact-info ul li i:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+#contactSection .contact-container .contact-info ul li span {
+  padding-top: 4px;
+  padding-left: 20px;
+}
+#contactSection .contact-container .contact-info ul li:not(:first-child) {
+  padding-top: 20px;
+}
+#contactSection .contact-container .contact_form {
+  width: 700px;
+  text-align: center;
+}
+#contactSection .contact-container .contact_form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#contactSection .contact-container .contact_form .input-box input {
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0.7rem 0;
+  background-color: rgb(232, 232, 232);
+  color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: none;
+}
+#contactSection .contact-container .contact_form .input-box input::placeholder {
+  color: #000000;
+}
+#contactSection .contact-container .contact_form .input-box .fullname,
+#contactSection .contact-container .contact_form .input-box .mobileNo {
+  width: 49%;
+}
+#contactSection .contact-container .contact_form textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin: 0.7rem 0;
+  background-color: rgb(232, 232, 232);
+  color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: none;
+}
+#contactSection .contact-container .contact_form textarea::placeholder {
+  color: #000000;
+}
+#contactSection .contact-container .contact_form .btn {
+  cursor: pointer;
+  border: 1px solid #97bbe3;
+  width: 20%;
+}
+#contactSection .contact-container .contact_form .btn:hover {
+  background-color: white;
+  color: #97bbe3;
+  border: 1px solid #97bbe3;
 }
 
 /*# sourceMappingURL=style.css.map */

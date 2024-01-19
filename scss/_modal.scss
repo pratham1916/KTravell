@@ -13,8 +13,8 @@ $primary-color: #97bbe3;
 
     & .modal-content {
         background-color: #fefefe;
-        margin: 7% auto;
-        width: 40%;
+        margin: 5% auto;
+        width: 30%;
         animation: slideIn 0.5s ease-in-out;
         position: relative;
         border-radius: 10px;
@@ -53,16 +53,15 @@ $primary-color: #97bbe3;
             form {
                 display: flex;
                 flex-direction: column;
-
+                box-sizing: border-box;
                 .rows {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-between;
-                    margin-bottom: 15px;
+                    
+                    margin-bottom: 5px;
                 }
 
                 label {
-                    margin-top: 10px;
                     font-size: 14px;
                     color: #000000;
                 }
@@ -86,14 +85,15 @@ $primary-color: #97bbe3;
                     width: 30%;
                     margin: 0 auto;
                     background-color: $primary-color;
-                    color: white;
+                    color: black;
                     padding: 12px;
                     border: none;
                     cursor: pointer;
-                    border-radius: 5px;
+                    border-radius: 10px;
                     font-size: 16px;
                     transition: background-color 0.3s ease-in-out;
                     font-weight: 600;
+                    border: 1px solid $primary-color;
 
                     &:hover {
                         background-color: white;
@@ -226,16 +226,21 @@ $primary-color: #97bbe3;
                     width: 30%;
                     margin: 0 auto;
                     background-color: $primary-color;
-                    color: white;
+                    color: black;
                     padding: 12px;
                     border: none;
                     cursor: pointer;
-                    border-radius: 5px;
+                    border-radius: 10px;
                     font-size: 16px;
                     transition: background-color 0.3s ease-in-out;
+                    font-weight: 600;
+                    border: 1px solid $primary-color;
 
                     &:hover {
-                        background-color:$primary-color;
+                        background-color: white;
+                        color:$primary-color;
+                        border: 1px solid $primary-color;
+                        
                     }
                 }
             }
