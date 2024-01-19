@@ -108,3 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+
+//------------------- fetch And Append data --------------
+const baseServerURL = `http://localhost:${import.meta.env.REACT_APP_JSON_SERVER_PORT}`;
