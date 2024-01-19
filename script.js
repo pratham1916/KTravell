@@ -22,6 +22,10 @@ document.getElementById('bookingbtn').addEventListener('click', function() {
   showSection('bookingSection');
 });
 
+document.getElementById('contactbtn').addEventListener('click', function() {
+  showSection('homeSection');
+});
+
 // --------------------- Slider ------------------
 let container1 = document.getElementById("img1");
 let container2 = document.getElementById("img2");
