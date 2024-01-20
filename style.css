@@ -234,21 +234,16 @@ nav .change {
   font-size: 42px;
   font-weight: bold;
 }
-#homeSection .pd p {
-  margin-top: 10px;
-  font-size: 22px;
-  color: gray;
-}
 #homeSection .cardConatiner {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 30px 0;
+  margin: 50px 0 80px;
 }
 #homeSection .cardConatiner .card-y {
   position: relative;
-  border-radius: 8px;
-  transition: transform 0.3s;
+  border-radius: 15px;
+  transition: transform 0.1s;
   overflow: hidden;
 }
 #homeSection .cardConatiner .card-y img {
@@ -256,62 +251,43 @@ nav .change {
   height: 310px;
 }
 #homeSection .cardConatiner .card-y h3 {
-  color: rgb(231, 231, 231);
+  color: rgb(255, 255, 255);
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   background: none;
   padding: 12px;
 }
 #homeSection .cardConatiner .card-y:hover {
-  transform: translateY(-20px);
+  transform: translateY(-8px);
 }
 #homeSection #countBody {
-  width: 1363px;
-  height: 500px;
+  width: 100%;
+  height: auto;
   color: white;
   background-color: black;
-  border: none;
+  border-radius: 10px;
   box-sizing: border-box;
   text-align: center;
+  padding: 40px 0;
 }
 #homeSection #countBody h3 {
-  font-size: 50px;
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: lighter;
-  font-variation-settings: "wdth" 100;
-  border: none;
+  font-size: 30px;
   display: inline-block;
-  margin-top: 30px;
 }
-#homeSection #travelP {
-  font-size: 25px;
-  margin-top: 10px;
-  border: none;
-  width: 75%;
-  text-align: center;
-  margin-left: 180px;
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+#homeSection #countBody #travelP {
+  font-size: 18px;
+  width: 70%;
+  margin: 30px auto;
 }
 #homeSection #countingStart {
-  border: none;
-  width: 650px;
-  height: 100px;
+  width: 550px;
+  height: auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 20px;
   box-sizing: border-box;
-  margin: 100px 0px 0px 390px;
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 #homeSection .counter-section {
   text-align: center;
@@ -319,9 +295,6 @@ nav .change {
 }
 #homeSection .counter-section > h2 {
   font-size: 16px;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   margin-top: 10px;
 }
 #homeSection .counter-section > p {
@@ -582,6 +555,73 @@ nav .change {
     font-size: 30px;
   }
 }
+#homeSection #explore {
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+#homeSection #explore h3 {
+  text-align: start;
+  margin-top: 10px;
+  font-size: 25px;
+}
+#homeSection #explore p {
+  margin: 10px 0px;
+  font-size: 18px;
+}
+#homeSection #localEx {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+  white-space: nowrap;
+}
+#homeSection .localExCard {
+  width: 270px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: inline-block;
+  margin: 20px 10px;
+}
+#homeSection .localExCard:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+#homeSection .localExCard > div {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+#homeSection .localExCard .img1E > img {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+#homeSection .localExCard p {
+  text-align: center;
+  margin: 10px 0 30px;
+}
+#homeSection .localExCard .guidebtn {
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #97bbe3;
+  color: black;
+  padding: 6px 12px;
+  margin: 90px;
+}
+#homeSection #localEx::-webkit-scrollbar {
+  display: none;
+}
+#homeSection #localEx::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
   .cardConatiner {
@@ -686,38 +726,110 @@ nav .change {
   }
 }
 #aboutImg {
-  background-image: url(../images/templeImage.jpg);
+  background-image: url(https://www.indianglimpse.in/wp-content/uploads/2022/08/popular-tourist-destinations-in-andaman.jpg);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 550px;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 #about-section {
   display: flex;
   width: 90%;
   margin: auto;
+  margin-top: 10px;
   gap: 50px;
 }
 #about-section #about-para {
   height: 220px;
-  width: 100%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+#about-section #about-para h1 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+  color: #141b4d;
+}
 #about-section #about-para #about-para1 {
   font-size: large;
-}
-#about-section #about-para #about-para2 {
-  font-size: medium;
+  color: rgb(80, 109, 172);
+  text-align: justify;
+  font-style: italic;
 }
 #about-section #about-img {
-  height: 400px;
+  height: 300px;
   width: 100%;
   border-radius: 5px;
+}
+
+#mission-vison {
+  width: 90%;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  gap: 100px;
+  margin-top: 70px;
+}
+#mission-vison #mv-para {
+  width: 100%;
+  height: 300px;
+}
+#mission-vison #mv-para h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #141b4d;
+  font-style: italic;
+}
+#mission-vison #mv-para p {
+  margin-top: 20px;
+  font-size: large;
+  color: rgb(80, 109, 172);
+  font-style: italic;
+}
+#mission-vison #mv-box {
+  width: 100%;
+  display: flex;
+  height: 300px;
+  gap: 40px;
+  text-align: center;
+}
+#mission-vison #mv-box #mv-box1 {
+  height: 220px;
+  background-color: #141b4d;
+  padding: 10px;
+  color: #e0e0e0;
+  border-radius: 5px;
+}
+#mission-vison #mv-box #mv-box1 h1 {
+  margin-top: 10px;
+  font-style: italic;
+}
+#mission-vison #mv-box #mv-box1 p {
+  margin-top: 15px;
+  font-size: large;
+  font-style: italic;
+}
+#mission-vison #mv-box #mv-box2 {
+  height: 220px;
+  background-color: #00629b;
+  padding: 10px;
+  color: #e0e0e0;
+  border-radius: 5px;
+}
+#mission-vison #mv-box #mv-box2 h1 {
+  margin-top: 10px;
+  font-style: italic;
+}
+#mission-vison #mv-box #mv-box2 p {
+  margin-top: 15px;
+  font-size: large;
+  font-style: italic;
 }
 
 #img-faq {
@@ -725,24 +837,30 @@ nav .change {
   gap: 100px;
   width: 90%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 #img-faq #left-img-faq {
-  background-image: url(../images/templeImage.jpg);
+  background-image: url("https://eitherview.com/wp-content/uploads/2022/01/andaman-1024x683.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 500px;
+  height: 550px;
+  width: 45%;
   margin-left: 40px;
   border-radius: 5px;
 }
 #img-faq #right-faq {
+  height: 550px;
   display: flex;
+  width: 45%;
   flex-direction: column;
   gap: 30px;
 }
 #img-faq #right-faq #h1-faq {
   text-align: center;
+  color: darkslategray;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 #img-faq #right-faq .faq-container {
   max-width: 600px;
@@ -771,14 +889,260 @@ nav .change {
   background-color: #dee2e4;
 }
 
-@media all and (max-width: 1024px) {
-  #img-faq {
-    flex-direction: column;
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #aboutImg {
+    height: 300px;
   }
-  #img-faq #left-img-faq {
+  #about-section #about-para h1 {
+    font-size: large;
+    margin-bottom: 20px;
+  }
+  #mission-vison {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 60px;
+    margin-bottom: 250px;
+  }
+  #mission-vison #mv-para {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+  }
+  #mission-vison #mv-para h1 {
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+  }
+  #mission-vison #mv-box {
+    gap: 120px;
+    margin-left: 50px;
+  }
+  #mission-vison #mv-box #mv-box1 {
     height: 200px;
     width: 300px;
-    margin-left: 25px;
+  }
+  #mission-vison #mv-box #mv-box2 {
+    height: 200px;
+    width: 300px;
+    margin-right: 40px;
+  }
+  #img-faq {
+    gap: 50px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  #img-faq #left-img-faq {
+    width: 50%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 767px) {
+  #aboutImg {
+    height: 300px;
+  }
+  #about-section {
+    gap: 40px;
+    flex-direction: column;
+  }
+  #about-section #about-para {
+    width: 100%;
+  }
+  #about-section #about-para h1 {
+    font-size: large;
+    margin-bottom: 20px;
+  }
+  #about-section #about-para #about-para1 {
+    font-size: large;
+  }
+  #about-section #about-img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #mission-vison {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 60px;
+    margin-bottom: 250px;
+  }
+  #mission-vison #mv-para {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: justify;
+    height: 200px;
+  }
+  #mission-vison #mv-para h1 {
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+  }
+  #mission-vison #mv-box {
+    gap: 30px;
+    margin-left: 20px;
+  }
+  #mission-vison #mv-box #mv-box1 {
+    height: 200px;
+    width: 500px;
+  }
+  #mission-vison #mv-box #mv-box2 {
+    height: 200px;
+    width: 500px;
+    margin-right: 20px;
+  }
+  #img-faq {
+    gap: 10px;
+    width: 99%;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  #img-faq #left-img-faq {
+    width: 93%;
+    height: 200px;
+    margin-left: 10px;
+  }
+  #img-faq #right-faq {
+    width: 100%;
+    height: 500px;
+  }
+  #img-faq #right-faq #h1-faq {
+    font-size: large;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0%;
+  }
+  #img-faq #right-faq .faq-container {
+    max-width: 600px;
+  }
+  #img-faq #right-faq .faq-container .question {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: smaller;
+    display: flex;
+    justify-content: space-between;
+  }
+  #img-faq #right-faq .faq-container .question:hover {
+    background-color: #e0e0e0;
+    border-radius: 2px;
+  }
+  #img-faq #right-faq .faq-container .question .icon {
+    cursor: pointer;
+  }
+  #img-faq #right-faq .faq-container .answer {
+    display: none;
+    padding: 10px;
+    font-size: smaller;
+    background-color: #fff;
+  }
+  #img-faq #right-faq .faq-container .answer:hover {
+    background-color: #dee2e4;
+  }
+}
+@media all and (max-width: 487px) {
+  #aboutImg {
+    height: 300px;
+  }
+  #about-section {
+    gap: 120px;
+    flex-direction: column;
+  }
+  #about-section #about-para {
+    width: 100%;
+  }
+  #about-section #about-para h1 {
+    font-size: large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  #about-section #about-para #about-para1 {
+    font-size: large;
+  }
+  #about-section #about-img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #mission-vison {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 120px;
+    margin-bottom: 300px;
+  }
+  #mission-vison #mv-para {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: justify;
+    height: 200px;
+  }
+  #mission-vison #mv-para h1 {
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+  }
+  #mission-vison #mv-box {
+    gap: 10px;
+  }
+  #mission-vison #mv-box #mv-box1 {
+    height: 200px;
+    width: 400px;
+  }
+  #mission-vison #mv-box #mv-box1 p {
+    font-size: small;
+  }
+  #mission-vison #mv-box #mv-box2 {
+    height: 200px;
+    width: 400px;
+  }
+  #mission-vison #mv-box #mv-box2 p {
+    font-size: small;
+  }
+  #img-faq {
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  #img-faq #left-img-faq {
+    width: 93%;
+    height: 200px;
+    margin-left: 10px;
+  }
+  #img-faq #right-faq {
+    height: 500px;
+    width: 100%;
+  }
+  #img-faq #right-faq #h1-faq {
+    font-size: large;
+    font-weight: bold;
+  }
+  #img-faq #right-faq .faq-container {
+    max-width: 600px;
+  }
+  #img-faq #right-faq .faq-container .question {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+  }
+  #img-faq #right-faq .faq-container .question:hover {
+    background-color: #e0e0e0;
+    border-radius: 2px;
+  }
+  #img-faq #right-faq .faq-container .question .icon {
+    cursor: pointer;
+  }
+  #img-faq #right-faq .faq-container .answer {
+    display: none;
+    padding: 10px;
+    font-size: medium;
+    background-color: #fff;
+  }
+  #img-faq #right-faq .faq-container .answer:hover {
+    background-color: #dee2e4;
   }
 }
 #exploreSection {
@@ -811,8 +1175,7 @@ nav .change {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-width: 100%;
   max-height: 100%;
 }
@@ -901,8 +1264,7 @@ nav .change {
   #exploreSection #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
@@ -977,8 +1339,7 @@ nav .change {
   #exploreSection #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
@@ -1063,8 +1424,7 @@ nav .change {
   #exploreSection #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
@@ -1163,8 +1523,7 @@ nav .change {
   #exploreSection #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
@@ -1263,8 +1622,7 @@ nav .change {
   width: 100%;
   padding: 0;
   height: 230px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 #exploreSection #card-container .card-list .card .name {
@@ -1629,9 +1987,6 @@ nav .change {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
 }
-#contactSection .contact-container .contact_form .input-box input::-moz-placeholder {
-  color: #000000;
-}
 #contactSection .contact-container .contact_form .input-box input::placeholder {
   color: #000000;
 }
@@ -1649,9 +2004,6 @@ nav .change {
   color: #000000;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
-}
-#contactSection .contact-container .contact_form textarea::-moz-placeholder {
-  color: #000000;
 }
 #contactSection .contact-container .contact_form textarea::placeholder {
   color: #000000;
@@ -1853,4 +2205,6 @@ nav .change {
   .footy footer .fright-y .cty p {
     font-size: 22px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,41 +1,127 @@
 #aboutImg {
-    background-image: url(../images/templeImage.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    width: 100%;
-    margin-bottom: 50px;
-  }
+  background-image: url(https://www.indianglimpse.in/wp-content/uploads/2022/08/popular-tourist-destinations-in-andaman.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+
+
+  // #about_name{
+  //   height: 100px;
+  //   width: 150px;
+  //   border: 1px solid red;
+  //   position: absolute;
+  //   top: 200px;
+  //   h1{
+  //     color: #00629b;
+  //     font-size: xx-large;
+  //     font-weight: bolder;
+  //   }
+  // }
   #about-section{
     display: flex;
     width: 90%;
     margin: auto;
+    margin-top: 10px;
     gap: 50px;
     #about-para{
       height: 220px;
-      width: 100%;
+      width: 60%;
       margin: auto;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      h1{ 
+        font-style: italic;
+        font-weight: bolder;
+        font-size: xx-large;
+        text-align: center;
+        color: #141b4d;
+      }
       // align-items: flex-start;
       #about-para1{
         font-size:large;
-      }
-      #about-para2{
-        font-size:medium;
+        color: rgb(80, 109, 172);
+        text-align: justify;
+        font-style: italic;
       }
     } 
     #about-img{
-      // background-image: url(./templeImage.jpg);
+      // background-image: url(../images/templeImage.jpg);
       // background-size: cover;
       // background-position: center;
-      height: 400px;
+      height: 300px;
       width: 100%; 
       border-radius: 5px;
     }
   }
   
+  #mission-vison{
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    gap: 100px;
+    margin-top: 70px;
+    #mv-para{
+      width:100% ;
+      height: 300px;
+      h1{
+        font-size:xx-large ;
+      font-weight: bolder;
+      color: #141b4d;
+      font-style: italic;
+      }
+      p{
+        margin-top: 20px;
+        font-size:large ; 
+        color: rgb(80, 109, 172);
+        font-style: italic;
+      }
+    }
+    #mv-box{
+      width:100% ;
+      display: flex;
+      height: 300px;
+      gap: 40px;
+      text-align: center;
+      #mv-box1{
+        height:220px ;
+        background-color: #141b4d ;
+        padding: 10px;
+        color: #e0e0e0;
+        border-radius: 5px;
+        h1{
+          margin-top: 10px;
+          font-style: italic;
+        }
+        p{
+          margin-top: 15px;
+          font-size: large;
+          font-style: italic;
+        }
+      }
+      #mv-box2{
+        height:220px ;
+        background-color: #00629b ;
+        padding: 10px;
+        color: #e0e0e0;
+        border-radius: 5px;
+        h1{
+          margin-top: 10px;
+          font-style: italic;
+        }
+        p{
+          margin-top: 15px;
+          font-size: large;
+          font-style: italic;
+        }
+      }
+    }
+  }
   
   // $font-family: "Poppins";
   // .NcommonAlignCont {
@@ -89,22 +175,28 @@
     gap: 100px;
     width: 90%;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     #left-img-faq {
-        background-image: url(../images/templeImage.jpg);
+    background-image: url("https://eitherview.com/wp-content/uploads/2022/01/andaman-1024x683.jpg");
     background-size: cover;
     background-position: center;
-      height: 400px;
-      width: 500px;
+      height: 550px;
+      width:45% ;
       margin-left: 40px;
       border-radius: 5px;
     }
     #right-faq {
+      height: 550px;
       display: flex;
+      width:45% ;
       flex-direction: column;
       gap: 30px;
       #h1-faq {
         text-align: center;
+        color: darkslategray;
+        font-size: xx-large;
+        font-weight: bolder;
       }
   
       $faq-container-max-width: 600px;
@@ -116,17 +208,19 @@
         .question {
           cursor: pointer;
           padding: 10px;
-          // border: 1px solid #ddd;
-          // background-color: #d5d8d9;
+          // font-weight: 100;
           margin-bottom: 5px;
+          // font-size: small;
           display: flex;
           justify-content: space-between;
-  
+            
           &:hover {
             background-color: #e0e0e0;
             border-radius: 2px;
           }
-  
+          // .ques{   
+          //   font-size:large;
+          // }
           .icon {
             cursor: pointer;
           }
@@ -155,13 +249,321 @@
   //    }
   //   } 
   //  }
-  @media all and (max-width:1024px){
-   #img-faq{
-    flex-direction: column;
-    #left-img-faq{
-      height: 200px;
-      width: 300px;
-      margin-left: 25px;
+//   @media all and (max-width:1024px){
+//    #img-faq{
+//     flex-direction: column;
+//     #left-img-faq{
+//       height: 200px;
+//       width: 300px;
+//       margin-left: 25px;
+//     }
+//    } 
+// }
+@media all and (min-width:768px) and (max-width:1024px){
+  #aboutImg{
+    height: 300px;
+  }
+  #about-section{
+    
+    #about-para{
+     
+      h1{
+        font-size:large;
+        margin-bottom: 20px;  
+      }
+      // #about-para1{
+      //   font-size:medium ;
+      // }
     }
-   } 
-}
+      }
+  #mission-vison{
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 60px;
+    #mv-para{
+      margin-bottom: 20px;
+      width:100% ;
+      height: 200px;
+      h1{
+        margin-top: 20px;
+        font-size:large ;
+        text-align: center;
+      }
+    }
+      #mv-box{
+        gap: 120px;
+        margin-left: 50px;
+        #mv-box1{
+          height:200px ;
+          width: 300px;
+        }
+        #mv-box2{
+          height:200px ;
+          width: 300px;
+          margin-right: 40px;
+        }
+      
+    }
+    margin-bottom: 250px;
+  }
+  #img-faq {
+    gap: 50px;
+    width: 95%;
+    margin: auto;
+    #left-img-faq {
+      width:50% ;
+    }
+    margin-bottom: 30px;
+  }
+  
+ }
+
+ @media all and (min-width:480px) and (max-width:767px){
+  #aboutImg{
+    height: 300px;
+  }
+  #about-section{
+    gap: 40px;
+    flex-direction: column;
+    #about-para{
+      width: 100%;
+      h1{
+        font-size:large;
+        margin-bottom: 20px;  
+      }
+      #about-para1{
+        font-size:large;
+      }
+    }
+    #about-img{
+      // background-image: url(../images/templeImage.jpg);
+      // background-size: cover;
+      // background-position: center;
+      height: 200px;
+      width: 100%; 
+      border-radius: 5px;
+    }
+      }
+  #mission-vison{
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 60px;
+    #mv-para{
+      margin-bottom: 50px;
+      width:100% ;
+      text-align: justify;
+      height: 200px;
+      h1{
+        margin-top: 20px;
+        font-size:large ;
+        text-align: center;
+      }
+    }
+      #mv-box{
+        gap: 30px;
+        margin-left: 20px;
+        #mv-box1{
+          height:200px ;
+          width: 500px;
+        }
+        #mv-box2{
+          height:200px ;
+          width: 500px;
+          margin-right: 20px;
+        }
+      
+    }
+    margin-bottom: 250px;
+  }
+  #img-faq {
+    gap: 10px;
+    width: 99%;
+    flex-direction: column;
+    margin: auto;
+    #left-img-faq {
+      width:93% ;
+      height:200px ;
+      margin-left: 10px;
+    }
+    #right-faq {
+      width: 100%;
+      height: 500px;
+      
+      #h1-faq {
+        font-size: large;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0%;
+      }
+  
+      $faq-container-max-width: 600px;
+  
+      .faq-container {
+        max-width: $faq-container-max-width;
+        // margin: 0 auto;
+  
+        .question {
+          cursor: pointer;
+          padding: 10px;
+          // font-weight: 100;
+          margin-bottom: 5px;
+          font-size: smaller;
+          display: flex;
+          justify-content: space-between;
+            
+          &:hover {
+            background-color: #e0e0e0;
+            border-radius: 2px;
+          }
+          // .ques{   
+          //   font-size:large;
+          // }
+          .icon {
+            cursor: pointer;
+          }
+        }
+  
+        .answer {
+          display: none;
+          padding: 10px;
+         font-size: smaller;
+          background-color: #fff;
+          &:hover {
+            background-color: #dee2e4;
+          }
+        }
+      }
+    }
+    margin-bottom: 50px;
+  }
+  
+ }
+
+
+
+
+ @media all and (max-width:487px){
+  #aboutImg{
+    height: 300px;
+  }
+  #about-section{
+    gap: 120px;
+    flex-direction: column;
+    #about-para{
+      width: 100%;
+      h1{
+        font-size:large;
+        margin-bottom: 20px;
+        margin-top: 20px;  
+      }
+      #about-para1{
+        font-size:large;
+      }
+    }
+    #about-img{
+      // background-image: url(../images/templeImage.jpg);
+      // background-size: cover;
+      // background-position: center;
+      height: 200px;
+      width: 100%; 
+      border-radius: 5px;
+    }
+      }
+  #mission-vison{
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 120px;
+    #mv-para{
+      margin-bottom: 50px;
+      width:100% ;
+      text-align: justify;
+      height: 200px;
+      h1{
+        margin-top: 20px;
+        font-size:large ;
+        text-align: center;
+      }
+    }
+      #mv-box{
+        gap: 10px;
+        #mv-box1{
+          height:200px ;
+          width: 400px;
+          
+          p{
+            font-size: small; 
+          }
+        }
+        #mv-box2{
+          height:200px ;
+          width: 400px;
+          p{
+            font-size: small;  
+          }
+        }
+      
+    }
+    margin-bottom: 300px;
+  }
+  #img-faq {
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    
+    #left-img-faq {
+      width:93% ;
+      height:200px ;
+      margin-left: 10px;
+    }
+    #right-faq {
+      height: 500px;
+      width:100% ;
+     
+      #h1-faq {
+        font-size: large;
+        font-weight: bold;
+      }
+  
+      $faq-container-max-width: 600px;
+  
+      .faq-container {
+        max-width: $faq-container-max-width;
+        // margin: 0 auto;
+  
+        .question {
+          cursor: pointer;
+          padding: 10px;
+          // font-weight: 100;
+          margin-bottom: 5px;
+          font-size: medium;
+          display: flex;
+          justify-content: space-between;
+            
+          &:hover {
+            background-color: #e0e0e0;
+            border-radius: 2px;
+          }
+          // .ques{   
+          //   font-size:large;
+          // }
+          .icon {
+            cursor: pointer;
+          }
+        }
+  
+        .answer {
+          display: none;
+          padding: 10px;
+         font-size: medium;
+          background-color: #fff;
+          &:hover {
+            background-color: #dee2e4;
+          }
+        }
+      }
+    }
+    margin-bottom: 50px;
+  }
+  
+ }
