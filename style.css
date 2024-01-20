@@ -726,38 +726,110 @@ nav .change {
   }
 }
 #aboutImg {
-  background-image: url(../images/templeImage.jpg);
+  background-image: url(https://www.indianglimpse.in/wp-content/uploads/2022/08/popular-tourist-destinations-in-andaman.jpg);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 550px;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 #about-section {
   display: flex;
   width: 90%;
   margin: auto;
+  margin-top: 10px;
   gap: 50px;
 }
 #about-section #about-para {
   height: 220px;
-  width: 100%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+#about-section #about-para h1 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+  color: #141b4d;
+}
 #about-section #about-para #about-para1 {
   font-size: large;
-}
-#about-section #about-para #about-para2 {
-  font-size: medium;
+  color: rgb(80, 109, 172);
+  text-align: justify;
+  font-style: italic;
 }
 #about-section #about-img {
-  height: 400px;
+  height: 300px;
   width: 100%;
   border-radius: 5px;
+}
+
+#mission-vison {
+  width: 90%;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  gap: 100px;
+  margin-top: 70px;
+}
+#mission-vison #mv-para {
+  width: 100%;
+  height: 300px;
+}
+#mission-vison #mv-para h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #141b4d;
+  font-style: italic;
+}
+#mission-vison #mv-para p {
+  margin-top: 20px;
+  font-size: large;
+  color: rgb(80, 109, 172);
+  font-style: italic;
+}
+#mission-vison #mv-box {
+  width: 100%;
+  display: flex;
+  height: 300px;
+  gap: 40px;
+  text-align: center;
+}
+#mission-vison #mv-box #mv-box1 {
+  height: 220px;
+  background-color: #141b4d;
+  padding: 10px;
+  color: #e0e0e0;
+  border-radius: 5px;
+}
+#mission-vison #mv-box #mv-box1 h1 {
+  margin-top: 10px;
+  font-style: italic;
+}
+#mission-vison #mv-box #mv-box1 p {
+  margin-top: 15px;
+  font-size: large;
+  font-style: italic;
+}
+#mission-vison #mv-box #mv-box2 {
+  height: 220px;
+  background-color: #00629b;
+  padding: 10px;
+  color: #e0e0e0;
+  border-radius: 5px;
+}
+#mission-vison #mv-box #mv-box2 h1 {
+  margin-top: 10px;
+  font-style: italic;
+}
+#mission-vison #mv-box #mv-box2 p {
+  margin-top: 15px;
+  font-size: large;
+  font-style: italic;
 }
 
 #img-faq {
@@ -765,24 +837,30 @@ nav .change {
   gap: 100px;
   width: 90%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 #img-faq #left-img-faq {
-  background-image: url(../images/templeImage.jpg);
+  background-image: url("https://eitherview.com/wp-content/uploads/2022/01/andaman-1024x683.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
-  width: 500px;
+  height: 550px;
+  width: 45%;
   margin-left: 40px;
   border-radius: 5px;
 }
 #img-faq #right-faq {
+  height: 550px;
   display: flex;
+  width: 45%;
   flex-direction: column;
   gap: 30px;
 }
 #img-faq #right-faq #h1-faq {
   text-align: center;
+  color: darkslategray;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 #img-faq #right-faq .faq-container {
   max-width: 600px;
@@ -811,14 +889,260 @@ nav .change {
   background-color: #dee2e4;
 }
 
-@media all and (max-width: 1024px) {
-  #img-faq {
-    flex-direction: column;
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #aboutImg {
+    height: 300px;
   }
-  #img-faq #left-img-faq {
+  #about-section #about-para h1 {
+    font-size: large;
+    margin-bottom: 20px;
+  }
+  #mission-vison {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 60px;
+    margin-bottom: 250px;
+  }
+  #mission-vison #mv-para {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+  }
+  #mission-vison #mv-para h1 {
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+  }
+  #mission-vison #mv-box {
+    gap: 120px;
+    margin-left: 50px;
+  }
+  #mission-vison #mv-box #mv-box1 {
     height: 200px;
     width: 300px;
-    margin-left: 25px;
+  }
+  #mission-vison #mv-box #mv-box2 {
+    height: 200px;
+    width: 300px;
+    margin-right: 40px;
+  }
+  #img-faq {
+    gap: 50px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  #img-faq #left-img-faq {
+    width: 50%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 767px) {
+  #aboutImg {
+    height: 300px;
+  }
+  #about-section {
+    gap: 40px;
+    flex-direction: column;
+  }
+  #about-section #about-para {
+    width: 100%;
+  }
+  #about-section #about-para h1 {
+    font-size: large;
+    margin-bottom: 20px;
+  }
+  #about-section #about-para #about-para1 {
+    font-size: large;
+  }
+  #about-section #about-img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #mission-vison {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 60px;
+    margin-bottom: 250px;
+  }
+  #mission-vison #mv-para {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: justify;
+    height: 200px;
+  }
+  #mission-vison #mv-para h1 {
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+  }
+  #mission-vison #mv-box {
+    gap: 30px;
+    margin-left: 20px;
+  }
+  #mission-vison #mv-box #mv-box1 {
+    height: 200px;
+    width: 500px;
+  }
+  #mission-vison #mv-box #mv-box2 {
+    height: 200px;
+    width: 500px;
+    margin-right: 20px;
+  }
+  #img-faq {
+    gap: 10px;
+    width: 99%;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  #img-faq #left-img-faq {
+    width: 93%;
+    height: 200px;
+    margin-left: 10px;
+  }
+  #img-faq #right-faq {
+    width: 100%;
+    height: 500px;
+  }
+  #img-faq #right-faq #h1-faq {
+    font-size: large;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0%;
+  }
+  #img-faq #right-faq .faq-container {
+    max-width: 600px;
+  }
+  #img-faq #right-faq .faq-container .question {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: smaller;
+    display: flex;
+    justify-content: space-between;
+  }
+  #img-faq #right-faq .faq-container .question:hover {
+    background-color: #e0e0e0;
+    border-radius: 2px;
+  }
+  #img-faq #right-faq .faq-container .question .icon {
+    cursor: pointer;
+  }
+  #img-faq #right-faq .faq-container .answer {
+    display: none;
+    padding: 10px;
+    font-size: smaller;
+    background-color: #fff;
+  }
+  #img-faq #right-faq .faq-container .answer:hover {
+    background-color: #dee2e4;
+  }
+}
+@media all and (max-width: 487px) {
+  #aboutImg {
+    height: 300px;
+  }
+  #about-section {
+    gap: 120px;
+    flex-direction: column;
+  }
+  #about-section #about-para {
+    width: 100%;
+  }
+  #about-section #about-para h1 {
+    font-size: large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  #about-section #about-para #about-para1 {
+    font-size: large;
+  }
+  #about-section #about-img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #mission-vison {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 120px;
+    margin-bottom: 300px;
+  }
+  #mission-vison #mv-para {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: justify;
+    height: 200px;
+  }
+  #mission-vison #mv-para h1 {
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+  }
+  #mission-vison #mv-box {
+    gap: 10px;
+  }
+  #mission-vison #mv-box #mv-box1 {
+    height: 200px;
+    width: 400px;
+  }
+  #mission-vison #mv-box #mv-box1 p {
+    font-size: small;
+  }
+  #mission-vison #mv-box #mv-box2 {
+    height: 200px;
+    width: 400px;
+  }
+  #mission-vison #mv-box #mv-box2 p {
+    font-size: small;
+  }
+  #img-faq {
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  #img-faq #left-img-faq {
+    width: 93%;
+    height: 200px;
+    margin-left: 10px;
+  }
+  #img-faq #right-faq {
+    height: 500px;
+    width: 100%;
+  }
+  #img-faq #right-faq #h1-faq {
+    font-size: large;
+    font-weight: bold;
+  }
+  #img-faq #right-faq .faq-container {
+    max-width: 600px;
+  }
+  #img-faq #right-faq .faq-container .question {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+  }
+  #img-faq #right-faq .faq-container .question:hover {
+    background-color: #e0e0e0;
+    border-radius: 2px;
+  }
+  #img-faq #right-faq .faq-container .question .icon {
+    cursor: pointer;
+  }
+  #img-faq #right-faq .faq-container .answer {
+    display: none;
+    padding: 10px;
+    font-size: medium;
+    background-color: #fff;
+  }
+  #img-faq #right-faq .faq-container .answer:hover {
+    background-color: #dee2e4;
   }
 }
 #exploreSection {
