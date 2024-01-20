@@ -68,13 +68,102 @@ nav #signUp:hover {
   background-color: white;
   border: 1px solid #97bbe3;
 }
+nav #navigation-hm {
+  display: none;
+}
 nav #hamburger {
   display: none;
+}
+@media all and (min-width: 269px) and (max-width: 768px) {
+  nav .navbar {
+    display: none;
+  }
+  nav .sgn {
+    display: none;
+  }
+  nav #navigation-hm {
+    display: block;
+  }
+  nav .change {
+    width: 100%;
+  }
 }
 @media all and (min-width: 769px) and (max-width: 1024px) {
   nav .navbar a {
     font-size: 17px;
   }
+}
+nav .change {
+  width: 100%;
+}
+
+#menu {
+  width: 25px;
+  height: 30px;
+  margin: 30px 0px 20px 0px;
+  cursor: pointer;
+  z-index: 100;
+}
+#menu .bar {
+  height: 5px;
+  width: 100%;
+  background-color: #cf0404;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+#menu #bar1 {
+  transform: translateY(-4px);
+}
+#menu #bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  padding: 0;
+  margin: 0 20px;
+  transition: 1s ease;
+  display: none;
+}
+.nav li {
+  list-style-type: none;
+  margin: 10px;
+}
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav li a:hover {
+  border: 1px solid #fff;
+  padding: 20px 20px;
+}
+
+.icon .bar {
+  background-color: #d61515;
+}
+.icon #bar1 {
+  transform: translateY(4px) rotate(-45deg);
+}
+.icon #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+.icon #bar2 {
+  opacity: 0;
+}
+
+.change {
+  background-color: #f55c47;
+  height: 100vh;
+  margin: 0;
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+  z-index: -100;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #homeSection {
@@ -694,7 +783,7 @@ nav #hamburger {
 }
 #exploreSection {
   width: 90%;
-  margin: auto;
+  margin: 80px auto auto auto;
 }
 #exploreSection #main164 {
   width: 100%;
@@ -720,7 +809,8 @@ nav #hamburger {
 #exploreSection #destination #desId #videoDest {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
   max-height: 100%;
 }
@@ -806,7 +896,8 @@ nav #hamburger {
   #exploreSection #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
@@ -881,7 +972,8 @@ nav #hamburger {
   #exploreSection #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
@@ -939,6 +1031,9 @@ nav #hamburger {
   }
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
+  #exploreSection #card-container .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
   #exploreSection #main164 {
     width: 768px;
     border: none;
@@ -963,7 +1058,8 @@ nav #hamburger {
   #exploreSection #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
@@ -1062,7 +1158,8 @@ nav #hamburger {
   #exploreSection #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
@@ -1136,11 +1233,15 @@ nav #hamburger {
     background-color: rgb(141, 135, 135);
     color: black;
   }
+  #exploreSection #card-container .card-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 #exploreSection #card-container .card-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 30px;
+  margin: 20px 0 50px 0px;
 }
 #exploreSection #card-container .card-list .card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -1156,12 +1257,14 @@ nav #hamburger {
 #exploreSection #card-container .card-list .card img {
   width: 100%;
   padding: 0;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
 }
 #exploreSection #card-container .card-list .card .name {
-  font-size: 15px;
+  padding: 16px 0px;
+  font-size: 22px;
   text-align: center;
 }
 #exploreSection #card-container .card-list .card .description {
@@ -1172,11 +1275,25 @@ nav #hamburger {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: 10px auto;
+  margin: 8px auto;
 }
 #exploreSection #card-container .card-list .card .bookbtn {
-  padding: 10px 20px;
-  margin-bottom: 20px;
+  padding: 15px 40px;
+  margin: 15px 0px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  background-color: red;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#exploreSection #card-container .card-list .card .bookbtn:hover {
+  background-color: #fd6363;
+  font-size: 16px;
+  transform: translateY(3px);
+}
+#exploreSection #card-container .card-list .card:hover {
+  transform: translateY(5px);
 }
 
 /* Sign-up Modal */
@@ -1507,6 +1624,9 @@ nav #hamburger {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
 }
+#contactSection .contact-container .contact_form .input-box input::-moz-placeholder {
+  color: #000000;
+}
 #contactSection .contact-container .contact_form .input-box input::placeholder {
   color: #000000;
 }
@@ -1524,6 +1644,9 @@ nav #hamburger {
   color: #000000;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
+}
+#contactSection .contact-container .contact_form textarea::-moz-placeholder {
+  color: #000000;
 }
 #contactSection .contact-container .contact_form textarea::placeholder {
   color: #000000;
@@ -1725,6 +1848,4 @@ nav #hamburger {
   .footy footer .fright-y .cty p {
     font-size: 22px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
