@@ -1,71 +1,180 @@
 $primary-color: #97bbe3;
 .btn {
-    background-color: $primary-color;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 10px;
-    font-weight: 600;
+  background-color: $primary-color;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 600;
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 15px 5%;
+  border-bottom: 1px solid grey;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  h2 {
+    color: black;
+    cursor: pointer;
+  }
+
+  .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 15px 5%;
-    border-bottom: 1px solid grey;
-    position: fixed;
-    top: 0;
+
+    a {
+      font-size: 20px;
+      margin: 0 10px;
+      font-weight: 600;
+      color: black;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  #signIn {
     background-color: white;
-    z-index: 1;
-    h2{
-        color: black;
-        cursor: pointer;
-    }
+    border: 1px solid $primary-color;
 
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+
+  #signUp:hover {
+    background-color: white;
+    border: 1px solid $primary-color;
+  }
+  #navigation-hm {
+    display: none;
+  }
+  #hamburger {
+    display: none;
+  }
+
+  @media all and (min-width: 269px) and (max-width: 768px) {
     .navbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        a {
-            font-size: 20px;
-            margin: 0 10px;
-            font-weight: 600;
-            color: black;
-
-            &:hover {
-                color: $primary-color;
-            }
-        }
+      display: none;
     }
-
-    #signIn {
-        background-color: white;
-        border: 1px solid $primary-color;
-
-        &:hover {
-            background-color: $primary-color;
-        }
+    // #humburger {
+    //   display: block;
+    // }
+    .sgn {
+      display: none;
     }
-
-    #signUp:hover {
-        background-color: white;
-        border: 1px solid $primary-color;
+    #navigation-hm {
+      display: block;
     }
-
-    #hamburger {
-        display: none;
+    .change {
+      width: 100%;
     }
-
-    @media all and (min-width: 769px) and (max-width: 1024px) {
-        .navbar {
-            a {
-                font-size: 17px;
-            }
-        }
+  }
+  @media all and (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+      a {
+        font-size: 17px;
+      }
     }
+  }
+  .change {
+    width: 100%;
+  }
 }
+
+//HAMBURGER
+
+#menu {
+  width: 25px;
+  height: 30px;
+  margin: 30px 0px 20px 0px;
+  cursor: pointer;
+  z-index: 100;
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #cf0404;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+    transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+}
+
+.nav {
+  padding: 0;
+  margin: 0 20px;
+  transition: 1s ease;
+  display: none;
+  li {
+    list-style-type: none;
+    margin: 10px;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      border: 1px solid #fff;
+      padding: 20px 20px;
+    }
+  }
+}
+
+.icon {
+  .bar {
+    background-color: #d61515;
+  }
+  #bar1 {
+    transform: translateY(4px) rotate(-45deg);
+  }
+  #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+  }
+  #bar2 {
+    opacity: 0;
+  }
+}
+
+.change {
+  background-color: #f55c47;
+  height: 100vh;
+  margin: 0;
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+  z-index: -100;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// @media only screen and (max-width: 769px) {
+//   .change {
+//     width: 40%;
+//   }
+// }
+
+// @media only screen and (max-width: 768px) {
+//   .change {
+//     width: 100%;
+//   }
+// }

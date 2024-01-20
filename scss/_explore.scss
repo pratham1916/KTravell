@@ -1,6 +1,6 @@
 #exploreSection {
   width: 90%;
-  margin: auto;
+  margin: 80px auto auto auto;
   // Yash To Add Scss Here Video and form
   #main164 {
     width: 100%;
@@ -22,7 +22,6 @@
     position: relative;
     // <uniquifier>: Use a uniquifier for the class name
 
-
     #desId {
       width: 100%;
       height: 100%;
@@ -42,7 +41,7 @@
       //   opacity: 0.7; /* Adjust as needed */
       // }
 
-      #desId>#videoDest.controls-hidden {
+      #desId > #videoDest.controls-hidden {
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
       }
@@ -50,8 +49,6 @@
       // #desId:hover >  #videoDest.controls-hidden {
       //   opacity: 1;
       // }
-
-
     }
   }
 
@@ -76,18 +73,16 @@
   }
 
   // text part "where do you want visit "
-  #destination>h3 {
+  #destination > h3 {
     position: absolute;
     top: 25%;
     left: 36%;
     color: white;
     // transform: translate(-50%, -50%);
     font-size: 47px;
-
-
   }
 
-  #destination>p {
+  #destination > p {
     position: absolute;
     top: 36%;
     left: 40%;
@@ -95,7 +90,6 @@
     // transform: translate(-50%, -50%);
     font-size: 20px;
     text-align: center;
-
   }
 
   // text part "where do you want visit ----end"
@@ -104,12 +98,10 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
-    text-overflow: '';
+    text-overflow: "";
   }
 
-
-  .desFormClass>input {
-
+  .desFormClass > input {
     padding: 10px 15px;
     border-radius: 10px;
     border: none;
@@ -129,8 +121,7 @@
 
   // video part end & Form part END
 
-
-  @media all and (min-width:1025px) and (max-width:1200px) {
+  @media all and (min-width: 1025px) and (max-width: 1200px) {
     #main164 {
       width: 100%;
       // border: 2px solid rgb(65, 4, 4);
@@ -153,7 +144,6 @@
       position: relative;
       // <uniquifier>: Use a uniquifier for the class name
 
-
       #desId {
         width: 100%;
         height: 100%;
@@ -173,7 +163,7 @@
         //   opacity: 0.7; /* Adjust as needed */
         // }
 
-        #desId>#videoDest.controls-hidden {
+        #desId > #videoDest.controls-hidden {
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
         }
@@ -181,13 +171,11 @@
         // #desId:hover >  #videoDest.controls-hidden {
         //   opacity: 1;
         // }
-
-
       }
     }
 
     // video end --------
-    // FORM start 
+    // FORM start
     #desIdform {
       width: 860px;
       height: 100px;
@@ -205,18 +193,16 @@
     }
 
     // text part "where do you want visit --start"
-    #destination>h3 {
+    #destination > h3 {
       position: absolute;
       top: 25%;
       left: 25%;
       color: white;
       // transform: translate(-50%, -50%);
       font-size: 47px;
-
-
     }
 
-    #destination>p {
+    #destination > p {
       position: absolute;
       top: 36%;
       left: 28%;
@@ -224,20 +210,17 @@
       // transform: translate(-50%, -50%);
       font-size: 20px;
       text-align: center;
-
     }
 
     // text part "where do you want visit ----end"
-    .desFormClass>input {
-
+    .desFormClass > input {
       padding: 10px 15px;
       border-radius: 10px;
       border: none;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
     }
 
-    .desFormClass>input:hover {
+    .desFormClass > input:hover {
       cursor: pointer;
       background-color: rgb(141, 135, 135);
       color: black;
@@ -246,13 +229,12 @@
     // video responsive is ENDED
 
     //START responsive is ---For counting
-
   }
 
   // ==============================
   //-------------------------------
   // responsive from 1024px to 769px
-  @media all and (min-width:769px) and (max-width:1024px) {
+  @media all and (min-width: 769px) and (max-width: 1024px) {
     #main164 {
       width: 1024px;
       // border: 2px solid rgb(238, 111, 111);
@@ -275,7 +257,6 @@
       position: relative;
       // <uniquifier>: Use a uniquifier for the class name
 
-
       #desId {
         width: 100%;
         height: 100%;
@@ -295,7 +276,7 @@
         //   opacity: 0.7; /* Adjust as needed */
         // }
 
-        #desId>#videoDest.controls-hidden {
+        #desId > #videoDest.controls-hidden {
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
         }
@@ -303,13 +284,11 @@
         // #desId:hover >  #videoDest.controls-hidden {
         //   opacity: 1;
         // }
-
-
       }
     }
 
     // video end --------
-    // FORM start 
+    // FORM start
     #desIdform {
       width: 860px;
       height: 100px;
@@ -327,18 +306,16 @@
     }
 
     // text part "where do you want visit --start"
-    #destination>h3 {
+    #destination > h3 {
       position: absolute;
       top: 25%;
       left: 25%;
       color: white;
       // transform: translate(-50%, -50%);
       font-size: 47px;
-
-
     }
 
-    #destination>p {
+    #destination > p {
       position: absolute;
       top: 36%;
       left: 28%;
@@ -346,21 +323,18 @@
       // transform: translate(-50%, -50%);
       font-size: 20px;
       text-align: center;
-
     }
 
     // text part "where do you want visit ----end"
-    .desFormClass>input {
-
+    .desFormClass > input {
       padding: 10px 15px;
       border-radius: 10px;
       // border:1px solid red;
       border: none;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
     }
 
-    .desFormClass>input:hover {
+    .desFormClass > input:hover {
       cursor: pointer;
       background-color: rgb(141, 135, 135);
       color: black;
@@ -377,11 +351,15 @@
     // video responsive is ENDED
 
     //START responsive is ---For counting
-
   }
 
   // responsive 768px---481px
-  @media all and (min-width:481px) and (max-width:768px) {
+  @media all and (min-width: 481px) and (max-width: 768px) {
+    #card-container {
+      .card-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
     #main164 {
       width: 768px;
       // border: 2px solid rgb(160, 74, 74);
@@ -403,7 +381,6 @@
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       position: relative;
 
-
       #desId {
         width: 100%;
         height: 100%;
@@ -423,7 +400,7 @@
         //   opacity: 0.7; /* Adjust as needed */
         // }
 
-        #desId>#videoDest.controls-hidden {
+        #desId > #videoDest.controls-hidden {
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
         }
@@ -431,13 +408,11 @@
         // #desId:hover >  #videoDest.controls-hidden {
         //   opacity: 1;
         // }
-
-
       }
     }
 
     // video end --------
-    // FORM start 
+    // FORM start
     #desIdform {
       width: 600px;
       height: 150px;
@@ -457,18 +432,16 @@
     }
 
     // text part "where do you want visit --start"
-    #destination>h3 {
+    #destination > h3 {
       position: absolute;
       top: 20%;
       left: 18%;
       color: white;
       // transform: translate(-50%, -50%);
       font-size: 42px;
-
-
     }
 
-    #destination>p {
+    #destination > p {
       position: absolute;
       top: 32%;
       left: 24%;
@@ -476,33 +449,27 @@
       // transform: translate(-50%, -50%);
       font-size: 18px;
       text-align: center;
-
     }
 
     // text part "where do you want visit ----end"
-    .desFormClass>input {
-
-
+    .desFormClass > input {
       border-radius: 10px;
       border: none;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
     }
 
-    .desFormClass>input[type="text"] {
+    .desFormClass > input[type="text"] {
       padding: 12px 30px;
       width: 350px;
       height: 14px;
       font-size: 16px;
-
     }
 
-    .desFormClass>input[type="date"] {
+    .desFormClass > input[type="date"] {
       padding: 12px 30px;
       width: 200px;
       height: 14px;
       font-size: 16px;
-
     }
 
     #travel-select {
@@ -513,12 +480,12 @@
       border: none;
     }
 
-    .desFormClass>input[type="submit"] {
+    .desFormClass > input[type="submit"] {
       padding: 12px 25px;
       font-size: 16px;
     }
 
-    .desFormClass>input:hover {
+    .desFormClass > input:hover {
       cursor: pointer;
       background-color: rgb(141, 135, 135);
       color: black;
@@ -527,13 +494,12 @@
     // video responsive is ENDED
 
     //START responsive is ---For counting
-
   }
 
   // ---------------
   //--------------------------------
   //responsive in 480px to 320px
-  @media all and (min-width:320px) and (max-width:480px) {
+  @media all and (min-width: 320px) and (max-width: 480px) {
     #main164 {
       width: 480px;
       // border: 2px solid rgb(160, 74, 74);
@@ -556,7 +522,6 @@
       position: relative;
       // <uniquifier>: Use a uniquifier for the class name
 
-
       #desId {
         width: 100%;
         height: 100%;
@@ -572,7 +537,7 @@
           transition: opacity 0.3s ease-in-out;
         }
 
-        #desId>#videoDest.controls-hidden {
+        #desId > #videoDest.controls-hidden {
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
         }
@@ -580,7 +545,7 @@
     }
 
     // video end --------
-    // FORM start 
+    // FORM start
     #desIdform {
       width: 480px;
       height: 250px;
@@ -600,17 +565,15 @@
     }
 
     // text part "where do you want visit --start"
-    #destination>h3 {
+    #destination > h3 {
       position: absolute;
       top: 25%;
       left: 12%;
       color: white;
       font-size: 30px;
-
-
     }
 
-    #destination>p {
+    #destination > p {
       position: absolute;
       top: 32%;
       left: 15%;
@@ -618,34 +581,28 @@
       // transform: translate(-50%, -50%);
       font-size: 15px;
       text-align: center;
-
     }
 
     // text part "where do you want visit ----end"
-    .desFormClass>input,
+    .desFormClass > input,
     label {
-
-
       border-radius: 10px;
       border: none;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
     }
 
-    .desFormClass>input[type="text"] {
+    .desFormClass > input[type="text"] {
       padding: 12px 30px;
       width: 350px;
       height: 14px;
       font-size: 16px;
-
     }
 
-    .desFormClass>input[type="date"] {
+    .desFormClass > input[type="date"] {
       padding: 12px 30px;
       width: 350px;
       height: 14px;
       font-size: 16px;
-
     }
 
     #travel-select {
@@ -656,30 +613,35 @@
       border: none;
     }
 
-    .desFormClass>input[type="submit"] {
+    .desFormClass > input[type="submit"] {
       padding: 12px 25px;
       font-size: 16px;
     }
 
-    .desFormClass>input:hover {
+    .desFormClass > input:hover {
       cursor: pointer;
       background-color: rgb(141, 135, 135);
       color: black;
     }
 
     // video responsive is ENDED
-
-
+    #card-container {
+      .card-list {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
   }
   // yash ---END Code
   // Card SCSS
   #card-container {
-    .card-list{
+    .card-list {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      .card{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+      gap: 30px;
+      margin: 20px 0 50px 0px;
+      .card {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         background-color: white;
         font-size: 20px;
         max-width: 400px;
@@ -688,35 +650,47 @@
         gap: 4%;
         text-align: center;
         margin-top: 70px;
-        img{
-          width:100%;
+        img {
+          width: 100%;
           padding: 0;
-          height: 200px;
+          height: 230px;
           object-fit: cover;
-          border-radius: 10px;
+          border-radius: 10px 10px 0px 0px;
         }
-        .name{
-          font-size: 15px;
+        .name {
+          padding: 16px 0px;
+          font-size: 22px;
           text-align: center;
         }
-        .description{
+        .description {
           text-align: justify;
           padding: 20px;
         }
-        .price_rating{
+        .price_rating {
           display: flex;
           justify-content: space-between;
           width: 80%;
-          margin: 10px auto;
+          margin: 8px auto;
         }
-        .bookbtn{
-          padding: 10px 20px;
-          margin-bottom: 20px;
+        .bookbtn {
+          padding: 15px 40px;
+          margin: 15px 0px;
+          border: none;
+          color: #fff;
+          font-size: 16px;
+          background-color: red;
+          border-radius: 8px;
+          cursor: pointer;
         }
+        .bookbtn:hover {
+          background-color: #fd6363;
+          font-size: 16px;
+          transform: translateY(3px);
+        }
+      }
+      .card:hover {
+        transform: translateY(5px);
       }
     }
   }
-
-
-
 }
