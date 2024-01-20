@@ -1158,6 +1158,7 @@ nav .change {
   width: 100%;
   height: 600px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
   font-family: "Bodoni Moda", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -1173,6 +1174,7 @@ nav .change {
 #exploreSection #destination #desId #videoDest {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   object-fit: cover;
   max-width: 100%;
   max-height: 100%;
@@ -1185,6 +1187,7 @@ nav .change {
   width: 860px;
   height: 100px;
   border: none;
+  border-radius: 10px;
   position: absolute;
   top: 50%;
   left: 55%;
@@ -1222,6 +1225,7 @@ nav .change {
 #exploreSection .desFormClass > input {
   padding: 10px 15px;
   border-radius: 10px;
+  background-color: #fff;
   border: none;
 }
 #exploreSection #travel-select {
@@ -1229,6 +1233,7 @@ nav .change {
   padding: 10px 15px;
   width: 200px;
   border-radius: 10px;
+  background-color: #fff;
   border: none;
 }
 #exploreSection #travel-select option:checked {
