@@ -3,9 +3,10 @@ $medium-screen: 480px;
 $large-screen: 768px;
 $extra-large-screen: 1290px;
 $primary-color: #97bbe3;
+
 #homeSection {
   width: 100%;
-  margin-top: 68px;
+  margin-top: 150px;
   padding: 0 5%;
 
   h1 {
@@ -117,545 +118,517 @@ $primary-color: #97bbe3;
   }
   // yash code for counting
   // COUNTING  part start ---------------------
-#countBody{
-  width: 1363px;
- height:500px;
- color:white;
- background-color: black;
-    border:none;
+  #countBody {
+    width: 1363px;
+    height: 500px;
+    color: white;
+    background-color: black;
+    border: none;
     // border:1px solid red;
-   box-sizing: border-box;
-   text-align: center;
+    box-sizing: border-box;
+    text-align: center;
 
-  h3{
-    font-size:50px;
+    h3 {
+      font-size: 50px;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: lighter;
+      font-variation-settings: "wdth" 100;
+      // border:1px solid yellow;
+      border: none;
+      display: inline-block;
+      margin-top: 30px;
+      // transform: translate(-50%, -50%);
+    }
+  }
+  #travelP {
+    // padding:0px 45px ;
+    font-size: 25px;
+    margin-top: 10px;
+    // border: 1px solid rgb(171, 255, 4);
+    border: none;
+    width: 75%;
+
+    text-align: center;
+    margin-left: 180px;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: lighter;
-    font-variation-settings:
-      "wdth" 100;
-    // border:1px solid yellow;
-    border:none;
-    display: inline-block;
-    margin-top: 30px;
-  // transform: translate(-50%, -50%);
-   }
+    font-variation-settings: "wdth" 100;
+  }
 
-}
-#travelP{
-  // padding:0px 45px ;
-  font-size:25px;
-  margin-top: 10px;
-  // border: 1px solid rgb(171, 255, 4);
-  border:none;
-  width:75%;
-  
-  text-align: center;
-  margin-left:180px;
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
+  // ----counting block
+  #countingStart {
+    // border:3px solid red;
+    border: none;
+    width: 650px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    margin: 100px 0px 0px 390px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
 
-// ----counting block
-#countingStart{
-// border:3px solid red;
-border:none;
-width: 650px;
-height:100px;
-display: flex;
-justify-content:space-between;
-align-items: center;
-gap:20px;
-box-sizing: border-box;
-margin:100px 0px 0px 390px;
-font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  .counter-section {
+    text-align: center;
+    width: 100%;
+    // border:2px solid blueviolet;
+  }
+  // counting Trip part & happy Cust.\
 
-}
+  .counter-section > h2 {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 10px;
+  }
+  .counter-section > p {
+    font-size: 34px;
+  }
 
-.counter-section {
-  text-align: center;
-  width:100%;
-  // border:2px solid blueviolet;
-  
-}
-// counting Trip part & happy Cust.\
-
-.counter-section>h2{
-  font-size:16px;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  margin-top: 10px;
-
-}
-.counter-section>p{
-  font-size: 34px;
-}
-
-
-
-//START responsive is ---For counting
-//-----------------------------------
-@media all and (min-width:1025px) and (max-width:1200px) {
-
-  #countBody{
-    width: 1200px;
-   height:500px;
-   color:white;
-   background-color: black;
-      border:none;
+  //START responsive is ---For counting
+  //-----------------------------------
+  @media all and (min-width: 1025px) and (max-width: 1200px) {
+    #countBody {
+      width: 1200px;
+      height: 500px;
+      color: white;
+      background-color: black;
+      border: none;
       // border:1px solid rgb(126, 77, 65);
-     box-sizing: border-box;
-     text-align: center;
-  
-    h3{
-      font-size:50px;
+      box-sizing: border-box;
+      text-align: center;
+
+      h3 {
+        font-size: 50px;
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: lighter;
+        font-variation-settings: "wdth" 100;
+        // border:1px solid rgb(153, 93, 3);
+        border: none;
+        display: inline-block;
+        margin-top: 53px;
+        // transform: translate(-50%, -50%);
+      }
+    }
+    #travelP {
+      // padding:0px 45px ;
+      font-size: 25px;
+      margin-top: 10px;
+      // border: 1px solid rgb(81, 116, 11);
+      border: none;
+      width: 75%;
+
+      text-align: center;
+      margin-left: 150px;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-weight: lighter;
-      font-variation-settings:
-        "wdth" 100;
-      // border:1px solid rgb(153, 93, 3);
-      border:none;
-      display: inline-block;
-      margin-top: 53px;
-    // transform: translate(-50%, -50%);
-     }
-  
-  }
-  #travelP{
-    // padding:0px 45px ;
-    font-size:25px;
-    margin-top: 10px;
-    // border: 1px solid rgb(81, 116, 11);
-    border:none;
-    width:75%;
-    
-    text-align: center;
-    margin-left:150px;
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
-  // ----counting block
-  #countingStart{
-  // border:3px solid rgb(107, 5, 5);
-  border:none;
-  width: 650px;
-  height:100px;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  gap:20px;
-  box-sizing: border-box;
-  margin:100px 0px 0px 290px;
-  font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  
-  }
-  
-  .counter-section {
-    text-align: center;
-    width:100%;
-    // border:2px solid rgb(61, 12, 107);
-    border:none;
-  }
-  // counting Trip part & happy Cust.\
-  
-  .counter-section>h2{
-    font-size:16px;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    margin-top: 10px;
-  
-  }
-  .counter-section>p{
-    font-size: 34px;
-  }
-  
+      font-variation-settings: "wdth" 100;
+    }
 
-}
+    // ----counting block
+    #countingStart {
+      // border:3px solid rgb(107, 5, 5);
+      border: none;
+      width: 650px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      box-sizing: border-box;
+      margin: 100px 0px 0px 290px;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
 
-// responsive-769px-1024  --laptops--
-@media all and (min-width:769px) and (max-width:1024px) {
+    .counter-section {
+      text-align: center;
+      width: 100%;
+      // border:2px solid rgb(61, 12, 107);
+      border: none;
+    }
+    // counting Trip part & happy Cust.\
 
+    .counter-section > h2 {
+      font-size: 16px;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      margin-top: 10px;
+    }
+    .counter-section > p {
+      font-size: 34px;
+    }
+  }
 
-  #countBody{
-    width: 1024px;
-   height:500px;
-   color:white;
-   background-color: black;
-      border:none;
+  // responsive-769px-1024  --laptops--
+  @media all and (min-width: 769px) and (max-width: 1024px) {
+    #countBody {
+      width: 1024px;
+      height: 500px;
+      color: white;
+      background-color: black;
+      border: none;
       // border:1px solid rgb(102, 41, 25);
-     box-sizing: border-box;
-     text-align: center;
-  
-    h3{
-      font-size:50px;
+      box-sizing: border-box;
+      text-align: center;
+
+      h3 {
+        font-size: 50px;
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: lighter;
+        font-variation-settings: "wdth" 100;
+        // border:1px solid rgb(105, 65, 3);
+        border: none;
+        display: inline-block;
+        margin-top: 53px;
+        // transform: translate(-50%, -50%);
+      }
+    }
+    #travelP {
+      // padding:0px 45px ;
+      font-size: 25px;
+      margin-top: 10px;
+      // border: 1px solid rgb(53, 80, 0);
+      border: none;
+      width: 75%;
+
+      text-align: center;
+      margin-left: 150px;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-weight: lighter;
-      font-variation-settings:
-        "wdth" 100;
-      // border:1px solid rgb(105, 65, 3);
-      border:none;
-      display: inline-block;
-      margin-top: 53px;
-    // transform: translate(-50%, -50%);
-     }
-  
-  }
-  #travelP{
-    // padding:0px 45px ;
-    font-size:25px;
-    margin-top: 10px;
-    // border: 1px solid rgb(53, 80, 0);
-    border:none;
-    width:75%;
-    
-    text-align: center;
-    margin-left:150px;
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
-  // ----counting block
-  #countingStart{
-  // border:3px solid rgb(75, 0, 0);
-  border:none;
-  width: 650px;
-  height:100px;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  gap:20px;
-  box-sizing: border-box;
-  margin:100px 0px 0px 200px;
-  font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  
-  }
-  
-  .counter-section {
-    text-align: center;
-    width:100%;
-    // border:2px solid rgb(55, 0, 107);
-    border:none;
-  }
-  // counting Trip part & happy Cust.\
-  
-  .counter-section>h2{
-    font-size:16px;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    margin-top: 10px;
-  
-  }
-  .counter-section>p{
-    font-size: 34px;
-  }
+      font-variation-settings: "wdth" 100;
+    }
 
+    // ----counting block
+    #countingStart {
+      // border:3px solid rgb(75, 0, 0);
+      border: none;
+      width: 650px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      box-sizing: border-box;
+      margin: 100px 0px 0px 200px;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
 
-}
-// responsive is 481px --768px--iPads & Tablets
+    .counter-section {
+      text-align: center;
+      width: 100%;
+      // border:2px solid rgb(55, 0, 107);
+      border: none;
+    }
+    // counting Trip part & happy Cust.\
 
-@media all and (min-width:481px) and (max-width:768px) {
+    .counter-section > h2 {
+      font-size: 16px;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      margin-top: 10px;
+    }
+    .counter-section > p {
+      font-size: 34px;
+    }
+  }
+  // responsive is 481px --768px--iPads & Tablets
 
-
-  #countBody{
-    width: 768px;
-   height:500px;
-   color:white;
-   background-color: black;
+  @media all and (min-width: 481px) and (max-width: 768px) {
+    #countBody {
+      width: 768px;
+      height: 500px;
+      color: white;
+      background-color: black;
       // border:none;
       // border:1px solid rgb(63, 25, 16);
-      border:none;
-     box-sizing: border-box;
-     text-align: center;
-  
-    h3{
-      font-size:42px;
+      border: none;
+      box-sizing: border-box;
+      text-align: center;
+
+      h3 {
+        font-size: 42px;
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: lighter;
+        font-variation-settings: "wdth" 100;
+        // border:1px solid rgb(105, 65, 3);
+        border: none;
+        display: inline-block;
+        margin-top: 53px;
+        margin-left: 15px;
+        // transform: translate(-50%, -50%);
+      }
+    }
+    #travelP {
+      // padding:0px 45px ;
+      font-size: 18px;
+      margin-top: 10px;
+      // border: 1px solid rgb(39, 53, 12);
+      border: none;
+      width: 80%;
+
+      text-align: center;
+      margin-left: 86px;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-weight: lighter;
-      font-variation-settings:
-        "wdth" 100;
-      // border:1px solid rgb(105, 65, 3);
-      border:none;
-      display: inline-block;
-      margin-top: 53px;
-      margin-left:15px;
-    // transform: translate(-50%, -50%);
-     }
-  
-  }
-  #travelP{
-    // padding:0px 45px ;
-    font-size:18px;
-    margin-top: 10px;
-    // border: 1px solid rgb(39, 53, 12);
-    border:none;
-    width:80%;
-    
-    text-align: center;
-    margin-left:86px;
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
-  // ----counting block
-  #countingStart{
-  // border:3px solid rgb(56, 16, 16);
-  border:none;
-  width: 550px;
-  height:100px;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  gap:20px;
-  box-sizing: border-box;
-  margin:100px 0px 0px 120px;
-  font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  
-  }
-  
-  .counter-section {
-    text-align: center;
-    width:100%;
-    // border:2px solid rgb(55, 0, 107);
-    border:none;
-  }
-  // counting Trip part & happy Cust.\
-  
-  .counter-section>h2{
-    font-size:16px;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    margin-top: 10px;
-  
-  }
-  .counter-section>p{
-    font-size: 34px;
+      font-variation-settings: "wdth" 100;
+    }
+
+    // ----counting block
+    #countingStart {
+      // border:3px solid rgb(56, 16, 16);
+      border: none;
+      width: 550px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      box-sizing: border-box;
+      margin: 100px 0px 0px 120px;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+
+    .counter-section {
+      text-align: center;
+      width: 100%;
+      // border:2px solid rgb(55, 0, 107);
+      border: none;
+    }
+    // counting Trip part & happy Cust.\
+
+    .counter-section > h2 {
+      font-size: 16px;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      margin-top: 10px;
+    }
+    .counter-section > p {
+      font-size: 34px;
+    }
   }
 
-
-}
-
-//responsive part 320px to 480px
-@media all and (min-width:320px) and (max-width:480px){
-
-
-  #countBody{
-    width:480px;
-   height:500px;
-   color:white;
-   background-color: black;
-      border:none;
+  //responsive part 320px to 480px
+  @media all and (min-width: 320px) and (max-width: 480px) {
+    #countBody {
+      width: 480px;
+      height: 500px;
+      color: white;
+      background-color: black;
+      border: none;
       // border:1px solid rgb(36, 21, 17);
-     box-sizing: border-box;
-     text-align: center;
-  
-    h3{
-      font-size:35px;
+      box-sizing: border-box;
+      text-align: center;
+
+      h3 {
+        font-size: 35px;
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: lighter;
+        font-variation-settings: "wdth" 100;
+        // border:1px solid rgb(59, 46, 25);
+        border: none;
+        display: inline-block;
+        margin-top: 53px;
+        margin-left: 15px;
+        // transform: translate(-50%, -50%);
+      }
+    }
+    #travelP {
+      // padding:0px 45px ;
+      font-size: 16px;
+      margin-top: 10px;
+      // border: 1px solid rgb(51, 59, 35);
+      border: none;
+      width: 83%;
+      text-align: center;
+      margin-left: 50px;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-weight: lighter;
-      font-variation-settings:
-        "wdth" 100;
-      // border:1px solid rgb(59, 46, 25);
-      border:none;
-      display: inline-block;
-      margin-top: 53px;
-      margin-left:15px;
-    // transform: translate(-50%, -50%);
-     }
-  
-  }
-  #travelP{
-    // padding:0px 45px ;
-    font-size:16px;
-    margin-top: 10px;
-    // border: 1px solid rgb(51, 59, 35);
-    border:none;
-    width:83%;
-    text-align: center;
-    margin-left:50px;
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
-  // ----counting block
-  #countingStart{
-  // border:3px solid rgb(202, 10, 10);
-  border:none;
-  width: 380px;
-  height:150px;
-  gap:20px;
-  box-sizing: border-box;
-  margin:100px 0px 0px 62px;
-  font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
- 
-  }
-  
-  .counter-section {
-    text-align: center;
-    width:100%;
-    // border:2px solid rgb(58, 37, 78);
-    border:none;
-  }
-  // counting Trip part & happy Cust.\
-  
-  .counter-section>h2{
-    font-size:15px;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    margin-top: 10px;
-  
-  }
-  .counter-section>p{
-    font-size: 30px;
-  }
+      font-variation-settings: "wdth" 100;
+    }
 
+    // ----counting block
+    #countingStart {
+      // border:3px solid rgb(202, 10, 10);
+      border: none;
+      width: 380px;
+      height: 150px;
+      gap: 20px;
+      box-sizing: border-box;
+      margin: 100px 0px 0px 62px;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
 
+    .counter-section {
+      text-align: center;
+      width: 100%;
+      // border:2px solid rgb(58, 37, 78);
+      border: none;
+    }
+    // counting Trip part & happy Cust.\
 
+    .counter-section > h2 {
+      font-size: 15px;
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      margin-top: 10px;
+    }
+    .counter-section > p {
+      font-size: 30px;
+    }
+  }
 }
-}
-
-
-
-
 
 @media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
   // Your styles for small to medium screens
-
-  .cardConatiner {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .footy {
-    footer {
+  #homeSection {
+    h1 {
+      font-size: 52px;
+    }
+    .container {
       flex-direction: column;
-      .fleft-y {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .fright-y {
-        // margin-top: 10px;
-
-        h1 {
-          text-align: center;
-          font-size: 22px;
+      .left {
+        img {
+          width: 390px;
+          height: 350px;
         }
-        .cty {
+      }
+      .right {
+        // flex-basis: 0;
+        .slider {
           flex-direction: column;
-          justify-content: center;
-          justify-items: center;
-          align-items: center;
-          p {
-            font-size: 22px;
-            text-align: center;
+          gap: 20px;
+          #img1 {
+            margin: auto;
           }
         }
       }
     }
-    .bottom-brand {
+
+    .cardConatiner {
       flex-direction: column;
-      // margin: auto;
       justify-content: center;
       align-items: center;
       gap: 20px;
     }
-  }
-}
 
-@media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
-  .cardConatiner {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    gap: 10px;
-    // flex-direction: column;
-  }
-  .footy {
-    footer {
-      flex-direction: column;
-      .fleft-y {
+    .footy {
+      footer {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .fright-y {
-        // margin-top: 10px;
-
-        h1 {
-          text-align: center;
-          font-size: 22px;
-        }
-        .cty {
+        .fleft-y {
           flex-direction: column;
           justify-content: center;
-          justify-items: center;
           align-items: center;
-          p {
-            font-size: 22px;
+        }
+        .fright-y {
+          // margin-top: 10px;
+
+          h1 {
             text-align: center;
+            font-size: 22px;
+          }
+          .cty {
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            p {
+              font-size: 22px;
+              text-align: center;
+            }
           }
         }
       }
+      .bottom-brand {
+        flex-direction: column;
+        // margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
     }
-    .bottom-brand {
-      flex-direction: column;
-      // margin: auto;
+  }
+
+  @media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
+    .cardConatiner {
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
-      gap: 20px;
+      width: 80%;
+      margin: auto;
+      gap: 10px;
+      // flex-direction: column;
+    }
+
+    .footy {
+      footer {
+        flex-direction: column;
+        .fleft-y {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .fright-y {
+          // margin-top: 10px;
+
+          h1 {
+            text-align: center;
+            font-size: 22px;
+          }
+          .cty {
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            p {
+              font-size: 22px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .bottom-brand {
+        flex-direction: column;
+        // margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
     }
   }
 }

@@ -70,11 +70,21 @@ nav {
     // #humburger {
     //   display: block;
     // }
+    nav {
+      position: static;
+      z-index: 0;
+      justify-content: initial;
+      position: static;
+    }
+    h2 {
+      display: none;
+    }
     .sgn {
       display: none;
     }
     #navigation-hm {
       display: block;
+      width: 100%;
     }
     .change {
       width: 100%;
@@ -157,10 +167,10 @@ nav {
   height: 100vh;
   margin: 0;
   position: absolute;
-  font-size: 30px;
+  font-size: 40px;
   top: 0;
   z-index: -100;
-  width: 20%;
+  // width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -78,11 +78,21 @@ nav #hamburger {
   nav .navbar {
     display: none;
   }
+  nav nav {
+    position: static;
+    z-index: 0;
+    justify-content: initial;
+    position: static;
+  }
+  nav h2 {
+    display: none;
+  }
   nav .sgn {
     display: none;
   }
   nav #navigation-hm {
     display: block;
+    width: 100%;
   }
   nav .change {
     width: 100%;
@@ -156,10 +166,9 @@ nav .change {
   height: 100vh;
   margin: 0;
   position: absolute;
-  font-size: 30px;
+  font-size: 40px;
   top: 0;
   z-index: -100;
-  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,7 +177,7 @@ nav .change {
 
 #homeSection {
   width: 100%;
-  margin-top: 68px;
+  margin-top: 150px;
   padding: 0 5%;
 }
 #homeSection h1 {
@@ -584,42 +593,59 @@ nav .change {
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
-  .cardConatiner {
+  #homeSection h1 {
+    font-size: 52px;
+  }
+  #homeSection .container {
+    flex-direction: column;
+  }
+  #homeSection .container .left img {
+    width: 390px;
+    height: 350px;
+  }
+  #homeSection .container .right .slider {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #homeSection .container .right .slider #img1 {
+    margin: auto;
+  }
+  #homeSection .cardConatiner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
-  .footy footer {
+  #homeSection .footy footer {
     flex-direction: column;
   }
-  .footy footer .fleft-y {
+  #homeSection .footy footer .fleft-y {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .footy footer .fright-y h1 {
+  #homeSection .footy footer .fright-y h1 {
     text-align: center;
     font-size: 22px;
   }
-  .footy footer .fright-y .cty {
+  #homeSection .footy footer .fright-y .cty {
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
   }
-  .footy footer .fright-y .cty p {
+  #homeSection .footy footer .fright-y .cty p {
     font-size: 22px;
     text-align: center;
   }
-  .footy .bottom-brand {
+  #homeSection .footy .bottom-brand {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 480px) and (min-width: 480px) and (max-width: 768px) {
   .cardConatiner {
     flex-wrap: wrap;
     justify-content: center;
