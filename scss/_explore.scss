@@ -1,628 +1,722 @@
-#exploreSection{
-    // Yash To Add Scss Here Video and form
+#exploreSection {
+  width: 90%;
+  margin: auto;
+  // Yash To Add Scss Here Video and form
+  #main164 {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  #destination {
+    width: 100%;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+    // <uniquifier>: Use a uniquifier for the class name
+
+
+    #desId {
+      width: 100%;
+      height: 100%;
+      //   overflow: hidden;
+      //   object-fit: cover;
+
+      #videoDest {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+        // transition: opacity 0.3s ease-in-out;
+      }
+
+      // #desId >  #videoDest:hover {
+      //   opacity: 0.7; /* Adjust as needed */
+      // }
+
+      #desId>#videoDest.controls-hidden {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      // #desId:hover >  #videoDest.controls-hidden {
+      //   opacity: 1;
+      // }
+
+
+    }
+  }
+
+  // video end --------
+  // FORM start ---PART--YELLOW--THIS WILL PRESENT FORM BLOCK
+  #desIdform {
+    width: 860px;
+    height: 100px;
+    // border:1px solid yellow;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+    flex-wrap: wrap;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // text part "where do you want visit "
+  #destination>h3 {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    color: white;
+    // transform: translate(-50%, -50%);
+    font-size: 47px;
+
+
+  }
+
+  #destination>p {
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    color: white;
+    // transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+  // text part "where do you want visit ----end"
+  #travel-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
+
+  .desFormClass>input {
+
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+  }
+
+  #travel-select {
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+  }
+
+  #travel-select option:checked {
+    background-color: grey;
+  }
+
+  // video part end & Form part END
+
+
+  @media all and (min-width:1025px) and (max-width:1200px) {
     #main164 {
-        width: 100%;
-        border:none;
-       box-sizing: border-box;
-      }
-      #destination{
-        width: 100%;
-        height: 600px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-        font-family: "Bodoni Moda", serif;
+      width: 100%;
+      // border: 2px solid rgb(65, 4, 4);
+      border: none;
+      box-sizing: border-box;
+    }
+
+    #destination {
+      width: 100%;
+      height: 600px;
+
+      font-family: "Bodoni Moda", serif;
       font-optical-sizing: auto;
       font-weight: 700;
       font-style: normal;
-        border: none;
-        box-sizing: border-box;
-        position: relative;
-        // <uniquifier>: Use a uniquifier for the class name
-    
-    
-        #desId {
-          width: 100%;
-          height: 100%;
-        //   overflow: hidden;
-        //   object-fit: cover;
-    
-          #videoDest{
-            width: 100%;
-            height:100%;
-            object-fit: cover;
-            max-width: 100%;
-          max-height: 100%;
-            // transition: opacity 0.3s ease-in-out;
-          }
-          // #desId >  #videoDest:hover {
-          //   opacity: 0.7; /* Adjust as needed */
-          // }
-      
-          #desId > #videoDest.controls-hidden {
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-          }
-      
-          // #desId:hover >  #videoDest.controls-hidden {
-          //   opacity: 1;
-          // }
-    
-    
-        }
-      }
-    // video end --------
-    // FORM start ---PART--YELLOW--THIS WILL PRESENT FORM BLOCK
-    #desIdform{
-        width:860px;
-        height:100px;
-        // border:1px solid yellow;
-        border:none;
-        position: absolute;
-        top: 50%;
-        left:55%;
-        transform: translate(-50%, -50%);
-        font-size:24px;
-        text-align: center;
-        flex-wrap: wrap;
-        align-self: center;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    // text part "where do you want visit "
-    #destination>h3{
-        position: absolute;
-        top: 25%;
-        left:36%;
-        color:white;
-        // transform: translate(-50%, -50%);
-        font-size:47px;
-        
-    
-    }
-    #destination>p{
-        position: absolute;
-        top: 36%;
-        left:40%;
-        color:white;
-        // transform: translate(-50%, -50%);
-        font-size:20px;
-        text-align: center;
-    
-    }
-    // text part "where do you want visit ----end"
-    #travel-select {
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      text-indent: 1px;
-      text-overflow: '';
-    }
-    
-    
-    .desFormClass>input{
-    
-      padding:10px 15px;
-      border-radius:10px;
-      border:none;
-    }
-    #travel-select{
-      cursor: pointer;
-      padding:10px 15px;
-      width: 200px;
-      border-radius:10px;
-      border:none;
-    }
-    #travel-select option:checked {
-      background-color:grey;
-    }
-    // video part end & Form part END
-    
-    
-    @media all and (min-width:1025px) and (max-width:1200px) {
-      #main164 {
-        width: 100%;
-        // border: 2px solid rgb(65, 4, 4);
-        border:none;
-       box-sizing: border-box;
-      }
-      #destination{
-        width: 100%;
-        height: 600px;
-    
-        font-family: "Bodoni Moda", serif;
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-style: normal;
-        // border: 2px solid rgb(70, 95, 11);
-        border:none;
-        box-sizing: border-box;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        position: relative;
-        // <uniquifier>: Use a uniquifier for the class name
-    
-    
-        #desId {
-          width: 100%;
-          height: 100%;
-        //   overflow: hidden;
-        //   object-fit: cover;
-    
-          #videoDest{
-            width: 100%;
-            height:100%;
-            object-fit: cover;
-            max-width: 100%;
-          max-height: 100%;
-            transition: opacity 0.3s ease-in-out;
-          }
-          // #desId >  #videoDest:hover {
-          //   opacity: 0.7; /* Adjust as needed */
-          // }
-      
-          #desId > #videoDest.controls-hidden {
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-          }
-      
-          // #desId:hover >  #videoDest.controls-hidden {
-          //   opacity: 1;
-          // }
-    
-    
-        }
-      }
-    // video end --------
-    // FORM start 
-    #desIdform{
-        width:860px;
-        height:100px;
-        // border:1px solid rgb(145, 145, 42);
-        border:none;
-        position: absolute;
-        top: 50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        font-size:24px;
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    // text part "where do you want visit --start"
-    #destination>h3{
-        position: absolute;
-        top: 25%;
-        left:25%;
-        color:white;
-        // transform: translate(-50%, -50%);
-        font-size:47px;
-        
-    
-    }
-    #destination>p{
-        position: absolute;
-        top: 36%;
-        left:28%;
-        color:white;
-        // transform: translate(-50%, -50%);
-        font-size:20px;
-        text-align: center;
-    
-    }
-    // text part "where do you want visit ----end"
-    .desFormClass>input{
-    
-      padding:10px 15px;
-      border-radius:10px;
-      border:none;
+      // border: 2px solid rgb(70, 95, 11);
+      border: none;
+      box-sizing: border-box;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-    }
-    .desFormClass>input:hover{
-      cursor: pointer;
-      background-color:rgb(141, 135, 135);
-      color:black;
-    }
-    // video responsive is ENDED
-    
-    //START responsive is ---For counting
-    
-    }
-    // ==============================
-    //-------------------------------
-    // responsive from 1024px to 769px
-    @media all and (min-width:769px) and (max-width:1024px) {
-      #main164 {
-        width: 1024px;
-        // border: 2px solid rgb(238, 111, 111);
-        border:none;
-       box-sizing: border-box;
+      position: relative;
+      // <uniquifier>: Use a uniquifier for the class name
+
+
+      #desId {
+        width: 100%;
+        height: 100%;
+        //   overflow: hidden;
+        //   object-fit: cover;
+
+        #videoDest {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          max-width: 100%;
+          max-height: 100%;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        // #desId >  #videoDest:hover {
+        //   opacity: 0.7; /* Adjust as needed */
+        // }
+
+        #desId>#videoDest.controls-hidden {
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        // #desId:hover >  #videoDest.controls-hidden {
+        //   opacity: 1;
+        // }
+
+
       }
-      #destination{
-        width: 1024px;
-        height: 600px;
-    
-        font-family: "Bodoni Moda", serif;
+    }
+
+    // video end --------
+    // FORM start 
+    #desIdform {
+      width: 860px;
+      height: 100px;
+      // border:1px solid rgb(145, 145, 42);
+      border: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    // text part "where do you want visit --start"
+    #destination>h3 {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      color: white;
+      // transform: translate(-50%, -50%);
+      font-size: 47px;
+
+
+    }
+
+    #destination>p {
+      position: absolute;
+      top: 36%;
+      left: 28%;
+      color: white;
+      // transform: translate(-50%, -50%);
+      font-size: 20px;
+      text-align: center;
+
+    }
+
+    // text part "where do you want visit ----end"
+    .desFormClass>input {
+
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+    .desFormClass>input:hover {
+      cursor: pointer;
+      background-color: rgb(141, 135, 135);
+      color: black;
+    }
+
+    // video responsive is ENDED
+
+    //START responsive is ---For counting
+
+  }
+
+  // ==============================
+  //-------------------------------
+  // responsive from 1024px to 769px
+  @media all and (min-width:769px) and (max-width:1024px) {
+    #main164 {
+      width: 1024px;
+      // border: 2px solid rgb(238, 111, 111);
+      border: none;
+      box-sizing: border-box;
+    }
+
+    #destination {
+      width: 1024px;
+      height: 600px;
+
+      font-family: "Bodoni Moda", serif;
       font-optical-sizing: auto;
       font-weight: 700;
       font-style: normal;
-        // border: 2px solid rgb(52, 59, 34);
-        border:none;
-        box-sizing: border-box;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        position: relative;
-        // <uniquifier>: Use a uniquifier for the class name
-    
-    
-        #desId {
-          width: 100%;
-          height: 100%;
+      // border: 2px solid rgb(52, 59, 34);
+      border: none;
+      box-sizing: border-box;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      position: relative;
+      // <uniquifier>: Use a uniquifier for the class name
+
+
+      #desId {
+        width: 100%;
+        height: 100%;
         //   overflow: hidden;
         //   object-fit: cover;
-    
-          #videoDest{
-            width: 100%;
-            height:100%;
-            object-fit: cover;
-            max-width: 100%;
+
+        #videoDest {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          max-width: 100%;
           max-height: 100%;
-            transition: opacity 0.3s ease-in-out;
-          }
-          // #desId >  #videoDest:hover {
-          //   opacity: 0.7; /* Adjust as needed */
-          // }
-      
-          #desId > #videoDest.controls-hidden {
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-          }
-      
-          // #desId:hover >  #videoDest.controls-hidden {
-          //   opacity: 1;
-          // }
-    
-    
+          transition: opacity 0.3s ease-in-out;
         }
+
+        // #desId >  #videoDest:hover {
+        //   opacity: 0.7; /* Adjust as needed */
+        // }
+
+        #desId>#videoDest.controls-hidden {
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        // #desId:hover >  #videoDest.controls-hidden {
+        //   opacity: 1;
+        // }
+
+
       }
+    }
+
     // video end --------
     // FORM start 
-    #desIdform{
-        width:860px;
-        height:100px;
-        // border:1px solid rgb(95, 95, 44);
-        border:none;
-        position: absolute;
-        top: 50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        font-size:24px;
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    #desIdform {
+      width: 860px;
+      height: 100px;
+      // border:1px solid rgb(95, 95, 44);
+      border: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     // text part "where do you want visit --start"
-    #destination>h3{
-        position: absolute;
-        top: 25%;
-        left:25%;
-        color:white;
-        // transform: translate(-50%, -50%);
-        font-size:47px;
-        
-    
+    #destination>h3 {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      color: white;
+      // transform: translate(-50%, -50%);
+      font-size: 47px;
+
+
     }
-    #destination>p{
-        position: absolute;
-        top: 36%;
-        left:28%;
-        color:white;
-        // transform: translate(-50%, -50%);
-        font-size:20px;
-        text-align: center;
-    
+
+    #destination>p {
+      position: absolute;
+      top: 36%;
+      left: 28%;
+      color: white;
+      // transform: translate(-50%, -50%);
+      font-size: 20px;
+      text-align: center;
+
     }
+
     // text part "where do you want visit ----end"
-    .desFormClass>input{
-    
-      padding:10px 15px;
-      border-radius:10px;
+    .desFormClass>input {
+
+      padding: 10px 15px;
+      border-radius: 10px;
       // border:1px solid red;
-      border:none;
+      border: none;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+
     }
-    .desFormClass>input:hover{
+
+    .desFormClass>input:hover {
       cursor: pointer;
-      background-color:rgb(141, 135, 135);
-      color:black;
+      background-color: rgb(141, 135, 135);
+      color: black;
     }
-    #travel-select{
+
+    #travel-select {
       cursor: pointer;
-      padding:10px 15px;
+      padding: 10px 15px;
       width: 200px;
-      border-radius:10px;
-      border:none;
+      border-radius: 10px;
+      border: none;
     }
+
     // video responsive is ENDED
-    
+
     //START responsive is ---For counting
-    
+
+  }
+
+  // responsive 768px---481px
+  @media all and (min-width:481px) and (max-width:768px) {
+    #main164 {
+      width: 768px;
+      // border: 2px solid rgb(160, 74, 74);
+      border: none;
+      box-sizing: border-box;
     }
-    // responsive 768px---481px
-    @media all and (min-width:481px) and (max-width:768px) {
-      #main164 {
-        width: 768px;
-        // border: 2px solid rgb(160, 74, 74);
-        border:none;
-       box-sizing: border-box;
-      }
-      #destination{
-        width: 768px;
-        height: 600px;
-    
-        font-family: "Bodoni Moda", serif;
+
+    #destination {
+      width: 768px;
+      height: 600px;
+
+      font-family: "Bodoni Moda", serif;
       font-optical-sizing: auto;
       font-weight: 700;
       font-style: normal;
-        // border: 2px solid rgb(52, 59, 34);
-        border:none;
-        box-sizing: border-box;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        position: relative;
-    
-    
-        #desId {
-          width: 100%;
-          height: 100%;
+      // border: 2px solid rgb(52, 59, 34);
+      border: none;
+      box-sizing: border-box;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      position: relative;
+
+
+      #desId {
+        width: 100%;
+        height: 100%;
         //   overflow: hidden;
         //   object-fit: cover;
-    
-          #videoDest{
-            width: 100%;
-            height:100%;
-            object-fit: cover;
-            max-width: 100%;
+
+        #videoDest {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          max-width: 100%;
           max-height: 100%;
-            transition: opacity 0.3s ease-in-out;
-          }
-          // #desId >  #videoDest:hover {
-          //   opacity: 0.7; /* Adjust as needed */
-          // }
-      
-          #desId > #videoDest.controls-hidden {
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-          }
-      
-          // #desId:hover >  #videoDest.controls-hidden {
-          //   opacity: 1;
-          // }
-    
-    
+          transition: opacity 0.3s ease-in-out;
         }
+
+        // #desId >  #videoDest:hover {
+        //   opacity: 0.7; /* Adjust as needed */
+        // }
+
+        #desId>#videoDest.controls-hidden {
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        // #desId:hover >  #videoDest.controls-hidden {
+        //   opacity: 1;
+        // }
+
+
       }
+    }
+
     // video end --------
     // FORM start 
-    #desIdform{
-        width:600px;
-        height:150px;
-        // border:1px solid rgb(219, 219, 49);
-        border:none;
-        position: absolute;
-        top: 50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        font-size:24px;
-        text-align: center;
-        display: flex;
-        align-content: center;
-        gap:10px 10px;
-        justify-content:space-evenly;
-        align-items: center;
+    #desIdform {
+      width: 600px;
+      height: 150px;
+      // border:1px solid rgb(219, 219, 49);
+      border: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      text-align: center;
+      display: flex;
+      align-content: center;
+      gap: 10px 10px;
+      justify-content: space-evenly;
+      align-items: center;
     }
+
     // text part "where do you want visit --start"
-    #destination>h3{
-        position: absolute;
-        top: 20%;
-        left:18%;
-        color:white;
-        // transform: translate(-50%, -50%);
-        font-size:42px;
-        
-    
+    #destination>h3 {
+      position: absolute;
+      top: 20%;
+      left: 18%;
+      color: white;
+      // transform: translate(-50%, -50%);
+      font-size: 42px;
+
+
     }
-    #destination>p{
-        position: absolute;
-        top: 32%;
-        left:24%;
-        color:white;
-        // transform: translate(-50%, -50%);
-        font-size:18px;
-        text-align: center;
-    
+
+    #destination>p {
+      position: absolute;
+      top: 32%;
+      left: 24%;
+      color: white;
+      // transform: translate(-50%, -50%);
+      font-size: 18px;
+      text-align: center;
+
     }
+
     // text part "where do you want visit ----end"
-    .desFormClass>input{
-    
-     
-      border-radius:10px;
-      border:none;
+    .desFormClass>input {
+
+
+      border-radius: 10px;
+      border: none;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+
     }
-    .desFormClass>input[type="text"]{
-      padding:12px 30px;
-       width:350px;
-       height:14px;
+
+    .desFormClass>input[type="text"] {
+      padding: 12px 30px;
+      width: 350px;
+      height: 14px;
       font-size: 16px;
-     
+
     }
-    .desFormClass>input[type="date"]{
-      padding:12px 30px;
-       width:200px;
-       height:14px;
+
+    .desFormClass>input[type="date"] {
+      padding: 12px 30px;
+      width: 200px;
+      height: 14px;
       font-size: 16px;
-     
+
     }
-    #travel-select{
+
+    #travel-select {
       cursor: pointer;
-      padding:10px 15px;
+      padding: 10px 15px;
       width: 250px;
-      border-radius:10px;
-      border:none;
+      border-radius: 10px;
+      border: none;
     }
-    .desFormClass>input[type="submit"]{
-      padding:12px 25px;
+
+    .desFormClass>input[type="submit"] {
+      padding: 12px 25px;
       font-size: 16px;
     }
-    .desFormClass>input:hover{
+
+    .desFormClass>input:hover {
       cursor: pointer;
-      background-color:rgb(141, 135, 135);
-      color:black;
+      background-color: rgb(141, 135, 135);
+      color: black;
     }
+
     // video responsive is ENDED
-    
+
     //START responsive is ---For counting
-    
+
+  }
+
+  // ---------------
+  //--------------------------------
+  //responsive in 480px to 320px
+  @media all and (min-width:320px) and (max-width:480px) {
+    #main164 {
+      width: 480px;
+      // border: 2px solid rgb(160, 74, 74);
+      border: none;
+      box-sizing: border-box;
     }
-    // ---------------
-    //--------------------------------
-    //responsive in 480px to 320px
-    @media all and (min-width:320px) and (max-width:480px) {
-      #main164 {
-        width: 480px;
-        // border: 2px solid rgb(160, 74, 74);
-        border:none;
-       box-sizing: border-box;
-      }
-      #destination{
-        width: 480px;
-        height: 600px;
-    
-        font-family: "Bodoni Moda", serif;
+
+    #destination {
+      width: 480px;
+      height: 600px;
+
+      font-family: "Bodoni Moda", serif;
       font-optical-sizing: auto;
       font-weight: 700;
       font-style: normal;
-        // border: 2px solid rgb(52, 59, 34);
-        border:none;
-        box-sizing: border-box;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        position: relative;
-        // <uniquifier>: Use a uniquifier for the class name
-    
-    
-        #desId {
-          width: 100%;
-          height: 100%;
+      // border: 2px solid rgb(52, 59, 34);
+      border: none;
+      box-sizing: border-box;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      position: relative;
+      // <uniquifier>: Use a uniquifier for the class name
+
+
+      #desId {
+        width: 100%;
+        height: 100%;
         //   overflow: hidden;
         //   object-fit: cover;
-    
-          #videoDest{
-            width: 100%;
-            height:100%;
-            object-fit: cover;
-            max-width: 100%;
+
+        #videoDest {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          max-width: 100%;
           max-height: 100%;
-            transition: opacity 0.3s ease-in-out;
-          }
-          #desId > #videoDest.controls-hidden {
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-          }
+          transition: opacity 0.3s ease-in-out;
+        }
+
+        #desId>#videoDest.controls-hidden {
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
         }
       }
+    }
+
     // video end --------
     // FORM start 
-    #desIdform{
-        width:480px;
-        height:250px;
-        // border:1px solid rgb(219, 219, 49);
-        border:none;
-        position: absolute;
-        top: 55%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        font-size:24px;
-        text-align: center;
-        display: flex;
-        align-content: center;
-        gap:10px 10px;
-        justify-content:space-evenly;
-        align-items: center;
+    #desIdform {
+      width: 480px;
+      height: 250px;
+      // border:1px solid rgb(219, 219, 49);
+      border: none;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      text-align: center;
+      display: flex;
+      align-content: center;
+      gap: 10px 10px;
+      justify-content: space-evenly;
+      align-items: center;
     }
+
     // text part "where do you want visit --start"
-    #destination>h3{
-        position: absolute;
-        top: 25%;
-        left:12%;
-        color:white;
-        font-size:30px;
-        
-    
+    #destination>h3 {
+      position: absolute;
+      top: 25%;
+      left: 12%;
+      color: white;
+      font-size: 30px;
+
+
     }
-    #destination>p{
-        position: absolute;
-        top: 32%;
-        left:15%;
-        color:rgb(241, 239, 239);
-        // transform: translate(-50%, -50%);
-        font-size:15px;
-        text-align: center;
-    
+
+    #destination>p {
+      position: absolute;
+      top: 32%;
+      left: 15%;
+      color: rgb(241, 239, 239);
+      // transform: translate(-50%, -50%);
+      font-size: 15px;
+      text-align: center;
+
     }
+
     // text part "where do you want visit ----end"
-    .desFormClass>input,label{
-    
-     
-      border-radius:10px;
-      border:none;
+    .desFormClass>input,
+    label {
+
+
+      border-radius: 10px;
+      border: none;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+
     }
-    .desFormClass>input[type="text"]{
-      padding:12px 30px;
-       width:350px;
-       height:14px;
+
+    .desFormClass>input[type="text"] {
+      padding: 12px 30px;
+      width: 350px;
+      height: 14px;
       font-size: 16px;
-     
+
     }
-    .desFormClass>input[type="date"]{
-      padding:12px 30px;
-       width:350px;
-       height:14px;
+
+    .desFormClass>input[type="date"] {
+      padding: 12px 30px;
+      width: 350px;
+      height: 14px;
       font-size: 16px;
-     
+
     }
-    #travel-select{
+
+    #travel-select {
       cursor: pointer;
-      padding:11px 15px;
+      padding: 11px 15px;
       width: 405px;
-      border-radius:10px;
-      border:none;
+      border-radius: 10px;
+      border: none;
     }
-    
-    .desFormClass>input[type="submit"]{
-      padding:12px 25px;
+
+    .desFormClass>input[type="submit"] {
+      padding: 12px 25px;
       font-size: 16px;
     }
-    .desFormClass>input:hover{
+
+    .desFormClass>input:hover {
       cursor: pointer;
-      background-color:rgb(141, 135, 135);
-      color:black;
+      background-color: rgb(141, 135, 135);
+      color: black;
     }
+
     // video responsive is ENDED
-    
-    
-    }
 
 
-    // yash ---END Code
-    .card-container{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap:10px;
-        background-color: yellow;
+  }
+  // yash ---END Code
+  // Card SCSS
+  #card-container {
+    .card-list{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      .card{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+        background-color: white;
+        font-size: 20px;
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+        gap: 4%;
+        text-align: center;
+        margin-top: 70px;
+        img{
+          width:100%;
+          padding: 0;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+        .name{
+          font-size: 15px;
+          text-align: center;
+        }
+        .description{
+          text-align: justify;
+          padding: 20px;
+        }
+        .price_rating{
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
+          margin: 10px auto;
+        }
+        .bookbtn{
+          padding: 10px 20px;
+          margin-bottom: 20px;
+        }
+      }
     }
+  }
+
+
+
 }

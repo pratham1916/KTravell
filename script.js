@@ -111,6 +111,75 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //------------------- fetch And Append data --------------
 
+const travelUrl = `https://korea-api.onrender.com/destination`;
+const cardContainer = document.getElementById("card-container")
+let destinations = [];
+
+function createCard(item){
+  const card = document.createElement('div');
+  card.className= 'card';
+
+  let img = document.createElement('img')
+  img.className = "cardImage"
+  img.src = item.image;
+  img.alt =  item.name;
+
+  const h2 = document.createElement("h2")
+  h2.className = "name";
+  h2.innerText = `${item.name},${item.location}`;
+
+  const p = document.createElement("p");
+  p.className = "description"
+  p.innerText = item.description;
+
+  const price_rating = document.createElement("div");
+  price_rating.className ="price_rating";
+
+  const price = document.createElement("p");
+  price.className = "price";
+  price.innerText = item.price;
+
+  const rating = document.createElement("p");
+  rating.className ="rating";
+  rating.innerText = item.rating;
+
+  const bookBtn = document.createElement("button");
+  bookBtn.dataset.id = item.id;
+  bookBtn.innerHTML="Book Now";
+  bookBtn.className= "bookbtn";
+
+  price_rating.append(price,rating);
+  card.append(img,h2,p,price_rating,bookBtn);
+
+  return card;
+}
+
+async function fetchData(url){
+  try {
+    const res = await fetch (url);
+    const data = await res.json();
+    destinations = data;
+    appendData(destinations);
+
+  } 
+  catch (error) {
+    console.log(error);
+  }
+}
+fetchData(travelUrl);
+
+function appendData(data) {
+  let cardList = document.createElement("div");
+  cardList.className = "card-list";
+
+  data.forEach((item) => {
+    cardList.appendChild(createCard(item));
+  });
+
+  cardContainer.textContent = "";
+  cardContainer.append(cardList);
+}
+
 // counting ---Yash 
 
 // js for the video section -----------

@@ -692,6 +692,10 @@ nav #hamburger {
     margin-left: 25px;
   }
 }
+#exploreSection {
+  width: 90%;
+  margin: auto;
+}
 #exploreSection #main164 {
   width: 100%;
   border: none;
@@ -1098,7 +1102,8 @@ nav #hamburger {
     font-size: 15px;
     text-align: center;
   }
-  #exploreSection .desFormClass > input, #exploreSection label {
+  #exploreSection .desFormClass > input,
+  #exploreSection label {
     border-radius: 10px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -1132,11 +1137,46 @@ nav #hamburger {
     color: black;
   }
 }
-#exploreSection .card-container {
+#exploreSection #card-container .card-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  background-color: yellow;
+}
+#exploreSection #card-container .card-list .card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: white;
+  font-size: 20px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  gap: 4%;
+  text-align: center;
+  margin-top: 70px;
+}
+#exploreSection #card-container .card-list .card img {
+  width: 100%;
+  padding: 0;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#exploreSection #card-container .card-list .card .name {
+  font-size: 15px;
+  text-align: center;
+}
+#exploreSection #card-container .card-list .card .description {
+  text-align: justify;
+  padding: 20px;
+}
+#exploreSection #card-container .card-list .card .price_rating {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto;
+}
+#exploreSection #card-container .card-list .card .bookbtn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
 }
 
 /* Sign-up Modal */
