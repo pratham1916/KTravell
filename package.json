@@ -7,6 +7,7 @@
     "chalk": "^4.1.2",
     "ipaddr.js": "^1.9.1",
     "json-server": "^0.17.4",
+    "jsonwebtoken": "^9.0.2",
     "lowdb": "^1.0.0",
     "mime": "^1.6.0",
     "negotiator": "^0.6.3",
