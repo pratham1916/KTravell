@@ -10,79 +10,83 @@ server.use(jsonServer.bodyParser);
 server.use(middlewares);
 
 server.post("/login", (req, res) => {
-    const { username, password } = req.body;
-    const users = require('./db.json').users;
-    const user = users.find((u) => u.username === username);
+  const { username, password } = req.body;
+  const users = require("./db.json").users;
+  const user = users.find((u) => u.username === username);
 
-    if (!user) {
-        return res.status(401).json({ status: "error", message: "User not found" });
-    }
+  if (!user) {
+    return res.status(401).json({ status: "error", message: "User not found" });
+  }
 
-    if (user.password !== password) {
-        return res.status(401).json({ status: "error", message: 'Incorrect Password' });
-    }
+  if (user.password !== password) {
+    return res
+      .status(401)
+      .json({ status: "error", message: "Incorrect Password" });
+  }
 
-    const token = jwt.sign({ username }, SecretKey, { expiresIn: "2h" });
+  const token = jwt.sign({ username }, SecretKey, { expiresIn: "2h" });
 
-    return res.json({ user, token ,status: "Success",message:"Login Successfull"});
+  return res.json({
+    user,
+    token,
+    status: "Success",
+    message: "Login Successfull",
+  });
 });
 
 // Middleware for token verification
 server.use((req, res, next) => {
-    console.log(req.path,"Pratham");
-    if (req.headers.authorization && req.headers.authorization.startsWith("Bearer ")) {
-        const token = req.headers.authorization.split(" ")[1];
-        try {
-            const decode = jwt.verify(token, SecretKey);
-            req.user = decode;
-            next();
-        } catch (error) {
-            return res.status(401).json({ message: 'Token is invalid' });
-        }
-    } 
-    else {
-        if (req.path.includes("/users") || req.path.includes("/destination")) {
-            return next();
-        }
-        return res.status(401).json({ message: 'Unauthorized' });
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith("Bearer ")
+  ) {
+    const token = req.headers.authorization.split(" ")[1];
+    try {
+      const decode = jwt.verify(token, SecretKey);
+      req.user = decode;
+      next();
+    } catch (error) {
+      return res.status(401).json({ message: "Token is invalid" });
     }
+  } else {
+    if (req.path.includes("/users") || req.path.includes("/destination")) {
+      return next();
+    }
+    return res.status(401).json({ message: "Unauthorized" });
+  }
 });
-
-// Login route with token verification middleware
-
 
 // Middleware for protecting only the booking POST route
 server.post("/booking", (req, res, next) => {
-    if (req.user && req.user.username) {
-        // User is authenticated, allow access to the booking POST route
-        next();
-    } else {
-        return res.status(401).json({ message: 'Unauthorized' });
-    }
+  if (req.user && req.user.username) {
+    // User is authenticated, allow access to the booking POST route
+    next();
+  } else {
+    return res.status(401).json({ message: "Unauthorized" });
+  }
 });
 
 server.post("/users", async (req, res, next) => {
-    const { username } = req.body;
-  
-    const users = await fetch(`${"https://korea-api.onrender.com"}/users`).then(
-      (response) => {
-        return response.data;
-      }
-    );
-  
-    const usernameExists = users.some((user) => user.username === username);
-  
-    if (usernameExists) {
-      return res
-        .status(400)
-        .json({ status: "error", message: "Username already exists" });
-    }
-  
-    next();
+  const { username } = req.body;
+  const api = "https://korea-api.onrender.com";
+
+  const users = await fetch(`${api}/users`).then((response) => {
+    return response;
   });
+
+  const usernameExists = users.some((user) => user.username === username);
+
+  if (usernameExists) {
+    return res
+      .status(400)
+      .json({ status: "error", message: "Username already exists" });
+  }
+
+  next();
+});
 
 server.use(router);
 
 server.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
