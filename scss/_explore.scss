@@ -64,8 +64,6 @@ $primary-color: #97bbe3;
       .desFormClass {
         flex: 1;
         margin-right: 10px;
-        
-      
         select {
           width: 100%;
           padding: 10px 15px;
@@ -120,7 +118,6 @@ $primary-color: #97bbe3;
   @media all and (min-width: 1025px) and (max-width: 1200px) {
     #main164 {
       width: 100%;
-      // border: 2px solid rgb(65, 4, 4);
       border: none;
       box-sizing: border-box;
     }
