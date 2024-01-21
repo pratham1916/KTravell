@@ -1,3 +1,109 @@
+// constant variables
+const travelUrl = "https://korea-api-cusb.onrender.com";
+
+let token = JSON.parse(localStorage.getItem("token")) || null;
+let isLogin = token !== null ? true : false;
+let isAdmin = token && token?.user?.type === "admin" ? true : false;
+
+// admin view
+let adminMenuView = document.getElementById("adminView");
+
+if (isAdmin) {
+  adminMenuView.style.display = "block";
+} else {
+  adminMenuView.style.display = "none";
+}
+
+// signup signin and logout
+let signUptbn = document.getElementById("signUp");
+let signIn_LogOutbtn = document.getElementById("signIn");
+
+if (isLogin) {
+  signUptbn.style.visibility = "hidden";
+  signIn_LogOutbtn.innerText = "Logout";
+} else {
+  signUptbn.style.visibility = "visible";
+  signIn_LogOutbtn.innerText = "Sign In";
+}
+
+// login
+const loginBtn = document.getElementById("loginbtn");
+
+loginBtn.addEventListener("click", async (e) => {
+  e.preventDefault();
+  let loginUsername = document.getElementById("loginUsername");
+  let loginPassword = document.getElementById("LoginPassword");
+  let username = loginUsername.value;
+  let password = loginPassword.value;
+
+  let data = { username, password };
+  let url = `${travelUrl}/login`;
+
+  try {
+    let res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .catch((err) => {
+        return err;
+      });
+
+    if (res.status === "Success") {
+      localStorage.setItem("token", JSON.stringify(res));
+
+      window.location.href = "/";
+    } else {
+      window.alert(res.message);
+    }
+  } catch (error) {
+    window.alert("something went wrong");
+  }
+});
+
+//signup
+const signupBtn = document.getElementById("signupbtn");
+
+signupBtn.addEventListener("click", async (e) => {
+  e.preventDefault();
+  let s_fullname = document.getElementById("fullName");
+  let s_username = document.getElementById("email");
+  let s_password = document.getElementById("password");
+
+  let fullName = s_fullname.value;
+  let username = s_username.value;
+  let password = s_password.value;
+
+  let data = { fullName, username, password, type: "user" };
+  let url = `${travelUrl}/users`;
+
+  try {
+    let res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type":"application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .catch((err) => {
+        return err;
+      });
+
+    window.alert(`${fullName} Succesfully Registered`);
+  } catch (error) {
+    window.alert("something went wrong");
+  }
+});
+
+// section change
 function showSection(sectionId) {
   const sections = document.querySelectorAll("section");
   sections.forEach((section) => section.classList.remove("active"));
@@ -24,6 +130,66 @@ document.getElementById("bookingbtn").addEventListener("click", function () {
 
 document.getElementById("contactbtn").addEventListener("click", function () {
   showSection("homeSection");
+});
+
+document.getElementById("adminView").addEventListener("click", function () {
+  showSection("adminSection");
+});
+
+//signup signin modal
+document.addEventListener("DOMContentLoaded", function () {
+  const openSignUpModalBtn = document.getElementById("signUp");
+  const closeSignUpModalBtn = document.getElementById("closeModalBtnSignUp");
+  const signUpModal = document.getElementById("signUpModal");
+
+  const openSignInModalBtn = document.getElementById("signIn");
+  const closeSignInModalBtn = document.getElementById("closeModalBtnSignIn");
+  const signInModal = document.getElementById("signInModal");
+
+  function openModal(modal) {
+    modal.style.display = "block";
+  }
+
+  function closeModal(modal) {
+    modal.style.display = "none";
+  }
+
+  openSignUpModalBtn.addEventListener("click", function () {
+    closeModal(signInModal);
+    openModal(signUpModal);
+  });
+
+  closeSignUpModalBtn.addEventListener("click", function () {
+    closeModal(signUpModal);
+  });
+
+  openSignInModalBtn.addEventListener("click", function () {
+    if (isLogin) {
+      let userConfirmed = window.confirm("Do you want to Log Out?");
+      if (userConfirmed) {
+        localStorage.removeItem("token");
+        window.location.href = "/";
+      } else {
+        console.log("no");
+      }
+    } else {
+      closeModal(signUpModal);
+      openModal(signInModal);
+    }
+  });
+
+  closeSignInModalBtn.addEventListener("click", function () {
+    closeModal(signInModal);
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target == signUpModal) {
+      closeModal(signUpModal);
+    }
+    if (event.target == signInModal) {
+      closeModal(signInModal);
+    }
+  });
 });
 
 // --------------------- Slider ------------------
@@ -67,53 +233,22 @@ setInterval(() => {
   index++;
 }, 1500);
 
-// ---------------------- Modal -------------------------
-document.addEventListener("DOMContentLoaded", function () {
-  const openSignUpModalBtn = document.getElementById("signUp");
-  const closeSignUpModalBtn = document.getElementById("closeModalBtnSignUp");
-  const signUpModal = document.getElementById("signUpModal");
+// Rating into Stars
 
-  const openSignInModalBtn = document.getElementById("signIn");
-  const closeSignInModalBtn = document.getElementById("closeModalBtnSignIn");
-  const signInModal = document.getElementById("signInModal");
+function convertToStars(numRating) {
+  const maxStars = 5; 
+  const fullStars = Math.ceil(numRating);
+  const remainder = numRating - fullStars;
+  let starString = "★".repeat(fullStars);
 
-  function openModal(modal) {
-    modal.style.display = "block";
-  }
-
-  function closeModal(modal) {
-    modal.style.display = "none";
-  }
-
-  openSignUpModalBtn.addEventListener("click", function () {
-    openModal(signUpModal);
-  });
-
-  closeSignUpModalBtn.addEventListener("click", function () {
-    closeModal(signUpModal);
-  });
-
-  openSignInModalBtn.addEventListener("click", function () {
-    openModal(signInModal);
-  });
-
-  closeSignInModalBtn.addEventListener("click", function () {
-    closeModal(signInModal);
-  });
-
-  window.addEventListener("click", function (event) {
-    if (event.target == signUpModal) {
-      closeModal(signUpModal);
-    }
-    if (event.target == signInModal) {
-      closeModal(signInModal);
-    }
-  });
-});
+  starString += "☆".repeat(maxStars - fullStars);
+  return starString;
+}
 
 //------------------- fetch And Append data --------------
 
 const travelUrl = `https://korea-api-cusb.onrender.com/destination`;
+
 const cardContainer = document.getElementById("card-container");
 let destinations = [];
 
@@ -143,7 +278,9 @@ function createCard(item) {
 
   const rating = document.createElement("p");
   rating.className = "rating";
-  rating.innerText = item.rating;
+  rating.style.color = "gold"
+  rating.style.fontSize = "25px"
+  rating.innerText = convertToStars(item.rating);
 
   const bookBtn = document.createElement("button");
   bookBtn.dataset.id = item.id;
@@ -175,6 +312,7 @@ async function fetchData(url,page,limit) {
     console.log(error);
   }
 }
+
 let page=1;
 let limit=12;
 fetchData(travelUrl,1,12);
@@ -183,6 +321,9 @@ let seeMoreBtn = document.getElementById("seeMoreCardBtn");
 seeMoreBtn.addEventListener('click', () => {
   fetchData(travelUrl,page++,limit );
 });
+
+fetchData(`${travelUrl}/destination`);
+
 
 function appendData(data) {
   let cardList = document.createElement("div");
@@ -193,6 +334,7 @@ function appendData(data) {
   });
   cardContainer.append(cardList);
 }
+
 
 // to show booking page data 
 let bookingUserPyamentCont=document.getElementById("container")
@@ -314,6 +456,7 @@ function toggleAnswer(questionId) {
 function onclickMenu() {
   document.getElementById("menu").classList.toggle("icon");
   document.getElementById("nav").classList.toggle("change");
+
 }
 
 
@@ -335,3 +478,4 @@ paymentBtn.addEventListener("click",(e)=>{
     e.preventDefault();
     alert("Payment done Successfully");
 })
+
