@@ -61,17 +61,25 @@ server.post("/booking", (req, res, next) => {
     }
 });
 
-server.post("/users", (req, res, next) => {
-    const users = require('./db.json').users;
+server.post("/users", async (req, res, next) => {
     const { username } = req.body;
-
-    if (users.some((user) => user.username === username)) {
-        return res.status(400).json({ status: "error", message: 'Username already exists' });
+  
+    const users = await fetch(`${"https://korea-api.onrender.com"}/users`).then(
+      (response) => {
+        return response.data;
+      }
+    );
+  
+    const usernameExists = users.some((user) => user.username === username);
+  
+    if (usernameExists) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Username already exists" });
     }
-
-    // If the username is unique, proceed to create the new user
+  
     next();
-});
+  });
 
 server.use(router);
 
