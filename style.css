@@ -1295,6 +1295,106 @@ nav .change {
 #exploreSection #card-container .card-list .card:hover {
   transform: translateY(5px);
 }
+#exploreSection #seeMoreCardBtn {
+  background-color: rgb(14, 110, 188);
+  padding: 15px 40px;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: 600;
+  margin-left: 550px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  margin: 20px;
+}
+#container #itemContainingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+#container #itemContainingDiv #form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin-bottom: 10px; /* Add margin between forms */
+  padding: 30px;
+}
+#container #itemContainingDiv #form #label {
+  margin-bottom: 8px;
+  font-size: small;
+}
+#container #itemContainingDiv #form input {
+  width: 93%;
+  border: 1px solid;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+#container #itemContainingDiv #form #subBtn {
+  background-color: #1b80d3;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+#container #itemContainingDiv #form #subBtn:hover {
+  background-color: #45a049;
+}
+#container #itemContainingDiv .payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#container #itemContainingDiv .payment-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+#container #itemContainingDiv .payment-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+#container #itemContainingDiv .payment-form .payment-input {
+  width: 100%;
+  border: 1px solid;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+#container #itemContainingDiv .payment-form .payment-submit {
+  background-color: #1b80d3;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+#container #itemContainingDiv .payment-form .payment-submit:hover {
+  background-color: #45a049;
+}
 
 /* Sign-up Modal */
 #signUpModal {
@@ -1541,29 +1641,39 @@ nav .change {
   }
 }
 
+#contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
 #contactSection .map {
   margin: 50px 0 20px;
+  height: 200px;
 }
 #contactSection .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
+  height: 500px;
 }
 #contactSection .contact-container .contact-info {
   padding: 30px;
-  width: 500px;
+  width: 400px;
+  height: 350px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
+  margin-bottom: 50px;
+  margin-left: 30px;
 }
 #contactSection .contact-container .contact-info h1 {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 20px;
-  margin-top: 0;
+  margin-top: 20px;
 }
 #contactSection .contact-container .contact-info p {
   font-size: 16px;
@@ -1609,11 +1719,11 @@ nav .change {
 }
 #contactSection .contact-container .contact_form .input-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 #contactSection .contact-container .contact_form .input-box input {
-  width: 100%;
+  width: 80%;
   padding: 20px;
   font-size: 15px;
   height: 20px;
@@ -1632,10 +1742,10 @@ nav .change {
 }
 #contactSection .contact-container .contact_form .input-box .fullname,
 #contactSection .contact-container .contact_form .input-box .mobileNo {
-  width: 49%;
+  width: 35%;
 }
 #contactSection .contact-container .contact_form textarea {
-  width: 100%;
+  width: 80%;
   padding: 20px;
   font-size: 15px;
   border-radius: 10px;
@@ -1644,6 +1754,7 @@ nav .change {
   color: #000000;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
+  margin-bottom: 30px;
 }
 #contactSection .contact-container .contact_form textarea::-moz-placeholder {
   color: #000000;
@@ -1654,7 +1765,8 @@ nav .change {
 #contactSection .contact-container .contact_form .btn {
   cursor: pointer;
   border: 1px solid #97bbe3;
-  width: 20%;
+  padding: 20px 50px;
+  text-align: center;
 }
 #contactSection .contact-container .contact_form .btn:hover {
   background-color: white;
@@ -1662,6 +1774,92 @@ nav .change {
   border: 1px solid #97bbe3;
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #contactSection .contact-container .contact-info {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+  }
+}
+@media all and (min-width: 486px) and (max-width: 767px) {
+  #contactSection {
+    flex-direction: column;
+  }
+  #contactSection .contact-container {
+    height: 850px;
+    flex-direction: column;
+  }
+  #contactSection .contact-container .contact-info {
+    width: 96%;
+    margin: auto;
+    height: 330px;
+  }
+  #contactSection .contact-container .contact_form {
+    width: 98%;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 487px) {
+  #contactSection {
+    flex-direction: column;
+  }
+  #contactSection .contact-container {
+    height: 850px;
+    width: 300px;
+    flex-direction: column;
+  }
+  #contactSection .contact-container .contact-info {
+    width: 95%;
+    margin: auto;
+    height: 330px;
+    padding: 15px;
+  }
+  #contactSection .contact-container .contact-info ul li {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #contactSection .contact-container .contact-info ul li i {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  #contactSection .contact-container .contact-info ul li span {
+    font-size: smaller;
+  }
+  #contactSection .contact-container .contact_form {
+    width: 98%;
+  }
+}
+@media all and (max-width: 319px) {
+  #contactSection {
+    flex-direction: column;
+  }
+  #contactSection .contact-container {
+    height: 850px;
+    width: 300px;
+    flex-direction: column;
+  }
+  #contactSection .contact-container .contact-info {
+    width: 95%;
+    margin: auto;
+    height: 330px;
+    padding: 15px;
+  }
+  #contactSection .contact-container .contact-info ul li {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #contactSection .contact-container .contact-info ul li i {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  #contactSection .contact-container .contact-info ul li span {
+    font-size: smaller;
+  }
+  #contactSection .contact-container .contact_form {
+    width: 98%;
+  }
+}
 * {
   background: none;
   list-style-type: none;

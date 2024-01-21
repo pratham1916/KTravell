@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    // background-color: #3b98c4;
+    margin: 0;
+    padding: 0;
+    // display: flex;
+  }
+  
+  #container {
+    margin: 20px;
+    // display: none;
+    #itemContainingDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      #form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        margin-bottom: 10px; /* Add margin between forms */
+        padding: 30px;
+        #label {
+          // display: block;
+          margin-bottom: 8px;
+          font-size: small;
+        }
+  
+        input {
+          width: 93%;
+          border: 1px solid;
+          padding: 8px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+          border-radius: 4px;
+        }
+  
+        #subBtn {
+          background-color: #1b80d3;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+          margin-top: 10px;
+  
+          &:hover {
+            background-color: #45a049;
+          }
+        }
+      }
+  
+      .payment-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .payment-form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+  
+        label {
+          display: block;
+          margin-bottom: 8px;
+        }
+  
+        .payment-input {
+          width: 100%;
+          border: 1px solid;
+          padding: 8px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+          border-radius: 4px;
+        }
+  
+        .payment-submit {
+          background-color: #1b80d3;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+          margin-top: 10px;
+  
+          &:hover {
+            background-color: #45a049;
+          }
+        }
+      }
+    }
+  }
+  

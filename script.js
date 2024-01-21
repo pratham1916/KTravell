@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //------------------- fetch And Append data --------------
 
-const travelUrl = `https://korea-api.onrender.com/destination`;
+const travelUrl = `https://korea-api-cusb.onrender.com/destination`;
 const cardContainer = document.getElementById("card-container");
 let destinations = [];
 
@@ -149,6 +149,15 @@ function createCard(item) {
   bookBtn.dataset.id = item.id;
   bookBtn.innerHTML = "Book Now";
   bookBtn.className = "bookbtn";
+  bookBtn.addEventListener('click',(item)=>{
+    console.log(item);
+    // let data = JSON.parse(localStorage.getItem('booking')) || [];
+    // data.push(item);
+    
+    localStorage.setItem("booking", item);
+    ShowBooking();
+    window.location.href = "https://korea-api-cusb.onrender.com/booking";
+})
 
   price_rating.append(price, rating);
   card.append(img, h2, p, price_rating, bookBtn);
@@ -156,9 +165,9 @@ function createCard(item) {
   return card;
 }
 
-async function fetchData(url) {
+async function fetchData(url,page,limit) {
   try {
-    const res = await fetch(url);
+    const res = await fetch(`${url}?_page=${page}&_limit=${limit}`);
     const data = await res.json();
     destinations = data;
     appendData(destinations);
@@ -166,7 +175,14 @@ async function fetchData(url) {
     console.log(error);
   }
 }
-fetchData(travelUrl);
+let page=1;
+let limit=12;
+fetchData(travelUrl,1,12);
+
+let seeMoreBtn = document.getElementById("seeMoreCardBtn");
+seeMoreBtn.addEventListener('click', () => {
+  fetchData(travelUrl,page++,limit );
+});
 
 function appendData(data) {
   let cardList = document.createElement("div");
@@ -175,11 +191,64 @@ function appendData(data) {
   data.forEach((item) => {
     cardList.appendChild(createCard(item));
   });
-
-  cardContainer.textContent = "";
   cardContainer.append(cardList);
 }
 
+// to show booking page data 
+let bookingUserPyamentCont=document.getElementById("container")
+function ShowBooking(){
+  // let data=JSON.parse(localStorage.getItem('booking'))
+  let item=localStorage.getItem('booking')
+  let booking_container=document.getElementById("booking-container")
+  booking_container.innerText="" 
+    const card = document.createElement("div");
+    card.className = "card";
+  
+    let img = document.createElement("img");
+    img.className = "cardImage";
+    img.src = item.image;
+    img.alt = item.name;
+  
+    const h2 = document.createElement("h2");
+    h2.className = "name";
+    h2.innerText = `${item.name},${item.location}`;
+  
+    const p = document.createElement("p");
+    p.className = "description";
+    p.innerText = item.description;
+  
+    const price_rating = document.createElement("div");
+    price_rating.className = "price_rating";
+  
+    const price = document.createElement("p");
+    price.className = "price";
+    price.innerText = item.price;
+  
+    const rating = document.createElement("p");
+    rating.className = "rating";
+    rating.innerText = item.rating;
+    price_rating.append(price, rating);
+    const bookBtn = document.createElement("button");
+    bookBtn.dataset.id = item.id;
+    bookBtn.innerHTML = "confirm booking";
+    bookBtn.className = "bookbtn";
+    bookBtn.addEventListener('click',(item)=>{
+      console.log(item);
+      bookingUserPyamentCont.style.display="block";
+            
+  })
+    card.append(img, h2, p, price_rating,btn);
+    booking_container.append(card);
+}
+// to show booking page data end here
+
+
+// seemore  button
+
+
+
+
+// }
 // counting ---Yash
 
 // js for the video section -----------
@@ -246,3 +315,23 @@ function onclickMenu() {
   document.getElementById("menu").classList.toggle("icon");
   document.getElementById("nav").classList.toggle("change");
 }
+
+
+// booking logic 
+subBtn
+
+
+const subBtn=document.getElementById("subBtn");
+
+subBtn.addEventListener("click",(e)=>{
+    e.preventDefault();
+    alert("User added info Successfully");
+})
+
+
+const paymentBtn=document.getElementById("submitPayment");
+
+paymentBtn.addEventListener("click",(e)=>{
+    e.preventDefault();
+    alert("Payment done Successfully");
+})

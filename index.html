@@ -340,10 +340,73 @@
     </div>
     <!-- Yash to Paste His code for video & form -- end-->
     <div id="card-container"></div>
+    <button id="seeMoreCardBtn">See More</button>
+   
   </section>
 
   <section id="bookingSection">
     <h2>Booking</h2>
+    <div id="card">
+
+    </div>
+<div id="container">
+  <div id="itemContainingDiv">
+<div id="userContainer">
+  <form id="form" >
+    <h2>User Form</h2>
+    <label id="label" for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="5" cols="35px" required></textarea>
+
+    <button type="submit" id="subBtn">Submit</button>
+  </form>
+</div>
+  <div class="payment-container">
+    <form class="payment-form">
+      <h2 class="billing-title">Payment Form</h2>
+
+      <label for="cardHolder">Name<span style="color: red;">*</span></label>
+      <input type="text" id="cardHolder" class="payment-input" placeholder="Enter cardholder name" required>
+
+      <label for="cardNumber">Card Number<span style="color: red;">*</span></label>
+      <input type="number" id="cardNumber" class="payment-input" placeholder="Enter your card number" required>
+
+      <label for="expiryDate">Expiry Date<span style="color: red;">*</span></label>
+      <input type="text" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" placeholder="MM/YYYY" id="expiryDate"
+        class="payment-input" required>
+
+
+      <label for="paymentMethod">Payment Method</label>
+      <select id="paymentMethod" class="payment-input">
+        <option value="card">Select</option>
+        <option value="card">Credit Card</option>
+        <option value="card">Debit Card</option>
+        <option value="card">UPI</option>
+      </select>
+
+      <label for="amounttobePaid">Amount</label>
+      <input type="number" id="amounttobePaid" class="payment-input" placeholder="Enter amout to be paid" required>
+
+
+      <button type="button" id="submitPayment" class="payment-submit">Submit</button>
+    </form>
+  </div>
+</div>
+</div>
+    <!-- <div id="booking-container"> -->
+    <!-- </div> -->
+    
   </section>
 
   <!-- Yawer To Add Footer Here -->
