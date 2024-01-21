@@ -1,5 +1,5 @@
 // constant variables
-const travelUrl = "https://korea-api.onrender.com";
+const travelUrl = "https://korea-api-cusb.onrender.com";
 let token = JSON.parse(localStorage.getItem("token")) || null;
 let isLogin = token !== null ? true : false;
 let isAdmin = token && token?.user?.type === "admin" ? true : false;
@@ -85,7 +85,7 @@ signupBtn.addEventListener("click", async (e) => {
     let res = await fetch(url, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type":"application/json",
       },
       body: JSON.stringify(data),
     })
@@ -129,6 +129,10 @@ document.getElementById("bookingbtn").addEventListener("click", function () {
 
 document.getElementById("contactbtn").addEventListener("click", function () {
   showSection("homeSection");
+});
+
+document.getElementById("adminView").addEventListener("click", function () {
+  showSection("adminSection");
 });
 
 //signup signin modal

@@ -1,17 +1,17 @@
 {
   "name": "java-jadugar-3456",
   "version": "1.0.0",
-  "description": "Travell Api",
+  "description": "Travel Api",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Pratham Nemade",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.0",
     "jsonwebtoken": "^9.0.2"
-  },
-  "keywords": []
+  }
 }
