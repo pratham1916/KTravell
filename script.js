@@ -356,20 +356,6 @@ function appendData(data) {
   
   cardContainer.append(cardList);
 }
-
-// js for the video section -----------
-// var video = document.querySelector("#desId > video");
-
-// video.addEventListener("mouseover", function () {
-//   video.play();
-//   video.classList.remove("controls-hidden");
-// });
-
-// video.addEventListener("mouseout", function () {
-//   video.pause();
-//   video.classList.add("controls-hidden");
-// });
-
 var video = document.querySelector("#desId > video");
 
     video.addEventListener("mouseenter", function () {
@@ -378,7 +364,7 @@ var video = document.querySelector("#desId > video");
     });
 
     video.addEventListener("mouseleave", function () {
-        // Pause the video after a delay (e.g., 1000 milliseconds or 1 second)
+
         setTimeout(function () {
             video.pause();
             video.classList.add("controls-hidden");
@@ -405,7 +391,7 @@ function startTrips() {
   }
 }
 
-// Function to update the Happy Customers count
+
 function startHappyCustomers() {
   if (happyCustomersCount < 2500) {
     happyCustomersCount++;

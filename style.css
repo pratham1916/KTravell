@@ -613,22 +613,31 @@ nav .change {
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
+  #homeSection h1 {
+    font-size: 36px;
+    margin-top: 120px;
+  }
   #homeSection .container {
     flex-direction: column;
   }
   #homeSection .container .left img {
-    max-width: 350px;
+    max-width: 336px;
     height: 400px;
   }
-  #homeSection .container .slider {
+  #homeSection .container .right p {
+    margin: 10px 0;
+    text-align: justify;
+    font-family: sans-serif;
+  }
+  #homeSection .container .right .slider {
     width: 60%;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     justify-items: center;
   }
-  #homeSection .container .slider #img1,
-  #homeSection .container .slider #img2 {
+  #homeSection .container .right .slider #img1,
+  #homeSection .container .right .slider #img2 {
     width: 300px;
     height: 300px;
     position: static;

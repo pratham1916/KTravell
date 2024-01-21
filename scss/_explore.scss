@@ -48,7 +48,7 @@ $primary-color: #97bbe3;
       text-align: center;
       margin-top: 10px;
     }
-  
+
     #desIdform {
       width: 60%;
       height: auto;
@@ -59,16 +59,16 @@ $primary-color: #97bbe3;
       justify-content: space-between;
       align-items: center;
       margin-top: 20px;
-  
+
       .desFormClass {
         flex: 1;
         margin-right: 10px;
-      
+
         label {
           display: block;
           margin-bottom: 5px;
         }
-      
+
         select {
           width: 100%;
           padding: 10px 15px;
@@ -77,12 +77,12 @@ $primary-color: #97bbe3;
           border: none;
           margin-bottom: 10px;
           cursor: pointer;
-      
+
           option {
             background-color: #fff;
           }
         }
-      
+
         input {
           width: 100%;
           padding: 10px 15px;
@@ -91,7 +91,7 @@ $primary-color: #97bbe3;
           border: none;
           margin-bottom: 10px;
         }
-      
+
         input[type="submit"] {
           cursor: pointer;
           width: 100%;
@@ -103,7 +103,7 @@ $primary-color: #97bbe3;
         }
       }
     }
-    #serchBtn{
+    #serchBtn {
       color: black;
       background-color: $primary-color;
       border: 1px solid $primary-color;
@@ -113,12 +113,11 @@ $primary-color: #97bbe3;
       cursor: pointer;
       font-weight: 600;
       font-size: 15px;
-      &:hover{
+      &:hover {
         background-color: white;
       }
     }
   }
-  
 
   @media all and (min-width: 1025px) and (max-width: 1200px) {
     #main164 {
@@ -166,10 +165,6 @@ $primary-color: #97bbe3;
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
         }
-
-        // #desId:hover >  #videoDest.controls-hidden {
-        //   opacity: 1;
-        // }
       }
     }
 
@@ -224,19 +219,10 @@ $primary-color: #97bbe3;
       background-color: rgb(141, 135, 135);
       color: black;
     }
-
-    // video responsive is ENDED
-
-    //START responsive is ---For counting
   }
-
-  // ==============================
-  //-------------------------------
-  // responsive from 1024px to 769px
   @media all and (min-width: 769px) and (max-width: 1024px) {
     #main164 {
       width: 1024px;
-      // border: 2px solid rgb(238, 111, 111);
       border: none;
       box-sizing: border-box;
     }
@@ -254,14 +240,10 @@ $primary-color: #97bbe3;
       box-sizing: border-box;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       position: relative;
-      // <uniquifier>: Use a uniquifier for the class name
 
       #desId {
         width: 100%;
         height: 100%;
-        //   overflow: hidden;
-        //   object-fit: cover;
-
         #videoDest {
           width: 100%;
           height: 100%;
@@ -271,27 +253,15 @@ $primary-color: #97bbe3;
           transition: opacity 0.3s ease-in-out;
         }
 
-        // #desId >  #videoDest:hover {
-        //   opacity: 0.7; /* Adjust as needed */
-        // }
-
         #desId > #videoDest.controls-hidden {
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
         }
-
-        // #desId:hover >  #videoDest.controls-hidden {
-        //   opacity: 1;
-        // }
       }
     }
-
-    // video end --------
-    // FORM start
     #desIdform {
       width: 860px;
       height: 100px;
-      // border:1px solid rgb(95, 95, 44);
       border: none;
       position: absolute;
       top: 50%;
@@ -304,13 +274,11 @@ $primary-color: #97bbe3;
       align-items: center;
     }
 
-    // text part "where do you want visit --start"
     #destination > h3 {
       position: absolute;
       top: 25%;
       left: 25%;
       color: white;
-      // transform: translate(-50%, -50%);
       font-size: 47px;
     }
 
@@ -319,16 +287,13 @@ $primary-color: #97bbe3;
       top: 36%;
       left: 28%;
       color: white;
-      // transform: translate(-50%, -50%);
       font-size: 20px;
       text-align: center;
     }
 
-    // text part "where do you want visit ----end"
     .desFormClass > input {
       padding: 10px 15px;
       border-radius: 10px;
-      // border:1px solid red;
       border: none;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
@@ -346,13 +311,8 @@ $primary-color: #97bbe3;
       border-radius: 10px;
       border: none;
     }
-
-    // video responsive is ENDED
-
-    //START responsive is ---For counting
   }
 
-  // responsive 768px---481px
   @media all and (min-width: 481px) and (max-width: 768px) {
     #card-container {
       .card-list {
@@ -361,7 +321,6 @@ $primary-color: #97bbe3;
     }
     #main164 {
       width: 768px;
-      // border: 2px solid rgb(160, 74, 74);
       border: none;
       box-sizing: border-box;
     }
@@ -374,7 +333,6 @@ $primary-color: #97bbe3;
       font-optical-sizing: auto;
       font-weight: 700;
       font-style: normal;
-      // border: 2px solid rgb(52, 59, 34);
       border: none;
       box-sizing: border-box;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -383,9 +341,6 @@ $primary-color: #97bbe3;
       #desId {
         width: 100%;
         height: 100%;
-        //   overflow: hidden;
-        //   object-fit: cover;
-
         #videoDest {
           width: 100%;
           height: 100%;
@@ -395,27 +350,16 @@ $primary-color: #97bbe3;
           transition: opacity 0.3s ease-in-out;
         }
 
-        // #desId >  #videoDest:hover {
-        //   opacity: 0.7; /* Adjust as needed */
-        // }
-
         #desId > #videoDest.controls-hidden {
           opacity: 0;
           transition: opacity 0.3s ease-in-out;
         }
-
-        // #desId:hover >  #videoDest.controls-hidden {
-        //   opacity: 1;
-        // }
       }
     }
 
-    // video end --------
-    // FORM start
     #desIdform {
       width: 600px;
       height: 150px;
-      // border:1px solid rgb(219, 219, 49);
       border: none;
       position: absolute;
       top: 50%;
@@ -430,13 +374,12 @@ $primary-color: #97bbe3;
       align-items: center;
     }
 
-    // text part "where do you want visit --start"
     #destination > h3 {
       position: absolute;
       top: 20%;
       left: 18%;
       color: white;
-      // transform: translate(-50%, -50%);
+
       font-size: 42px;
     }
 
@@ -445,12 +388,11 @@ $primary-color: #97bbe3;
       top: 32%;
       left: 24%;
       color: white;
-      // transform: translate(-50%, -50%);
+
       font-size: 18px;
       text-align: center;
     }
 
-    // text part "where do you want visit ----end"
     .desFormClass > input {
       border-radius: 10px;
       border: none;
@@ -489,19 +431,12 @@ $primary-color: #97bbe3;
       background-color: rgb(141, 135, 135);
       color: black;
     }
-
-    // video responsive is ENDED
-
-    //START responsive is ---For counting
   }
 
-  // ---------------
-  //--------------------------------
-  //responsive in 480px to 320px
   @media all and (min-width: 320px) and (max-width: 480px) {
     #main164 {
       width: 480px;
-      // border: 2px solid rgb(160, 74, 74);
+
       border: none;
       box-sizing: border-box;
     }
@@ -514,18 +449,15 @@ $primary-color: #97bbe3;
       font-optical-sizing: auto;
       font-weight: 700;
       font-style: normal;
-      // border: 2px solid rgb(52, 59, 34);
+
       border: none;
       box-sizing: border-box;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       position: relative;
-      // <uniquifier>: Use a uniquifier for the class name
 
       #desId {
         width: 100%;
         height: 100%;
-        //   overflow: hidden;
-        //   object-fit: cover;
 
         #videoDest {
           width: 100%;
@@ -543,8 +475,6 @@ $primary-color: #97bbe3;
       }
     }
 
-    // video end --------
-    // FORM start
     #desIdform {
       width: 480px;
       height: 250px;
@@ -577,12 +507,11 @@ $primary-color: #97bbe3;
       top: 32%;
       left: 15%;
       color: rgb(241, 239, 239);
-      // transform: translate(-50%, -50%);
+
       font-size: 15px;
       text-align: center;
     }
 
-    // text part "where do you want visit ----end"
     .desFormClass > input,
     label {
       border-radius: 10px;
@@ -623,15 +552,13 @@ $primary-color: #97bbe3;
       color: black;
     }
 
-    // video responsive is ENDED
     #card-container {
       .card-list {
         grid-template-columns: repeat(1, 1fr);
       }
     }
   }
-  // yash ---END Code
-  // Card SCSS
+
   #card-container {
     .card-list {
       display: grid;
@@ -692,7 +619,7 @@ $primary-color: #97bbe3;
       }
     }
   }
-  #seeMoreCardBtn{
+  #seeMoreCardBtn {
     background-color: $primary-color;
     padding: 15px 40px;
     color: black;
@@ -702,10 +629,10 @@ $primary-color: #97bbe3;
     text-align: center;
     margin-bottom: 20px;
     font-size: large;
-    font-weight:600;
+    font-weight: 600;
     width: 15%;
     margin-left: 580px;
-    &:hover{
+    &:hover {
       background-color: white;
     }
   }
