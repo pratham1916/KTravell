@@ -391,30 +391,29 @@
   "users": [
     {
       "id": 1,
+      "fullName": "Krunal Bhandekar",
       "username": "testUser",
       "password": "user",
       "type": "user"
     },
     {
-      "id": 1,
+      "id": 2,
+      "fullName": "Pratham Nemade",
       "username": "testadmin",
       "password": "admin",
       "type": "admin"
-    },
-    {
-      "username": "pratham",
-      "password": "123456",
-      "type": "user",
-      "id": 2
-    },
-    {
-      "username": "pratham",
-      "password": "123456",
-      "type": "user",
-      "id": 3
     }
   ],
   "booking":[
-
+    {
+      "id": 1,
+      "name": "Gyeongbokgung Palace",
+      "description": "A grand palace in Seoul, known for its beautiful architecture and historical significance.",
+      "location": "Seoul",
+      "image": "https://wallpapers.com/images/featured/gyeongbokgung-palace-uraif3zx8jcs8b6m.jpg",
+      "price": "$149",
+      "rating": 4.3,
+      "username":"testUser"
+    }
   ]
 }
