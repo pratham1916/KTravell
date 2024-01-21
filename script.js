@@ -2,6 +2,7 @@
 const travelUrl = "https://korea-api-cusb.onrender.com";
 
 let token = JSON.parse(localStorage.getItem("token")) || null;
+let user = token?.user || null;
 let isLogin = token !== null ? true : false;
 let isAdmin = token && token?.user?.type === "admin" ? true : false;
 
@@ -285,15 +286,48 @@ function createCard(item) {
   bookBtn.innerHTML = "Book Now";
   bookBtn.className = "bookbtn";
 
+  bookBtn.addEventListener("click",()=>{
+    bookDestination(item);
+  })
+
   price_rating.append(price, rating);
   card.append(img, h2, p, price_rating, bookBtn);
 
   return card;
 }
 
-async function fetchData(url) {
+async function bookDestination(item){
+  if(!isLogin){
+    window.alert("Please Login ")
+  }
+  else{
+    let url = `${travelUrl}/booking`
+    try {
+      let res = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type":"application/json",
+          "Authorization": `Bearer ${token.token}`
+        },
+        body: JSON.stringify({...item,username:user.username}),
+      })
+        .then((res) => {
+          return res.json();
+        })
+        .catch((err) => {
+          return err;
+        });
+        console.log(res);
+      window.alert(`Pless Go for futher details `);
+    } catch (error) {
+      window.alert("something went wrong");
+    }
+  }
+}
+
+async function fetchData(url,page,limit) {
   try {
-    const res = await fetch(url);
+    const res = await fetch(`${url}?_page=${page}&_limit=${limit}`);
     const data = await res.json();
     destinations = data;
     appendData(destinations);
@@ -301,7 +335,15 @@ async function fetchData(url) {
     console.log(error);
   }
 }
-fetchData(`${travelUrl}/destination`);
+let page=1;
+let limit=12;
+fetchData(`${travelUrl}/destination`,1,12);
+
+let seeMoreBtn = document.getElementById("seeMoreCardBtn");
+seeMoreBtn.addEventListener('click', () => {
+  fetchData(`${travelUrl}/destination`,page++,limit);
+});
+
 
 function appendData(data) {
   let cardList = document.createElement("div");
@@ -311,22 +353,37 @@ function appendData(data) {
     cardList.appendChild(createCard(item));
   });
 
-  cardContainer.textContent = "";
+  
   cardContainer.append(cardList);
 }
 
 // js for the video section -----------
+// var video = document.querySelector("#desId > video");
+
+// video.addEventListener("mouseover", function () {
+//   video.play();
+//   video.classList.remove("controls-hidden");
+// });
+
+// video.addEventListener("mouseout", function () {
+//   video.pause();
+//   video.classList.add("controls-hidden");
+// });
+
 var video = document.querySelector("#desId > video");
 
-video.addEventListener("mouseover", function () {
-  video.play();
-  video.classList.remove("controls-hidden");
-});
+    video.addEventListener("mouseenter", function () {
+        video.play();
+        video.classList.remove("controls-hidden");
+    });
 
-video.addEventListener("mouseout", function () {
-  video.pause();
-  video.classList.add("controls-hidden");
-});
+    video.addEventListener("mouseleave", function () {
+        // Pause the video after a delay (e.g., 1000 milliseconds or 1 second)
+        setTimeout(function () {
+            video.pause();
+            video.classList.add("controls-hidden");
+        }, 1000);
+    });
 
 // -------------------------------
 let tripsCount = 0;

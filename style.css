@@ -1180,7 +1180,7 @@ nav .change {
 }
 #exploreSection {
   width: 90%;
-  margin: 80px auto auto auto;
+  margin: 80px auto;
 }
 #exploreSection #main164 {
   width: 100%;
@@ -1189,14 +1189,8 @@ nav .change {
 }
 #exploreSection #destination {
   width: 100%;
-  height: 600px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 400px;
   border-radius: 10px;
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  border: none;
   box-sizing: border-box;
   position: relative;
 }
@@ -1217,61 +1211,84 @@ nav .change {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-#exploreSection #desIdform {
-  width: 860px;
-  height: 100px;
-  border: none;
+#exploreSection #desIdstart {
+  background-color: black;
+  padding: 20px;
   border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
   text-align: center;
-  flex-wrap: wrap;
-  align-self: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 30px;
 }
-#exploreSection #destination > h3 {
-  position: absolute;
-  top: 25%;
-  left: 36%;
+#exploreSection #desIdstart h3 {
   color: white;
-  font-size: 47px;
+  font-size: 40px;
 }
-#exploreSection #destination > p {
-  position: absolute;
-  top: 36%;
-  left: 40%;
+#exploreSection #desIdstart p {
   color: white;
   font-size: 20px;
   text-align: center;
+  margin-top: 10px;
 }
-#exploreSection #travel-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: "";
-}
-#exploreSection .desFormClass > input {
-  padding: 10px 15px;
+#exploreSection #desIdstart #desIdform {
+  width: 60%;
+  height: auto;
+  margin: auto;
   border-radius: 10px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+#exploreSection #desIdstart #desIdform .desFormClass {
+  flex: 1;
+  margin-right: 10px;
+}
+#exploreSection #desIdstart #desIdform .desFormClass label {
+  display: block;
+  margin-bottom: 5px;
+}
+#exploreSection #desIdstart #desIdform .desFormClass select {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
   background-color: #fff;
   border: none;
-}
-#exploreSection #travel-select {
+  margin-bottom: 10px;
   cursor: pointer;
+}
+#exploreSection #desIdstart #desIdform .desFormClass select option {
+  background-color: #fff;
+}
+#exploreSection #desIdstart #desIdform .desFormClass input {
+  width: 100%;
   padding: 10px 15px;
-  width: 200px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #fff;
   border: none;
+  margin-bottom: 10px;
 }
-#exploreSection #travel-select option:checked {
-  background-color: grey;
+#exploreSection #desIdstart #desIdform .desFormClass input[type=submit] {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #97bbe3;
+  color: black;
+  font-weight: bold;
+}
+#exploreSection #desIdstart #serchBtn {
+  color: black;
+  background-color: #97bbe3;
+  border: 1px solid #97bbe3;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+#exploreSection #desIdstart #serchBtn:hover {
+  background-color: white;
 }
 @media all and (min-width: 1025px) and (max-width: 1200px) {
   #exploreSection #main164 {
@@ -1697,6 +1714,23 @@ nav .change {
 #exploreSection #card-container .card-list .card:hover {
   transform: translateY(5px);
 }
+#exploreSection #seeMoreCardBtn {
+  background-color: #97bbe3;
+  padding: 15px 40px;
+  color: black;
+  border: 1px solid #97bbe3;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: 600;
+  width: 15%;
+  margin-left: 580px;
+}
+#exploreSection #seeMoreCardBtn:hover {
+  background-color: white;
+}
 
 /* Sign-up Modal */
 #signUpModal {
@@ -1943,28 +1977,33 @@ nav .change {
   }
 }
 
+#contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
 #contactSection .map {
-  margin: 50px 0 20px 0;
 }
 #contactSection .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 50px;
-  margin-bottom: 100px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
+  height: 500px;
 }
 #contactSection .contact-container .contact-info {
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
+  margin-bottom: 50px;
+  margin-left: 30px;
 }
 #contactSection .contact-container .contact-info h1 {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 20px;
-  margin-top: 0;
+  margin-top: 20px;
 }
 #contactSection .contact-container .contact-info p {
   font-size: 16px;
@@ -2010,11 +2049,11 @@ nav .change {
 }
 #contactSection .contact-container .contact_form .input-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 #contactSection .contact-container .contact_form .input-box input {
-  width: 100%;
+  width: 80%;
   padding: 20px;
   font-size: 15px;
   height: 20px;
@@ -2033,10 +2072,10 @@ nav .change {
 }
 #contactSection .contact-container .contact_form .input-box .fullname,
 #contactSection .contact-container .contact_form .input-box .mobileNo {
-  width: 49%;
+  width: 35%;
 }
 #contactSection .contact-container .contact_form textarea {
-  width: 100%;
+  width: 80%;
   padding: 20px;
   font-size: 15px;
   border-radius: 10px;
@@ -2045,6 +2084,7 @@ nav .change {
   color: #000000;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
+  margin-bottom: 30px;
 }
 #contactSection .contact-container .contact_form textarea::-moz-placeholder {
   color: #000000;
@@ -2061,20 +2101,6 @@ nav .change {
   color: red;
   border: 1px solid #97bbe3;
 }
-
-@media screen and (min-width: 200px) and (max-width: 480px) {
-  #contactSection .map {
-    max-width: 480px;
-  }
-  .contact-container {
-    max-width: 450px;
-    flex-direction: column;
-  }
-  .contact-container .contact-info {
-    max-width: 300px;
-  }
-  .contact-container .contact_form {
-    max-width: 300px;
   }
 }
 * {
