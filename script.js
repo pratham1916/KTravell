@@ -1,5 +1,6 @@
 // constant variables
 const travelUrl = "https://korea-api-cusb.onrender.com";
+
 let token = JSON.parse(localStorage.getItem("token")) || null;
 let isLogin = token !== null ? true : false;
 let isAdmin = token && token?.user?.type === "admin" ? true : false;
@@ -232,6 +233,18 @@ setInterval(() => {
   index++;
 }, 1500);
 
+// Rating into Stars
+
+function convertToStars(numRating) {
+  const maxStars = 5; 
+  const fullStars = Math.ceil(numRating);
+  const remainder = numRating - fullStars;
+  let starString = "★".repeat(fullStars);
+
+  starString += "☆".repeat(maxStars - fullStars);
+  return starString;
+}
+
 //------------------- fetch And Append data --------------
 
 const cardContainer = document.getElementById("card-container");
@@ -263,7 +276,9 @@ function createCard(item) {
 
   const rating = document.createElement("p");
   rating.className = "rating";
-  rating.innerText = item.rating;
+  rating.style.color = "gold"
+  rating.style.fontSize = "25px"
+  rating.innerText = convertToStars(item.rating);
 
   const bookBtn = document.createElement("button");
   bookBtn.dataset.id = item.id;

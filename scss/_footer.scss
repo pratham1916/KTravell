@@ -2,6 +2,7 @@ $small-screen: 200px;
 $medium-screen: 480px;
 $large-screen: 768px;
 $extra-large-screen: 1290px;
+
 * {
   background: none;
   list-style-type: none;
@@ -10,6 +11,7 @@ $extra-large-screen: 1290px;
 .footy {
   padding: 30px;
   background-color: black;
+
   footer {
     width: 90%;
     margin: auto;
@@ -21,21 +23,24 @@ $extra-large-screen: 1290px;
     .fleft-y {
       display: flex;
       padding: 20px;
-      // justify-content: space-between;
       gap: 80px;
+
       .Company-y,
       .rs {
         ul {
           margin: 10px 0;
+
           li {
             margin: 10px 0;
             font-size: 18px;
+
             a {
               color: gray;
             }
           }
         }
       }
+
       .Company-y,
       .rs {
         ul {
@@ -55,34 +60,34 @@ $extra-large-screen: 1290px;
           margin-top: 16px;
           display: flex;
           gap: 40px;
-          // justify-content: space-between;
           div {
             display: flex;
             flex-direction: column;
             gap: 30px;
-            // justify-content: space-between;
           }
+
           div {
             a:hover {
-              transform: scale(1.5);
+              transform: scale(1.2);
             }
           }
         }
       }
     }
+
     .fright-y {
       margin-top: 6%;
+
       h1 {
-        margin-bottom: 30px;
-        // font-size: 42px;
+        margin-bottom: 18px;
+    
       }
       .cty {
         display: flex;
-        // justify-content: space-between;
         gap: 30px;
-        // align-items: center;
         div {
-          margin: 30px 0;
+          margin: 15px 0;
+
           p {
             color: gray;
             font-size: 18px;
@@ -92,112 +97,96 @@ $extra-large-screen: 1290px;
       }
     }
   }
+
   .bottom-brand {
     padding: 40px 0 0 0;
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-between;
+
     a:hover {
-      transform: scale(1.5);
+      transform: scale(0.9);
     }
   }
 }
 
-@media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
-  // Your styles for small to medium screens
+@media screen and (min-width:320px) and (max-width:480px) {
 
-  .cardConatiner {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
 
-  .footy {
-    footer {
-      flex-direction: column;
-      .fleft-y {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .fright-y {
-        // margin-top: 10px;
-
-        h1 {
-          text-align: center;
-          font-size: 22px;
-        }
-        .cty {
-          flex-direction: column;
-          justify-content: center;
-          justify-items: center;
-          align-items: center;
-          p {
-            font-size: 22px;
-            text-align: center;
-          }
-        }
-      }
-    }
-    .bottom-brand {
-      flex-direction: column;
-      // margin: auto;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
-  }
-}
-
-@media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
   .cardConatiner {
     flex-wrap: wrap;
     justify-content: center;
     width: 80%;
     margin: auto;
-    gap: 10px;
-    // flex-direction: column;
+
+    gap: 30px;
   }
+
   .footy {
+
     footer {
-      flex-direction: column;
+      flex-wrap: wrap;
+
       .fleft-y {
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        >.Company-y {
+          font-size: 18px;
+          margin-left: 0px;
+        }
+
+        >.rs {
+          margin-left: 0px;
+
+          >.social {
+
+            font-size: 18px;
+
+          }
+
+        }
+
       }
+
       .fright-y {
-        // margin-top: 10px;
+
+        margin-top: 24px;
 
         h1 {
-          text-align: center;
-          font-size: 22px;
+          text-align: left;
+          font-size: 18px;
+
         }
+
         .cty {
           flex-direction: column;
           justify-content: center;
           justify-items: center;
-          align-items: center;
+          align-items: flex-start;
+
+          >div>h2 {
+            font-size: 16px;
+          }
+
+          >div:nth-child(2) {
+            margin-top: -18px;
+
+          }
+
           p {
-            font-size: 22px;
-            text-align: center;
+            font-size: 16px;
+
           }
         }
       }
     }
-    .bottom-brand {
-      flex-direction: column;
-      // margin: auto;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
   }
+
 }
 
-@media screen and (min-width: $large-screen) and (max-width: $extra-large-screen) {
+@media screen and (min-width:481px) and (max-width:768px) {
   .cardConatiner {
     flex-wrap: wrap;
     justify-content: center;
@@ -205,24 +194,175 @@ $extra-large-screen: 1290px;
     margin: auto;
     gap: 30px;
   }
+
+  .footy {
+
+    footer {
+      flex-wrap: wrap;
+
+      .fleft-y {
+        justify-content: center;
+        align-items: center;
+
+        >.Company-y {
+          font-size: 18px;
+          margin-left: 0;
+        }
+
+        >.rs {
+          margin-left: 0;
+
+          >.social {
+
+            font-size: 18px;
+
+          }
+
+        }
+
+      }
+
+      .fright-y {
+
+        margin-top: 24px;
+
+        h1 {
+          text-align: left;
+          font-size: 20px;
+
+        }
+
+        .cty {
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          align-items: flex-start;
+
+          >div:nth-child(2) {
+            margin-top: -18px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+  .cardConatiner {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+  }
+
+  .footy {
+
+    footer {
+      flex-wrap: wrap;
+
+      .fleft-y {
+        justify-content: center;
+        align-items: center;
+
+        >.Company-y {
+          font-size: 18px;
+        }
+
+        >.rs {
+
+          font-size: 18px;
+
+          >.social {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .fright-y {
+        margin-top: 24px;
+
+        h1 {
+          text-align: center;
+          font-size: 20px;
+        }
+
+        .cty {
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          align-items: flex-start;
+
+          >div:nth-child(2) {
+            margin-top: -18px;
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    >.bottom-brand {
+      >a>img {
+        width: 80px;
+        height: 50px
+      }
+
+      >a:nth-child(4)>img {
+        width: 105px;
+        height: 50px;
+      }
+
+    }
+
+
+
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+  .cardConatiner {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+  }
+
   .footy {
     footer {
       flex-wrap: wrap;
+
       .fleft-y {
         justify-content: center;
         align-items: center;
       }
+
       .fright-y {
+        margin-top: 26px;
+
         h1 {
           text-align: center;
-          font-size: 26px;
+          font-size: 25px;
         }
+
         .cty {
           flex-direction: column;
-
           justify-content: center;
           justify-items: center;
           align-items: flex-start;
+
+          >div:nth-child(2) {
+            margin-top: -18px;
+          }
+
           p {
             font-size: 22px;
           }
