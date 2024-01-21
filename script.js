@@ -325,9 +325,9 @@ async function bookDestination(item){
   }
 }
 
-async function fetchData(url,page,limit) {
+async function fetchData(url) {
   try {
-    const res = await fetch(`${url}?_page=${page}&_limit=${limit}`);
+    const res = await fetch(url);
     const data = await res.json();
     destinations = data;
     appendData(destinations);
@@ -337,13 +337,34 @@ async function fetchData(url,page,limit) {
 }
 let page=1;
 let limit=12;
-fetchData(`${travelUrl}/destination`,1,12);
+fetchData(`${travelUrl}/destination?_page=${page}&_limit=${limit}`);
 
 let seeMoreBtn = document.getElementById("seeMoreCardBtn");
 seeMoreBtn.addEventListener('click', () => {
-  fetchData(`${travelUrl}/destination`,page++,limit);
+  fetchData(`${travelUrl}/destination?_page=${page++}&_limit=${limit}`);
 });
 
+// Serching Sorting
+let cityName = document.getElementById("cityName").value;
+let travel_select = document.getElementById("travel-select").value;
+let serchBtn = document.getElementById("serchBtn");
+
+// serchBtn.addEventListener("click",() =>{
+//   fetchData(`${travelUrl}/destination?_page=${page++}&_limit=${limit}&location=${cityName}`);
+// })
+
+async function search() {
+  try {
+    console.log("Pratham");
+    let res;
+    res = await fetch(`${travelUrl}/destination?location=${cityName}`);
+    let result = await res.json();
+    appendData(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+serchBtn.addEventListener("click", search);
 
 function appendData(data) {
   let cardList = document.createElement("div");
@@ -353,7 +374,6 @@ function appendData(data) {
     cardList.appendChild(createCard(item));
   });
 
-  
   cardContainer.append(cardList);
 }
 var video = document.querySelector("#desId > video");
@@ -422,3 +442,7 @@ function onclickMenu() {
   document.getElementById("menu").classList.toggle("icon");
   document.getElementById("nav").classList.toggle("change");
 }
+
+
+
+

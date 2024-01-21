@@ -386,16 +386,14 @@
         <p>Fill this form, and our manager will contact you</p>
         <form action="" method="get" class="desFormClass" id="desIdform">
           <div class="desFormClass">
-            <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Enter City you are Serching for!" required />
+            <input type="text" name="name" id="cityName" placeholder="Enter City you are Serching for!" required />
           </div>
 
           <div class="desFormClass">
-            <label for="travel-select"></label>
             <select name="travel-select" id="travel-select">
               <option value="">Sort By</option>
-              <option value="">Price High to Low</option>
-              <option value="">Price Low to High</option>
+              <option value="priceH-L">Price High to Low</option>
+              <option value="priceL-H">Price Low to High</option>
               <option value="">Review High to Low</option>
               <option value="">Review Low to High</option>
             </select>
