@@ -387,5 +387,9 @@
       "price": "$669",
       "rating": 4.4
     }
+  ],
+  "user":[
+    {"username":"testUser","password":"user","type":"user"},
+    {"username":"testadmin","password":"admin","type":"admin"}
   ]
 }
