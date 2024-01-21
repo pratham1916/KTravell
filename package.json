@@ -10,7 +10,8 @@
   "author": "Pratham Nemade",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "jsonwebtoken": "^9.0.2"
   },
   "keywords": []
 }

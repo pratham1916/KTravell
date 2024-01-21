@@ -79,7 +79,7 @@
       "location": "Yongin",
       "image": "https://images.unsplash.com/photo-1587121687556-c50cd7538d2a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": "$99",
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 10,
@@ -241,7 +241,7 @@
       "location": "Miryang",
       "image": "https://c4.wallpaperflare.com/wallpaper/82/739/641/pamukkale-nature-landscape-sunrise-water-mist-hot-spring-terraces-wallpaper-preview.jpg",
       "price": "$79",
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 28,
@@ -322,7 +322,7 @@
       "location": "Daejeon",
       "image": "https://c4.wallpaperflare.com/wallpaper/958/499/820/reflection-cityscape-bridge-landmark-wallpaper-preview.jpg",
       "price": "$149",
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 37,
@@ -388,8 +388,30 @@
       "rating": 4.4
     }
   ],
-  "user":[
-    {"username":"testUser","password":"user","type":"user"},
-    {"username":"testadmin","password":"admin","type":"admin"}
+  "users": [
+    {
+      "id": 1,
+      "username": "testUser",
+      "password": "user",
+      "type": "user"
+    },
+    {
+      "id": 1,
+      "username": "testadmin",
+      "password": "admin",
+      "type": "admin"
+    },
+    {
+      "username": "pratham",
+      "password": "123456",
+      "type": "user",
+      "id": 2
+    },
+    {
+      "username": "pratham",
+      "password": "123456",
+      "type": "user",
+      "id": 3
+    }
   ]
 }

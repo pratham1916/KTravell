@@ -113,7 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //------------------- fetch And Append data --------------
 
-const travelUrl = `https://korea-api.onrender.com/destination`;
+const travelUrl = `https://korea-api.onrender.com`;
+
 const cardContainer = document.getElementById("card-container");
 let destinations = [];
 
@@ -166,7 +167,7 @@ async function fetchData(url) {
     console.log(error);
   }
 }
-fetchData(travelUrl);
+fetchData(`${travelUrl}/destination`);
 
 function appendData(data) {
   let cardList = document.createElement("div");
@@ -246,3 +247,30 @@ function onclickMenu() {
   document.getElementById("menu").classList.toggle("icon");
   document.getElementById("nav").classList.toggle("change");
 }
+
+//Login 
+
+let loginUsername = document.getElementById("loginUsername");
+let loginPassword = document.getElementById("LoginPassword");
+let loginbtn = document.getElementById("loginbtn");
+
+async function login(url,data){
+  let res = await fetch(url,{
+    method:"POST",
+    headers:{
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  }).then(res=>{
+    console.log(res);
+  })
+}
+loginbtn.addEventListener("click",()=>{
+  let username=loginUsername.value;
+  let password=loginPassword.value;
+
+  let data = {username,password}
+  let  url = `${travelUrl}/login`
+
+  login(url,data);
+})
