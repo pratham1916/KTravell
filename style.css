@@ -1977,33 +1977,28 @@ nav .change {
   }
 }
 
-#contactSection {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
-}
 #contactSection .map {
+  margin: 50px 0 20px 0;
 }
 #contactSection .contact-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 50px;
+  margin-bottom: 100px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
-  height: 500px;
 }
 #contactSection .contact-container .contact-info {
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
-  margin-bottom: 50px;
-  margin-left: 30px;
 }
 #contactSection .contact-container .contact-info h1 {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 0;
 }
 #contactSection .contact-container .contact-info p {
   font-size: 16px;
@@ -2049,11 +2044,11 @@ nav .change {
 }
 #contactSection .contact-container .contact_form .input-box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 #contactSection .contact-container .contact_form .input-box input {
-  width: 80%;
+  width: 100%;
   padding: 20px;
   font-size: 15px;
   height: 20px;
@@ -2072,10 +2067,10 @@ nav .change {
 }
 #contactSection .contact-container .contact_form .input-box .fullname,
 #contactSection .contact-container .contact_form .input-box .mobileNo {
-  width: 35%;
+  width: 49%;
 }
 #contactSection .contact-container .contact_form textarea {
-  width: 80%;
+  width: 100%;
   padding: 20px;
   font-size: 15px;
   border-radius: 10px;
@@ -2084,7 +2079,6 @@ nav .change {
   color: #000000;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
-  margin-bottom: 30px;
 }
 #contactSection .contact-container .contact_form textarea::-moz-placeholder {
   color: #000000;
@@ -2101,6 +2095,20 @@ nav .change {
   color: red;
   border: 1px solid #97bbe3;
 }
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+  #contactSection .map {
+    max-width: 480px;
+  }
+  .contact-container {
+    max-width: 450px;
+    flex-direction: column;
+  }
+  .contact-container .contact-info {
+    max-width: 300px;
+  }
+  .contact-container .contact_form {
+    max-width: 300px;
   }
 }
 * {
