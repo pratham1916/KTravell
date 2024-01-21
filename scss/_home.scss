@@ -2,6 +2,7 @@ $small-screen: 200px;
 $medium-screen: 480px;
 $large-screen: 768px;
 $extra-large-screen: 1290px;
+
 $primary-color: #97bbe3;
 
 #homeSection {
@@ -19,7 +20,7 @@ $primary-color: #97bbe3;
     display: flex;
     justify-content: space-between;
 
-    .left>img {
+    .left > img {
       width: 650px;
       height: 500px;
       border-radius: 10px;
@@ -35,6 +36,9 @@ $primary-color: #97bbe3;
 
       .slider {
         display: flex;
+        justify-content: center;
+        gap: 30px;
+
         margin-top: 30px;
       }
     }
@@ -141,7 +145,7 @@ $primary-color: #97bbe3;
   }
 
   #countingStart {
-    width: 550px;
+    // width: 550px;
     height: auto;
     margin: 30px auto;
     display: flex;
@@ -155,21 +159,20 @@ $primary-color: #97bbe3;
     width: 100%;
   }
 
-  .counter-section>h2 {
+  .counter-section > h2 {
     font-size: 16px;
     margin-top: 10px;
   }
 
-  .counter-section>p {
+  .counter-section > p {
     font-size: 34px;
   }
 
   //START responsive is ---For counting
   //-----------------------------------
-  @media all and (min-width:1025px) and (max-width:1200px) {
-
+  @media all and (min-width: 1025px) and (max-width: 1200px) {
     #countBody {
-      width: 1200px;
+      // width: 1200px;
       height: 500px;
       color: white;
       background-color: black;
@@ -184,15 +187,13 @@ $primary-color: #97bbe3;
         font-optical-sizing: auto;
         font-style: normal;
         font-weight: lighter;
-        font-variation-settings:
-          "wdth" 100;
+        font-variation-settings: "wdth" 100;
         // border:1px solid rgb(153, 93, 3);
         border: none;
         display: inline-block;
         margin-top: 53px;
         // transform: translate(-50%, -50%);
       }
-
     }
 
     #travelP {
@@ -208,8 +209,7 @@ $primary-color: #97bbe3;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
+      font-variation-settings: "wdth" 100;
     }
 
     // ----counting block
@@ -227,9 +227,7 @@ $primary-color: #97bbe3;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
-
+      font-variation-settings: "wdth" 100;
     }
 
     .counter-section {
@@ -241,28 +239,23 @@ $primary-color: #97bbe3;
 
     // counting Trip part & happy Cust.\
 
-    .counter-section>h2 {
+    .counter-section > h2 {
       font-size: 16px;
       font-family: "Raleway", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       margin-top: 10px;
-
     }
 
-    .counter-section>p {
+    .counter-section > p {
       font-size: 34px;
     }
-
-
   }
 
   // responsive-769px-1024  --laptops--
-  @media all and (min-width:769px) and (max-width:1024px) {
-
-
+  @media all and (min-width: 769px) and (max-width: 1024px) {
     #countBody {
-      width: 1024px;
+      // width: 1024px;
       height: 500px;
       color: white;
       background-color: black;
@@ -277,15 +270,13 @@ $primary-color: #97bbe3;
         font-optical-sizing: auto;
         font-style: normal;
         font-weight: lighter;
-        font-variation-settings:
-          "wdth" 100;
+        font-variation-settings: "wdth" 100;
         // border:1px solid rgb(105, 65, 3);
         border: none;
         display: inline-block;
         margin-top: 53px;
         // transform: translate(-50%, -50%);
       }
-
     }
 
     #travelP {
@@ -301,8 +292,7 @@ $primary-color: #97bbe3;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
+      font-variation-settings: "wdth" 100;
     }
 
     // ----counting block
@@ -320,9 +310,7 @@ $primary-color: #97bbe3;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
-
+      font-variation-settings: "wdth" 100;
     }
 
     .counter-section {
@@ -334,30 +322,25 @@ $primary-color: #97bbe3;
 
     // counting Trip part & happy Cust.\
 
-    .counter-section>h2 {
+    .counter-section > h2 {
       font-size: 16px;
       font-family: "Raleway", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       margin-top: 10px;
-
     }
 
-    .counter-section>p {
+    .counter-section > p {
       font-size: 34px;
     }
-
-
   }
 
   // responsive is 481px --768px--iPads & Tablets
 
-  @media all and (min-width:481px) and (max-width:768px) {
-
-
+  @media all and (min-width: 481px) and (max-width: 768px) {
     #countBody {
-      width: 768px;
-      height: 500px;
+      // width: 768px;
+      // height: 500px;
       color: white;
       background-color: black;
       // border:none;
@@ -372,8 +355,7 @@ $primary-color: #97bbe3;
         font-optical-sizing: auto;
         font-style: normal;
         font-weight: lighter;
-        font-variation-settings:
-          "wdth" 100;
+        font-variation-settings: "wdth" 100;
         // border:1px solid rgb(105, 65, 3);
         border: none;
         display: inline-block;
@@ -381,7 +363,6 @@ $primary-color: #97bbe3;
         margin-left: 15px;
         // transform: translate(-50%, -50%);
       }
-
     }
 
     #travelP {
@@ -397,28 +378,33 @@ $primary-color: #97bbe3;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
+      font-variation-settings: "wdth" 100;
     }
 
     // ----counting block
     #countingStart {
       // border:3px solid rgb(56, 16, 16);
       border: none;
-      width: 550px;
-      height: 100px;
+      // width: 550px;
+      // height: 100px;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
       gap: 20px;
       box-sizing: border-box;
-      margin: 100px 0px 0px 120px;
+      margin: 100px 0px;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
+      font-variation-settings: "wdth" 100;
 
+      // gap: 20px;
+      box-sizing: border-box;
+
+      // font-family: "Noto Sans", sans-serif;
+      // font-optical-sizing: auto;
+      // font-style: normal;
     }
 
     .counter-section {
@@ -430,29 +416,24 @@ $primary-color: #97bbe3;
 
     // counting Trip part & happy Cust.\
 
-    .counter-section>h2 {
+    .counter-section > h2 {
       font-size: 16px;
       font-family: "Raleway", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       margin-top: 10px;
-
     }
 
-    .counter-section>p {
+    .counter-section > p {
       font-size: 34px;
     }
-
-
   }
 
   //responsive part 320px to 480px
-  @media all and (min-width:320px) and (max-width:480px) {
-
-
+  @media all and (min-width: 320px) and (max-width: 480px) {
     #countBody {
-      width: 480px;
-      height: 500px;
+      // width: 480px;
+      // height: 500px;
       color: white;
       background-color: black;
       border: none;
@@ -466,8 +447,7 @@ $primary-color: #97bbe3;
         font-optical-sizing: auto;
         font-style: normal;
         font-weight: lighter;
-        font-variation-settings:
-          "wdth" 100;
+        font-variation-settings: "wdth" 100;
         // border:1px solid rgb(59, 46, 25);
         border: none;
         display: inline-block;
@@ -475,7 +455,6 @@ $primary-color: #97bbe3;
         margin-left: 15px;
         // transform: translate(-50%, -50%);
       }
-
     }
 
     #travelP {
@@ -490,46 +469,43 @@ $primary-color: #97bbe3;
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
+      font-variation-settings: "wdth" 100;
     }
 
     // ----counting block
     #countingStart {
       // border:3px solid rgb(202, 10, 10);
-      border: none;
-      width: 380px;
-      height: 150px;
+
+      // border: none;
+      flex-direction: column;
+
       gap: 20px;
       box-sizing: border-box;
-      margin: 100px 0px 0px 62px;
+
       font-family: "Noto Sans", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
-
+      // font-variation-settings: "wdth" 100;
     }
 
     .counter-section {
-      text-align: center;
-      width: 100%;
+      // text-align: center;
+      // width: 100%;
       // border:2px solid rgb(58, 37, 78);
       border: none;
     }
 
     // counting Trip part & happy Cust.\
 
-    .counter-section>h2 {
+    .counter-section > h2 {
       font-size: 15px;
       font-family: "Raleway", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       margin-top: 10px;
-
     }
 
-    .counter-section>p {
+    .counter-section > p {
       font-size: 30px;
     }
   }
@@ -575,14 +551,14 @@ $primary-color: #97bbe3;
       transform: translateY(-10px);
     }
 
-    >div {
+    > div {
       height: 180px;
       display: flex;
       justify-content: center;
       border-radius: 5px;
     }
 
-    .img1E>img {
+    .img1E > img {
       border-radius: 10px;
       max-width: 100%;
       max-height: 100%;
@@ -614,12 +590,37 @@ $primary-color: #97bbe3;
   }
 }
 
-
-
-
-
 @media screen and (min-width: $small-screen) and (max-width: $medium-screen) {
   // Your styles for small to medium screens
+
+  #homeSection {
+    .container {
+      flex-direction: column;
+      .left {
+        img {
+          max-width: 350px;
+          height: 400px;
+        }
+      }
+      .slider {
+        width: 60%;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        justify-items: center;
+
+        #img1,
+        #img2 {
+          width: 300px;
+          height: 300px;
+          position: static;
+        }
+
+        // flex-wrap: wrap;
+        // margin: auto;
+      }
+    }
+  }
 
   .cardConatiner {
     flex-direction: column;
@@ -671,6 +672,35 @@ $primary-color: #97bbe3;
 }
 
 @media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
+  #homeSection {
+    .container {
+      flex-direction: column;
+      .left {
+        img {
+          max-width: 700px;
+          height: 400px;
+        }
+      }
+      .slider {
+        width: 60%;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        justify-items: center;
+
+        #img1,
+        #img2 {
+          width: 300px;
+          height: 300px;
+          position: static;
+        }
+
+        // flex-wrap: wrap;
+        // margin: auto;
+      }
+    }
+  }
+
   .cardConatiner {
     flex-wrap: wrap;
     justify-content: center;
@@ -723,8 +753,14 @@ $primary-color: #97bbe3;
 }
 
 @media screen and (min-width: $large-screen) and (max-width: $extra-large-screen) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   .cardConatiner {
     flex-wrap: wrap;
+
     justify-content: center;
     width: 80%;
     margin: auto;
@@ -748,7 +784,6 @@ $primary-color: #97bbe3;
 
         .cty {
           flex-direction: column;
-
           justify-content: center;
           justify-items: center;
           align-items: flex-start;

@@ -87,7 +87,7 @@ signupBtn.addEventListener("click", async (e) => {
     let res = await fetch(url, {
       method: "POST",
       headers: {
-        "Content-Type":"application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     })
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // --------------------- Slider ------------------
 let container1 = document.getElementById("img1");
 let container2 = document.getElementById("img2");
-container2.style.marginLeft = "80px";
+// container2.style.marginLeft = "80px";
 
 let img1 = document.createElement("img");
 img1.style.width = "300px";
@@ -237,7 +237,7 @@ setInterval(() => {
 // Rating into Stars
 
 function convertToStars(numRating) {
-  const maxStars = 5; 
+  const maxStars = 5;
   const fullStars = Math.ceil(numRating);
   const remainder = numRating - fullStars;
   let starString = "★".repeat(fullStars);
@@ -277,8 +277,8 @@ function createCard(item) {
 
   const rating = document.createElement("p");
   rating.className = "rating";
-  rating.style.color = "gold"
-  rating.style.fontSize = "25px"
+  rating.style.color = "gold";
+  rating.style.fontSize = "25px";
   rating.innerText = convertToStars(item.rating);
 
   const bookBtn = document.createElement("button");
