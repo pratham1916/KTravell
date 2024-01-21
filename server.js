@@ -66,24 +66,24 @@ server.post("/booking", (req, res, next) => {
   }
 });
 
-server.post("/users", async (req, res, next) => {
-  const { username } = req.body;
-  const api = "https://korea-api-cusb.onrender.com";
+// server.post("/users", async (req, res, next) => {
+//   const { username } = req.body;
+//   const api = "https://korea-api-cusb.onrender.com";
 
-  const users = await fetch(`${api}/users`).then((response) => {
-    return response;
-  });
+//   const users = await fetch(`${api}/users`).then((response) => {
+//     return response;
+//   });
 
-  const usernameExists = users.some((user) => user.username === username);
+//   const usernameExists = users.some((user) => user.username === username);
 
-  if (usernameExists) {
-    return res
-      .status(400)
-      .json({ status: "error", message: "Username already exists" });
-  }
+//   if (usernameExists) {
+//     return res
+//       .status(400)
+//       .json({ status: "error", message: "Username already exists" });
+//   }
 
-  next();
-});
+//   next();
+// });
 
 server.use(router);
 
