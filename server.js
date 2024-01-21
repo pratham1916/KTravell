@@ -68,7 +68,7 @@ server.post("/booking", (req, res, next) => {
 
 server.post("/users", async (req, res, next) => {
   const { username } = req.body;
-  const api = "https://korea-api.onrender.com";
+  const api = "https://korea-api-cusb.onrender.com";
 
   const users = await fetch(`${api}/users`).then((response) => {
     return response;
