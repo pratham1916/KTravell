@@ -1,23 +1,17 @@
 {
   "name": "java-jadugar-3456",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "ipaddr.js": "^1.9.1",
-    "json-server": "^0.17.4",
-    "jsonwebtoken": "^9.0.2",
-    "lowdb": "^1.0.0",
-    "mime": "^1.6.0",
-    "negotiator": "^0.6.3",
-    "steno": "^0.4.4"
-  },
+  "description": "Travell Api",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Pratham Nemade",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "keywords": []
 }
