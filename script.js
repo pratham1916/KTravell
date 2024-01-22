@@ -326,6 +326,8 @@ async function bookDestination(item){
 }
 
 async function fetchData(url) {
+  console.log(url);
+  appendData([]);
   try {
     const res = await fetch(url);
     const data = await res.json();
@@ -337,34 +339,49 @@ async function fetchData(url) {
 }
 let page=1;
 let limit=12;
+
 fetchData(`${travelUrl}/destination?_page=${page}&_limit=${limit}`);
 
 let seeMoreBtn = document.getElementById("seeMoreCardBtn");
 seeMoreBtn.addEventListener('click', () => {
-  fetchData(`${travelUrl}/destination?_page=${page++}&_limit=${limit}`);
+  page = page+1;
+  fetchData(`${travelUrl}/destination?_page=${page}&_limit=${limit}`);
 });
 
 // Serching Sorting
-let cityName = document.getElementById("cityName").value;
-let travel_select = document.getElementById("travel-select").value;
+
 let serchBtn = document.getElementById("serchBtn");
 
-// serchBtn.addEventListener("click",() =>{
-//   fetchData(`${travelUrl}/destination?_page=${page++}&_limit=${limit}&location=${cityName}`);
-// })
+serchBtn.addEventListener("click",async (e) => {
+  e.preventDefault();
+  page =1;
+  let cityName = document.getElementById("cityName").value;
+  let travel_select = document.getElementById("travel-select").value;
+  let sort= travel_select.split(".");
 
-async function search() {
-  try {
-    console.log("Pratham");
-    let res;
-    res = await fetch(`${travelUrl}/destination?location=${cityName}`);
-    let result = await res.json();
-    appendData(result);
-  } catch (error) {
-    console.log(error);
+  let url = `${travelUrl}/destination?_page=${1}&_limit=${limit}&location=${cityName}&_sort=${sort[0]}&_order=${sort[1]}`
+  if(cityName){
+    url = `${travelUrl}/destination?_page=${1}&_limit=${limit}&location=${cityName}`;
   }
-}
-serchBtn.addEventListener("click", search);
+  else if(sort.length === 2){
+    url = `${travelUrl}/destination?_page=${1}&_limit=${limit}&_sort=${sort[0]}&_order=${sort[1]}`
+  }
+  await fetchData(url)
+});
+
+
+// async function search() {
+//   try {
+//     console.log("Pratham");
+//     let res;
+//     res = await fetch(`${travelUrl}/destination?location=${cityName}`);
+//     let result = await res.json();
+//     appendData(result);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// serchBtn.addEventListener("click", search);
 
 function appendData(data) {
   let cardList = document.createElement("div");
@@ -374,6 +391,7 @@ function appendData(data) {
     cardList.appendChild(createCard(item));
   });
 
+  cardContainer.innerHTML = "";
   cardContainer.append(cardList);
 }
 
