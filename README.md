@@ -8,9 +8,9 @@ Welcome to Ktravels! Explore the beauty of South Korea through our website. Disc
 
 Meet the minds behind Ktravels:
 
-- **	Pratham Nemade** - Full Stack Web Developer
+- **Pratham Nemade** - Full Stack Web Developer
 - **Supriya Hatele** - Full Stack Web Developer
-- **	Yawer Atique** - Full Stack Web Developer
+- **Yawer Atique** - Full Stack Web Developer
 - **Yash Aditya** -  Full Stack Web Developer
 
 ## Technologies Used
