@@ -47,14 +47,6 @@ Navigate through the website using our user-friendly navigation bar:
 Begin your adventure with Ktravels by exploring our Home section. Engage with featured content and get inspired to discover the beauty of South Korea.
 
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>K travels</title>
-  </head>
-  <body>
     <h2>Home Section</h2>
    
       <h2>Welcome to Ktravels!</h2>
@@ -106,6 +98,5 @@ Begin your adventure with Ktravels by exploring our Home section. Engage with fe
       <p>&copy; 2024 Ktravels. All rights reserved.</p>
       <p>Connect with us on <a href="insert_social_media_link_here">Social Media</a></p>
     </footer>
-  </body>
-</html>
+
 
