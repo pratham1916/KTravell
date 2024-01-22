@@ -59,157 +59,154 @@ $primary-color: #97bbe3;
       justify-content: space-between;
       align-items: center;
       margin-top: 20px;
-        select {
-          width: 100%;
-          padding: 10px 15px;
-          border-radius: 5px;
+      select {
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #fff;
+
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        option {
           background-color: #fff;
-          
-          margin-bottom: 10px;
-          cursor: pointer;
-
-          option {
-            background-color: #fff;
-          }
-        }
-
-        input {
-          width: 100%;
-          padding: 10px 15px;
-          border-radius: 5px;
-          background-color: #fff;
-          border: none;
-          margin-bottom: 10px;
-        }
-
-        input[type="submit"] {
-          cursor: pointer;
-          width: 100%;
-          padding: 10px 15px;
-          border-radius: 10px;
-          background-color: $primary-color;
-          color: black;
-          font-weight: bold;
         }
       }
+
+      input {
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #fff;
+        border: none;
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"] {
+        cursor: pointer;
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: $primary-color;
+        color: black;
+        font-weight: bold;
+      }
     }
-    #serchBtn {
-      color: black;
-      background-color: $primary-color;
-      border: 1px solid $primary-color;
-      padding: 10px 20px;
-      border-radius: 10px;
-      width: 100px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 15px;
-      &:hover {
-        background-color: white;
+  }
+  #serchBtn {
+    color: black;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+  #main164 {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  #destination {
+    width: 100%;
+    height: 600px;
+
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    border: none;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+
+    #desId {
+      width: 100%;
+      height: 100%;
+
+      #videoDest {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      #desId > #videoDest.controls-hidden {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
       }
     }
   }
 
-  @media all and (min-width: 1025px) and (max-width: 1200px) {
-    #main164 {
-      width: 100%;
-      border: none;
-      box-sizing: border-box;
-    }
+  // video end --------
+  // FORM start
+  #desIdform {
+    width: 860px;
+    height: 100px;
+    // border:1px solid rgb(145, 145, 42);
+    border: none;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(68, 5, 5);
+  }
 
-    #destination {
-      width: 100%;
-      height: 600px;
+  #destination > h3 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: white;
 
-      font-family: "Bodoni Moda", serif;
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-style: normal;
-     
-      border: none;
-      box-sizing: border-box;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      position: relative;
-    
-      #desId {
-        width: 100%;
-        height: 100%;
-        
+    font-size: 47px;
+  }
 
-        #videoDest {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          max-width: 100%;
-          max-height: 100%;
-          transition: opacity 0.3s ease-in-out;
-        }
+  #destination > p {
+    position: absolute;
+    top: 36%;
+    left: 28%;
+    color: white;
 
+    font-size: 20px;
+    text-align: center;
+  }
 
-        #desId > #videoDest.controls-hidden {
-          opacity: 0;
-          transition: opacity 0.3s ease-in-out;
-        }
-      }
-    }
+  .desFormClass > input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 
-    // video end --------
-    // FORM start
-    #desIdform {
-      width: 860px;
-      height: 100px;
-      // border:1px solid rgb(145, 145, 42);
-      border: none;
-      font-size: 24px;
-      text-align: center;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 3px solid rgb(68, 5, 5);
-    }
+  .desFormClass > input:hover {
+    cursor: pointer;
+    background-color: rgb(141, 135, 135);
+    color: black;
+  }
 
-    
-    #destination > h3 {
-      position: absolute;
-      top: 25%;
-      left: 25%;
-      color: white;
-      
-      font-size: 47px;
-    }
-
-    #destination > p {
-      position: absolute;
-      top: 36%;
-      left: 28%;
-      color: white;
-   
-      font-size: 20px;
-      text-align: center;
-    }
-
-    .desFormClass > input {
-      padding: 10px 15px;
-      border-radius: 10px;
-      border: none;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-
-    .desFormClass > input:hover {
-      cursor: pointer;
-      background-color: rgb(141, 135, 135);
-      color: black;
-    }
-  
   @media all and (min-width: 769px) and (max-width: 1024px) {
     #main164 {
-      width:100%;
+      width: 100%;
 
       border: none;
       box-sizing: border-box;
     }
 
     #destination {
-      width:100%;
+      width: 100%;
       height: 600px;
 
       font-family: "Bodoni Moda", serif;
@@ -244,13 +241,12 @@ $primary-color: #97bbe3;
       width: 860px;
       height: 100px;
       border: none;
-      
+
       font-size: 24px;
       text-align: center;
       display: flex;
       justify-content: space-between;
       align-items: center;
-     
     }
 
     #destination > h3 {
@@ -293,19 +289,19 @@ $primary-color: #97bbe3;
   }
 
   @media all and (min-width: 481px) and (max-width: 768px) {
-    #card-container {
-      .card-list {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+    // #card-container {
+    //   .card-list {
+    //     grid-template-columns: repeat(2, 1fr);
+    //   }
+    // }
     #main164 {
-      width:100%;
+      width: 100%;
       border: none;
       box-sizing: border-box;
     }
 
     #destination {
-      width:100%;
+      width: 100%;
       height: 600px;
 
       font-family: "Bodoni Moda", serif;
@@ -337,7 +333,7 @@ $primary-color: #97bbe3;
     }
 
     #desIdform {
-     width:100%;
+      width: 100%;
       height: 150px;
       border: none;
       font-size: 24px;
@@ -347,7 +343,6 @@ $primary-color: #97bbe3;
       gap: 10px 10px;
       justify-content: space-evenly;
       align-items: center;
-
     }
 
     #destination > h3 {
@@ -409,14 +404,14 @@ $primary-color: #97bbe3;
 
   @media all and (min-width: 320px) and (max-width: 480px) {
     #main164 {
-     width:100%;
-  
+      width: 100%;
+
       border: none;
       box-sizing: border-box;
     }
 
     #destination {
-      width:100%;
+      width: 100%;
       height: 600px;
 
       font-family: "Bodoni Moda", serif;
@@ -506,88 +501,176 @@ $primary-color: #97bbe3;
       color: black;
     }
 
-    #card-container {
-      .card-list {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
+    // #card-container {
+    //   .card-list {
+    //     grid-template-columns: repeat(1, 1fr);
+    //   }
+    // }
   }
 
-  #card-container {
-    .card-list {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-      margin: 20px 0 50px 0px;
-      .card {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        background-color: white;
-        font-size: 20px;
-        max-width: 400px;
-        height: auto;
-        border-radius: 10px;
-        gap: 4%;
-        text-align: center;
-        margin-top: 70px;
-        img {
-          width: 100%;
-          padding: 0;
-          height: 230px;
-          object-fit: cover;
-          border-radius: 10px 10px 0px 0px;
-        }
-        .name {
-          padding: 16px 0px;
-          font-size: 22px;
-          text-align: center;
-        }
-        .description {
-          text-align: justify;
-          padding: 20px;
-        }
-        .price_rating {
-          display: flex;
-          justify-content: space-between;
-          width: 80%;
-          margin: 8px auto;
-        }
-        .bookbtn {
-          padding: 15px 40px;
-          margin: 15px 0px;
-          border: none;
-          color: #fff;
-          font-size: 16px;
-          background-color: red;
-          border-radius: 8px;
-          cursor: pointer;
-        }
-        .bookbtn:hover {
-          background-color: #fd6363;
-          font-size: 16px;
-          transform: translateY(3px);
-        }
-      }
-      .card:hover {
-        transform: translateY(5px);
-      }
+  // #card-container {
+  //   .card-list {
+  //     display: grid;
+  //     grid-template-columns: repeat(4, 1fr);
+  //     gap: 30px;
+  //     margin: 20px 0 50px 0px;
+  //     .card {
+  //       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+  //         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  //       background-color: white;
+  //       font-size: 20px;
+  //       max-width: 400px;
+  //       height: auto;
+  //       border-radius: 10px;
+  //       gap: 4%;
+  //       text-align: center;
+  //       margin-top: 70px;
+  //       img {
+  //         width: 100%;
+  //         padding: 0;
+  //         height: 230px;
+  //         object-fit: cover;
+  //         border-radius: 10px 10px 0px 0px;
+  //       }
+  //       .name {
+  //         padding: 16px 0px;
+  //         font-size: 22px;
+  //         text-align: center;
+  //       }
+  //       .description {
+  //         text-align: justify;
+  //         padding: 20px;
+  //       }
+  //       .price_rating {
+  //         display: flex;
+  //         justify-content: space-between;
+  //         width: 80%;
+  //         margin: 8px auto;
+  //       }
+  //       .bookbtn {
+  //         padding: 15px 40px;
+  //         margin: 15px 0px;
+  //         border: none;
+  //         color: #fff;
+  //         font-size: 16px;
+  //         background-color: red;
+  //         border-radius: 8px;
+  //         cursor: pointer;
+  //       }
+  //       .bookbtn:hover {
+  //         background-color: #fd6363;
+  //         font-size: 16px;
+  //         transform: translateY(3px);
+  //       }
+  //     }
+  //     .card:hover {
+  //       transform: translateY(5px);
+  //     }
+  //   }
+  // }
+
+  // }
+}
+#card-container {
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 20px 0 50px 0px;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
     }
-  }
-  #seeMoreCardBtn {
-    background-color: $primary-color;
-    padding: 15px 40px;
-    color: black;
-    border: 1px solid $primary-color;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: large;
-    font-weight: 600;
-    width: 15%;
-    margin-left: 580px;
-    &:hover {
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      margin: 20px 0; // Adjust margin for better spacing on small screens
+    }
+
+    .card {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
       background-color: white;
+      font-size: 20px;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      gap: 4%;
+      text-align: center;
+      margin: 70px auto; // Center the card horizontally
+
+      // Adjust margin for small screens
+      @media screen and (max-width: 767px) {
+        margin: 20px auto;
+      }
+
+      img {
+        width: 100%;
+        padding: 0;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .name {
+        padding: 16px 0px;
+        font-size: 22px;
+        text-align: center;
+      }
+      .description {
+        text-align: justify;
+        padding: 20px;
+      }
+      .price_rating {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 8px auto;
+      }
+      .bookbtn {
+        padding: 15px 40px;
+        margin: 15px 0px;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        background-color: red;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .bookbtn:hover {
+        background-color: #fd6363;
+        font-size: 16px;
+        transform: translateY(3px);
+      }
     }
+    // Your existing nested styles for card elements
+  }
+
+  .card:hover {
+    transform: translateY(5px);
+  }
+}
+#seeMoreCardBtn {
+  background-color: $primary-color;
+  padding: 15px 40px;
+  color: black;
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  // margin: 20px auto;
+  font-size: large;
+  font-weight: 600;
+  width: 100%;
+  // margin: auto;
+  // margin-left: 580px;
+  @media screen and (min-width: 768px) {
+    width: 50%; // Adjust width for larger screens if needed
+  }
+  &:hover {
+    background-color: white;
   }
 }
