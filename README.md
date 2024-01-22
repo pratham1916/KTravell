@@ -1,6 +1,7 @@
 # Ktravels
 
 ![Ktravels Logo](insert_logo_image_url_here)
+Deployed Link - <a href ="https://java-jadugar-3456-ktravell.netlify.app/">KTravel</a>
 
 Welcome to Ktravels! Explore the beauty of South Korea through our website. Discover popular places and make your virtual journey memorable.
 
