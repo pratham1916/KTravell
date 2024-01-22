@@ -55,24 +55,24 @@ Begin your adventure with Ktravels by exploring our Home section. Engage with fe
     <title>K travels</title>
   </head>
   <body>
-    Home Section
-    <section>
+    <h2>Home Section</h2>
+   
       <h2>Welcome to Ktravels!</h2>
       <p>Explore the captivating landscapes and rich cultural heritage of South Korea.</p>
       <img src="insert_home_image_url_here" alt="Home Image">
-    </section>
+   
     </br>
     <hr>
     ## Explore
     Dive into the wonders of South Korea through our Explore section. Immerse yourself in breathtaking visuals and detailed information about popular destinations.
     
     html
-     Explore Section 
-    <section>
+     <h2>Explore Section</h2>
+  
       <h2>Discover South Korea</h2>
       <p>Explore the hidden gems and iconic landmarks that make South Korea a must-visit destination.</p>
       <img src="insert_explore_image_url_here" alt="Explore Image">
-    </section>
+    
     
     #booking
     
