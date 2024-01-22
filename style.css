@@ -1211,7 +1211,8 @@ nav .change {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
   max-height: 100%;
 }
@@ -1247,11 +1248,7 @@ nav .change {
   align-items: center;
   margin-top: 20px;
 }
-#exploreSection #desIdstart #desIdform .desFormClass {
-  flex: 1;
-  margin-right: 10px;
-}
-#exploreSection #desIdstart #desIdform .desFormClass select {
+#exploreSection #desIdstart #desIdform select {
   width: 100%;
   padding: 10px 15px;
   border-radius: 5px;
@@ -1259,10 +1256,10 @@ nav .change {
   margin-bottom: 10px;
   cursor: pointer;
 }
-#exploreSection #desIdstart #desIdform .desFormClass select option {
+#exploreSection #desIdstart #desIdform select option {
   background-color: #fff;
 }
-#exploreSection #desIdstart #desIdform .desFormClass input {
+#exploreSection #desIdstart #desIdform input {
   width: 100%;
   padding: 10px 15px;
   border-radius: 5px;
@@ -1270,7 +1267,7 @@ nav .change {
   border: none;
   margin-bottom: 10px;
 }
-#exploreSection #desIdstart #desIdform .desFormClass input[type=submit] {
+#exploreSection #desIdstart #desIdform input[type=submit] {
   cursor: pointer;
   width: 100%;
   padding: 10px 15px;
@@ -1279,7 +1276,7 @@ nav .change {
   color: black;
   font-weight: bold;
 }
-#exploreSection #desIdstart #serchBtn {
+#exploreSection #serchBtn {
   color: black;
   background-color: #97bbe3;
   border: 1px solid #97bbe3;
@@ -1290,16 +1287,17 @@ nav .change {
   font-weight: 600;
   font-size: 15px;
 }
-#exploreSection #desIdstart #serchBtn:hover {
+#exploreSection #serchBtn:hover {
   background-color: white;
 }
+
 @media all and (min-width: 1025px) and (max-width: 1200px) {
-  #exploreSection #main164 {
+  #main164 {
     width: 100%;
     border: none;
     box-sizing: border-box;
   }
-  #exploreSection #destination {
+  #destination {
     width: 100%;
     height: 600px;
     font-family: "Bodoni Moda", serif;
@@ -1311,23 +1309,24 @@ nav .change {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
   }
-  #exploreSection #destination #desId {
+  #destination #desId {
     width: 100%;
     height: 100%;
   }
-  #exploreSection #destination #desId #videoDest {
+  #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
   }
-  #exploreSection #destination #desId #desId > #videoDest.controls-hidden {
+  #destination #desId #desId > #videoDest.controls-hidden {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
-  #exploreSection #desIdform {
+  #desIdform {
     width: 860px;
     height: 100px;
     border: none;
@@ -1338,14 +1337,14 @@ nav .change {
     align-items: center;
     border: 3px solid rgb(68, 5, 5);
   }
-  #exploreSection #destination > h3 {
+  #destination > h3 {
     position: absolute;
     top: 25%;
     left: 25%;
     color: white;
     font-size: 47px;
   }
-  #exploreSection #destination > p {
+  #destination > p {
     position: absolute;
     top: 36%;
     left: 28%;
@@ -1353,25 +1352,25 @@ nav .change {
     font-size: 20px;
     text-align: center;
   }
-  #exploreSection .desFormClass > input {
+  .desFormClass > input {
     padding: 10px 15px;
     border-radius: 10px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  #exploreSection .desFormClass > input:hover {
+  .desFormClass > input:hover {
     cursor: pointer;
     background-color: rgb(141, 135, 135);
     color: black;
   }
 }
-@media all and (min-width: 769px) and (max-width: 1024px) {
-  #exploreSection #main164 {
+@media all and (min-width: 1025px) and (max-width: 1200px) and (min-width: 769px) and (max-width: 1024px) {
+  #main164 {
     width: 100%;
     border: none;
     box-sizing: border-box;
   }
-  #exploreSection #destination {
+  #destination {
     width: 100%;
     height: 600px;
     font-family: "Bodoni Moda", serif;
@@ -1383,23 +1382,24 @@ nav .change {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
   }
-  #exploreSection #destination #desId {
+  #destination #desId {
     width: 100%;
     height: 100%;
   }
-  #exploreSection #destination #desId #videoDest {
+  #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
   }
-  #exploreSection #destination #desId #desId > #videoDest.controls-hidden {
+  #destination #desId #desId > #videoDest.controls-hidden {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
-  #exploreSection #desIdform {
+  #desIdform {
     width: 860px;
     height: 100px;
     border: none;
@@ -1409,14 +1409,14 @@ nav .change {
     justify-content: space-between;
     align-items: center;
   }
-  #exploreSection #destination > h3 {
+  #destination > h3 {
     position: absolute;
     top: 25%;
     left: 25%;
     color: white;
     font-size: 47px;
   }
-  #exploreSection #destination > p {
+  #destination > p {
     position: absolute;
     top: 36%;
     left: 28%;
@@ -1424,18 +1424,18 @@ nav .change {
     font-size: 20px;
     text-align: center;
   }
-  #exploreSection .desFormClass > input {
+  .desFormClass > input {
     padding: 10px 15px;
     border-radius: 10px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  #exploreSection .desFormClass > input:hover {
+  .desFormClass > input:hover {
     cursor: pointer;
     background-color: rgb(141, 135, 135);
     color: black;
   }
-  #exploreSection #travel-select {
+  #travel-select {
     cursor: pointer;
     padding: 10px 15px;
     width: 200px;
@@ -1443,16 +1443,13 @@ nav .change {
     border: none;
   }
 }
-@media all and (min-width: 481px) and (max-width: 768px) {
-  #exploreSection #card-container .card-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  #exploreSection #main164 {
+@media all and (min-width: 1025px) and (max-width: 1200px) and (min-width: 481px) and (max-width: 768px) {
+  #main164 {
     width: 100%;
     border: none;
     box-sizing: border-box;
   }
-  #exploreSection #destination {
+  #destination {
     width: 100%;
     height: 600px;
     font-family: "Bodoni Moda", serif;
@@ -1464,23 +1461,24 @@ nav .change {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
   }
-  #exploreSection #destination #desId {
+  #destination #desId {
     width: 100%;
     height: 100%;
   }
-  #exploreSection #destination #desId #videoDest {
+  #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
   }
-  #exploreSection #destination #desId #desId > #videoDest.controls-hidden {
+  #destination #desId #desId > #videoDest.controls-hidden {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
-  #exploreSection #desIdform {
+  #desIdform {
     width: 100%;
     height: 150px;
     border: none;
@@ -1492,14 +1490,14 @@ nav .change {
     justify-content: space-evenly;
     align-items: center;
   }
-  #exploreSection #destination > h3 {
+  #destination > h3 {
     position: absolute;
     top: 20%;
     left: 18%;
     color: white;
     font-size: 42px;
   }
-  #exploreSection #destination > p {
+  #destination > p {
     position: absolute;
     top: 32%;
     left: 24%;
@@ -1507,30 +1505,47 @@ nav .change {
     font-size: 18px;
     text-align: center;
   }
-  #exploreSection #travel-select {
+  .desFormClass > input {
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .desFormClass > input[type=text] {
+    padding: 12px 30px;
+    width: 350px;
+    height: 14px;
+    font-size: 16px;
+  }
+  .desFormClass > input[type=date] {
+    padding: 12px 30px;
+    width: 200px;
+    height: 14px;
+    font-size: 16px;
+  }
+  #travel-select {
     cursor: pointer;
     padding: 10px 15px;
     width: 250px;
     border-radius: 10px;
     border: none;
   }
-  #exploreSection .desFormClass > input[type=submit] {
+  .desFormClass > input[type=submit] {
     padding: 12px 25px;
     font-size: 16px;
   }
-  #exploreSection .desFormClass > input:hover {
+  .desFormClass > input:hover {
     cursor: pointer;
     background-color: rgb(141, 135, 135);
     color: black;
   }
 }
-@media all and (min-width: 320px) and (max-width: 480px) {
-  #exploreSection #main164 {
+@media all and (min-width: 1025px) and (max-width: 1200px) and (min-width: 320px) and (max-width: 480px) {
+  #main164 {
     width: 100%;
     border: none;
     box-sizing: border-box;
   }
-  #exploreSection #destination {
+  #destination {
     width: 100%;
     height: 600px;
     font-family: "Bodoni Moda", serif;
@@ -1542,23 +1557,24 @@ nav .change {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
   }
-  #exploreSection #destination #desId {
+  #destination #desId {
     width: 100%;
     height: 100%;
   }
-  #exploreSection #destination #desId #videoDest {
+  #destination #desId #videoDest {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     max-width: 100%;
     max-height: 100%;
     transition: opacity 0.3s ease-in-out;
   }
-  #exploreSection #destination #desId #desId > #videoDest.controls-hidden {
+  #destination #desId #desId > #videoDest.controls-hidden {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
-  #exploreSection #desIdform {
+  #desIdform {
     width: 480px;
     height: 250px;
     border: none;
@@ -1570,54 +1586,67 @@ nav .change {
     justify-content: space-evenly;
     align-items: center;
   }
-  #exploreSection #destination > h3 {
+  #destination > h3 {
     position: absolute;
     top: 25%;
     left: 12%;
     color: white;
     font-size: 25px;
   }
-  #exploreSection #destination > p {
+  #destination > p {
     position: absolute;
     top: 32%;
     left: 15%;
     color: rgb(241, 239, 239);
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
   }
-  #exploreSection .desFormClass > input,
-  #exploreSection label {
+  .desFormClass > input,
+  label {
     border-radius: 10px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  #exploreSection #travel-select {
+  #travel-select {
     cursor: pointer;
     padding: 11px 15px;
     width: 405px;
     border-radius: 10px;
     border: none;
   }
-  #exploreSection .desFormClass > input[type=submit] {
+  .desFormClass > input[type=submit] {
     padding: 12px 25px;
     font-size: 16px;
   }
-  #exploreSection .desFormClass > input:hover {
+  .desFormClass > input:hover {
     cursor: pointer;
     background-color: rgb(141, 135, 135);
     color: black;
   }
-  #exploreSection #card-container .card-list {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
-#exploreSection #card-container .card-list {
+#card-container .card-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin: 20px 0 50px 0px;
 }
-#exploreSection #card-container .card-list .card {
+@media screen and (max-width: 1200px) {
+  #card-container .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 992px) {
+  #card-container .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  #card-container .card-list {
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+  }
+}
+#card-container .card-list .card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   background-color: white;
   font-size: 20px;
@@ -1626,31 +1655,37 @@ nav .change {
   border-radius: 10px;
   gap: 4%;
   text-align: center;
-  margin-top: 70px;
+  margin: 70px auto;
 }
-#exploreSection #card-container .card-list .card img {
+@media screen and (max-width: 767px) {
+  #card-container .card-list .card {
+    margin: 20px auto;
+  }
+}
+#card-container .card-list .card img {
   width: 100%;
   padding: 0;
   height: 230px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
-#exploreSection #card-container .card-list .card .name {
+#card-container .card-list .card .name {
   padding: 16px 0px;
   font-size: 22px;
   text-align: center;
 }
-#exploreSection #card-container .card-list .card .description {
+#card-container .card-list .card .description {
   text-align: justify;
   padding: 20px;
 }
-#exploreSection #card-container .card-list .card .price_rating {
+#card-container .card-list .card .price_rating {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 8px auto;
 }
-#exploreSection #card-container .card-list .card .bookbtn {
+#card-container .card-list .card .bookbtn {
   padding: 15px 40px;
   margin: 15px 0px;
   border: none;
@@ -1660,15 +1695,16 @@ nav .change {
   border-radius: 8px;
   cursor: pointer;
 }
-#exploreSection #card-container .card-list .card .bookbtn:hover {
+#card-container .card-list .card .bookbtn:hover {
   background-color: #fd6363;
   font-size: 16px;
   transform: translateY(3px);
 }
-#exploreSection #card-container .card-list .card:hover {
+#card-container .card:hover {
   transform: translateY(5px);
 }
-#exploreSection #seeMoreCardBtn {
+
+#seeMoreCardBtn {
   background-color: #97bbe3;
   padding: 15px 40px;
   color: black;
@@ -1676,13 +1712,16 @@ nav .change {
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
-  margin-bottom: 20px;
   font-size: large;
   font-weight: 600;
-  width: 15%;
-  margin-left: 580px;
+  width: 100%;
 }
-#exploreSection #seeMoreCardBtn:hover {
+@media screen and (min-width: 768px) {
+  #seeMoreCardBtn {
+    width: 50%;
+  }
+}
+#seeMoreCardBtn:hover {
   background-color: white;
 }
 
@@ -2013,6 +2052,9 @@ nav .change {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
 }
+#contactSection .contact-container .contact_form .input-box input::-moz-placeholder {
+  color: #000000;
+}
 #contactSection .contact-container .contact_form .input-box input::placeholder {
   color: #000000;
 }
@@ -2030,6 +2072,9 @@ nav .change {
   color: #000000;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
+}
+#contactSection .contact-container .contact_form textarea::-moz-placeholder {
+  color: #000000;
 }
 #contactSection .contact-container .contact_form textarea::placeholder {
   color: #000000;
@@ -2323,6 +2368,4 @@ nav .change {
   .footy footer .fright-y .cty p {
     font-size: 22px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
