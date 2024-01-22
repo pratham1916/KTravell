@@ -172,16 +172,17 @@ nav .change {
   padding: 0 5%;
 }
 #homeSection h1 {
-  font-size: 113px;
-  margin-top: 70px;
+  font-size: 6rem;
+  margin-top: 120px;
 }
 #homeSection .container {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 #homeSection .container .left > img {
-  width: 650px;
+  width: 100%;
   height: 500px;
   border-radius: 10px;
 }
@@ -621,7 +622,7 @@ nav .change {
     flex-direction: column;
   }
   #homeSection .container .left img {
-    max-width: 336px;
+    max-width: 100%;
     height: 400px;
   }
   #homeSection .container .right p {
@@ -682,7 +683,7 @@ nav .change {
     flex-direction: column;
   }
   #homeSection .container .left img {
-    max-width: 700px;
+    max-width: 100%;
     height: 400px;
   }
   #homeSection .container .slider {
@@ -2034,6 +2035,7 @@ nav .change {
 #contactSection .contact-container .contact_form {
   width: 700px;
   text-align: center;
+  gap: 20px;
 }
 #contactSection .contact-container .contact_form .input-box {
   display: flex;
@@ -2102,6 +2104,24 @@ nav .change {
   }
   .contact-container .contact_form {
     max-width: 300px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #contactSection .map {
+    max-width: 480px;
+  }
+  .contact-container {
+    max-width: 450px;
+    flex-direction: column;
+  }
+  .contact-container .contact-info {
+    max-width: 300px;
+  }
+  .contact-container .contact_form {
+    max-width: 300px;
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 * {
