@@ -75,6 +75,9 @@ nav #hamburger {
   display: none;
 }
 @media all and (min-width: 269px) and (max-width: 768px) {
+  nav .pk {
+    display: none;
+  }
   nav .navbar {
     display: none;
   }
@@ -84,19 +87,12 @@ nav #hamburger {
   nav #navigation-hm {
     display: block;
   }
-  nav .change {
-    width: 100%;
-  }
 }
 @media all and (min-width: 769px) and (max-width: 1024px) {
   nav .navbar a {
     font-size: 17px;
   }
 }
-nav .change {
-  width: 100%;
-}
-
 #menu {
   width: 25px;
   height: 30px;
@@ -116,7 +112,7 @@ nav .change {
   transform: translateY(-4px);
 }
 #menu #bar3 {
-  transform: translateY(4px);
+  transform: translateY(6px);
 }
 
 .nav {
@@ -124,16 +120,19 @@ nav .change {
   margin: 0 20px;
   transition: 1s ease;
   display: none;
+  width: 100%;
 }
-.nav li {
-  list-style-type: none;
-  margin: 10px;
+.nav div {
+  width: 100%;
+  text-align: center;
+  align-content: center;
 }
-.nav li a {
+.nav div a {
   color: #fff;
   text-decoration: none;
+  padding: 10px;
 }
-.nav li a:hover {
+.nav div a:hover {
   border: 1px solid #fff;
   padding: 20px 20px;
 }
@@ -155,13 +154,13 @@ nav .change {
   background-color: #f55c47;
   height: 100vh;
   margin: 0;
-  position: absolute;
   font-size: 30px;
   top: 0;
   z-index: -100;
-  width: 20%;
+  width: 768px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
