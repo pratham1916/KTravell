@@ -386,20 +386,20 @@
         <p>Fill this form, and our manager will contact you</p>
         <form action="" method="get" class="desFormClass" id="desIdform">
           <div class="desFormClass">
-            <input type="text" name="name" id="cityName" placeholder="Enter City you are Serching for!" required />
+            <input type="text" id="cityName" placeholder="Enter City you are Serching for!" />
           </div>
 
           <div class="desFormClass">
             <select name="travel-select" id="travel-select">
               <option value="">Sort By</option>
-              <option value="priceH-L">Price High to Low</option>
-              <option value="priceL-H">Price Low to High</option>
-              <option value="">Review High to Low</option>
-              <option value="">Review Low to High</option>
+              <option value="price.desc">Price High to Low</option>
+              <option value="price.asc">Price Low to High</option>
+              <option value="rating.desc">Rating High to Low</option>
+              <option value="rating.asc">Rating Low to High</option>
             </select>
           </div>
+          <input type="submit" id="serchBtn" value="Search">
         </form>
-        <button id="serchBtn">Search</button>
       </div>
     </div>
     <!-- Yash to Paste His code for video & form -- end-->
