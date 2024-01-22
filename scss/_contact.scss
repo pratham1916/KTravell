@@ -80,7 +80,8 @@ $primary-color: #97bbe3;
     .contact_form {
       width: 700px;
       text-align: center;
-
+      // margin-left: 30px;
+      gap: 20px;
       .input-box {
         display: flex;
         justify-content: space-between;
@@ -146,12 +147,34 @@ $primary-color: #97bbe3;
   .contact-container {
     max-width: 450px;
     flex-direction: column;
+
+    .contact-info {
+      max-width: 300px;
+    }
+    .contact_form {
+      max-width: 300px;
+      margin-left: 0;
+      // margin: auto;
+    }
+  }
+}
+@media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
+  #contactSection {
+    .map {
+      max-width: 480px;
+    }
+  }
+  .contact-container {
+    max-width: 450px;
+    flex-direction: column;
     .contact-info {
       max-width: 300px;
     }
     .contact_form {
       max-width: 300px;
       // margin: auto;
+      margin-left: 0;
+      margin-top: 10px;
     }
   }
 }
